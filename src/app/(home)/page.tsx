@@ -65,7 +65,7 @@ export default function Home() {
                             }}>
                             <SplashItem
                                 name="discord"
-                                link="https://discord.com/kazu"
+                                link="https://discord.gg/heresy"
                                 icon={<RiDiscordLine />}
                             />
                         </motion.div>
