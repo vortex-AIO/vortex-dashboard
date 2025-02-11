@@ -52,7 +52,7 @@ export default function Home() {
                                 duration: 0.8,
                                 delay: 0.9
                             }}>
-                            <SplashItem name="cmds" link="/commands" icon={<IoTerminal />} />
+                            <SplashItem name="commands" link="/commands" icon={<IoTerminal />} />
                         </motion.div>
                         <motion.div
                             initial="hidden"
