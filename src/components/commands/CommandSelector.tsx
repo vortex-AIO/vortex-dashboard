@@ -59,7 +59,7 @@ export const CategorySelector = ({
             </button>
             <div
                 ref={scrollContainerRef}
-                className="mt-10 flex items-center overflow-x-auto no-scrollbar h-[60px] bg-kazu-200 rounded-2xl w-full border border-kazu-card-border"
+                className="mt-10 flex items-center overflow-x-auto no-scrollbar h-[60px] bg-heresy-200 rounded-2xl w-full border border-heresy-card-border"
                 onMouseDown={event => {
                     let startX = event.pageX
                     let scrollLeft = scrollContainerRef.current?.scrollLeft || 0
@@ -154,16 +154,17 @@ const SelectorItem = ({
 }) => {
     return (
         <button
-            className={`flex flex-row gap-2 items-center h-full px-6 ${active == name ? "text-white bg-kazu-300" : "text-kazu-700 bg-kazu-900 hover:bg-kazu-dim hover:text-white"}`}
+            className={`flex flex-row gap-2 items-center h-full px-6 ${active == name ? "text-white bg-heresy-300" : "text-heresy-700 bg-heresy-900 hover:bg-heresy-dim hover:text-white"}`}
             onClick={() => !scrolling && setCategory(name)}>
-            <div className="text-kazu-main font-bold text-lg">{icon}</div>
-            <span className={`font-bold ${active != name ? "text-kazu-unselected" : ""} text-base`}>
+            <div className="text-heresy-main font-bold text-lg">{icon}</div>
+            <span
+                className={`font-bold ${active != name ? "text-heresy-unselected" : ""} text-base`}>
                 {name}
             </span>
             <div
-                className={`flex font-bold ${active != name ? "bg-kazu-500" : "bg-kazu-700"} px-2 py-1 rounded-lg`}>
+                className={`flex font-bold ${active != name ? "bg-heresy-500" : "bg-heresy-700"} px-2 py-1 rounded-lg`}>
                 <span
-                    className={`text-sm font-semibold ${active != name ? "text-kazu-unselected" : "text-white"}`}>
+                    className={`text-sm font-semibold ${active != name ? "text-heresy-unselected" : "text-white"}`}>
                     {amount}
                 </span>
             </div>

@@ -6,37 +6,37 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    title: "kazu",
+    title: "heresy",
     description: "The only aesthetic multi-functional discord bot you need.",
     twitter: {
-        site: "https://kazu.bot/",
+        site: "https://heresy.bot/",
         card: "player"
     },
     openGraph: {
-        url: "https://kazu.bot/",
+        url: "https://heresy.cc/",
         type: "website",
-        title: "kazu",
-        siteName: "kazu.bot",
+        title: "heresy",
+        siteName: "heresy.cc",
         description: "The only aesthetic multi-functional discord bot you need.",
         images: [
             {
-                url: "https://cdn.kazu.bot/kazu.png",
+                url: "/heresy.png",
                 width: 500,
                 height: 500,
-                alt: "kazu"
+                alt: "heresy"
             }
         ]
     }
 }
 
-export default function kazuMain({
+export default function heresyMain({
     children
 }: Readonly<{
     children: React.ReactNode
 }>) {
     return (
         <html lang="en">
-            <body className={`bg-kazu-100 font-satoshi`}>{children}</body>
+            <body className={`bg-heresy-100 font-satoshi`}>{children}</body>
         </html>
     )
 }

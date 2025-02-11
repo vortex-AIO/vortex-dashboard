@@ -3,58 +3,16 @@ import { MeshGradient } from "@/components/(global)/GradientMesh"
 import "@/styles/globals.css"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ReactNode, useEffect, useState } from "react"
+import { ReactNode, useState } from "react"
 import { HiBookOpen } from "react-icons/hi2"
 import { IoTerminal } from "react-icons/io5"
 import { RiDiscordLine } from "react-icons/ri"
 import kazu from "../../../public/kazu.png"
 
-const fetchShards = async () => {
-    const response = await fetch(`https://api.kazu.bot/status`)
-    if (!response.ok) {
-        console.error("Failed to fetch shard data")
-        return []
-    }
-    const data = await response.json()
-    return data.shards.map((shard: any) => ({
-        id: shard.id,
-        guilds: parseInt(shard.guilds),
-        users: parseInt(shard.users.replace(/,/g, "")),
-        ping: parseFloat(shard.ping),
-        uptime: shard.uptime
-    }))
-}
-
 export default function Home() {
-    const [shards, setShards] = useState<IShard[]>([])
     const [totalUsers, setTotalUsers] = useState<number>(0)
     const [totalGuilds, setTotalGuilds] = useState<number>(0)
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const fetchedShards = await fetchShards()
-
-            if (fetchedShards.length === 0) {
-                console.error("No shard data available")
-            } else {
-                const totalUsers = fetchedShards.reduce(
-                    (acc: number, shard: IShard) => acc + shard.users,
-                    0
-                )
-                const totalGuilds = fetchedShards.reduce(
-                    (acc: number, shard: IShard) => acc + shard.guilds,
-                    0
-                )
-
-                setTotalUsers(totalUsers)
-                setTotalGuilds(totalGuilds)
-            }
-
-            setShards(fetchedShards)
-        }
-
-        fetchData()
-    }, [])
     const fadeUpVariants = {
         hidden: { opacity: 0, y: 90 },
         visible: { opacity: 1, y: 0 }
@@ -81,29 +39,9 @@ export default function Home() {
                         delay: 0.5
                     }}
                     className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#caca90] via-white to-[#caca90] pb-3">
-                    kazu
+                    heresy
                 </motion.h1>
-                <motion.span
-                    initial="hidden"
-                    animate="visible"
-                    variants={fadeUpVariants}
-                    transition={{
-                        ease: "easeInOut",
-                        duration: 0.8,
-                        delay: 0.7
-                    }}
-                    className="text-lg pb-10 -pt-5 font-medium text-[#6A6F71] text-center">
-                    serving{" "}
-                    <span className="text-[#D6D6D6] font-semibold">
-                        {totalUsers.toLocaleString() || "???"}
-                    </span>{" "}
-                    users across{" "}
-                    <span className="text-[#D6D6D6] font-semibold">
-                        {totalGuilds.toLocaleString() || "???"}
-                    </span>{" "}
-                    servers
-                </motion.span>
-                <div className="flex flex-row gap-3 sm:flex-col sm:gap-6">
+                <div className="flex flex-row gap-3 sm:flex-col sm:gap-6 mt-10">
                     <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
                         <motion.div
                             initial="hidden"
