@@ -3,16 +3,15 @@ const Privacy = () => {
         <div className="flex flex-col mx-[10vw] mt-5 sm:mx-[25vw]">
             <span className="font-bold text-5xl text-white">Privacy Policy</span>
             <span className="text-kazu-main italic text-sm mt-5">
-                Last updated And Effective Since: 2024-01-01
+                Last updated And Effective Since: 02-11-2025
             </span>
             <span className="text-neutral-400 text-sm mt-5 pb-5">
                 Any information we collect is not used in any malicious manner. If anything shown
                 seems misleading, please contact us @{" "}
-                <span className="text-white font-semibold">support@kazu.bot</span>
+                <span className="text-white font-semibold">heresy@playfairs.cc</span>
             </span>
             <div className="flex flex-col gap-4 text-[17px] pl-5">
                 <li className="text-neutral-400 marker:text-kazu-main">Guild IDs</li>
-                <li className="text-neutral-400 marker:text-kazu-main">Guild Names</li>
                 <li className="text-neutral-400 marker:text-kazu-main">Channel IDs</li>
                 <li className="text-neutral-400 marker:text-kazu-main">Role IDs</li>
                 <li className="text-neutral-400 marker:text-kazu-main">User IDs</li>
@@ -51,10 +50,6 @@ const Privacy = () => {
                 &quot;namehistory&quot; and &quot;avatarhistory&quot; commands to function. Users
                 can clear this data themselves at any time.
             </span>
-            <span className="text-neutral-400 text-sm mt-5">
-                Guild name changes are logged in order for the &quot;gnames&quot; command to
-                function. Server administrators can clear this data themselves at any time.
-            </span>
             <span className="font-bold text-2xl text-white pt-10">
                 Who is your collected information shared with?
             </span>
@@ -63,9 +58,9 @@ const Privacy = () => {
             </span>
             <span className="font-bold text-2xl text-white pt-10">Data Removal?</span>
             <span className="text-neutral-400 text-sm mt-5">
-                Email <span className="text-white font-semibold">support@kazu.bot</span> for all of
-                your data that we are currently storing. Response times may vary and could take up
-                to 7 days.
+                Email <span className="text-white font-semibold">heresy@playfairs.cc</span> for all
+                of your data that we are currently storing. Response times may vary and could take
+                up to 7 days.
             </span>
             <span className="font-bold text-2xl text-white pt-10">
                 Changes to the Privacy Policy

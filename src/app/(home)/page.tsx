@@ -27,7 +27,7 @@ export default function Home() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ ease: "easeInOut", duration: 1 }}
                     className="rounded-lg pb-3">
-                    <Image src={kazu} alt="kazu" width={300} height={300} />
+                    <Image src={kazu} alt="heresy" width={300} height={300} />
                 </motion.div>
                 <motion.h1
                     initial="hidden"

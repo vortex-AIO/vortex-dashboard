@@ -67,9 +67,9 @@ const BurgerMenu = ({ onClose }: { onClose: () => void }) => {
                 isActive: pathname == "/commands"
             },
             {
-                label: "Embeds",
-                destination: "https://embeds.kazu.bot",
-                isActive: pathname == "https://embeds.kazu.bot"
+                label: "Playfairs.cc",
+                destination: "https://playfairs.cc",
+                isActive: pathname == "https://playfairs.cc"
             },
             {
                 label: "Docs",
@@ -78,8 +78,11 @@ const BurgerMenu = ({ onClose }: { onClose: () => void }) => {
             },
             {
                 label: "Invite",
-                destination: "/invite",
-                isActive: pathname == "/invite"
+                destination:
+                    "https://discord.com/oauth2/authorize?client_id=1284037026672279635&permissions=8&integration_type=0&scope=bot",
+                isActive:
+                    pathname ==
+                    "https://discord.com/oauth2/authorize?client_id=1284037026672279635&permissions=8&integration_type=0&scope=bot"
             },
             {
                 label: "Status",

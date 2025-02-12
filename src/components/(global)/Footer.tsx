@@ -11,13 +11,13 @@ export const Footer = () => {
                     <div className="flex flex-col">
                         <Image
                             src={kazu}
-                            alt="kazu"
+                            alt="heresy"
                             height={150}
                             width={150}
                             className="rounded-2xl"
                         />
                         <p className="text-kazu-main text-sm mt-4">
-                            Copyright © 2024 kazu.bot. All rights reserved.
+                            Copyright © 2024 heresy.cc. All rights reserved.
                         </p>
                     </div>
                     <div className="flex flex-col gap-6 sm:flex-row">
@@ -34,7 +34,7 @@ export const Footer = () => {
                                 Documentation
                             </Link>
                             <Link
-                                href="https://discord.gg/kazu"
+                                href="https://discord.gg/heresy"
                                 className="font-semibold text-kazu-main text-sm mt-2">
                                 Support Server
                             </Link>
