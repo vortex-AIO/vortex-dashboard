@@ -48,7 +48,7 @@ const UserMenu = () => {
                 </div>
                 <button
                     className="bg-kazu-discord border-none px-7 py-2 flex space-x-1 rounded-lg border border-dark-border items-center font-medium text-base transition-all duration-200 hover:-translate-y-1 text-white"
-                    onClick={() => router.push("https://discord.gg/vortex")}>
+                    onClick={() => router.push("https://discord.gg/t4RYGFwY4D")}>
                     <FaDiscord size={22} />
                     <span className="hidden font-normal sm:inline-block">Support</span>
                 </button>

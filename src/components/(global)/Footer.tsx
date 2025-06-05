@@ -34,7 +34,7 @@ export const Footer = () => {
                                 Documentation
                             </Link>
                             <Link
-                                href="https://discord.gg/vortex"
+                                href="https://discord.gg/t4RYGFwY4D"
                                 className="font-semibold text-kazu-main text-sm mt-2">
                                 Support Server
                             </Link>
