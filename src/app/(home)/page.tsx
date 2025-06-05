@@ -79,8 +79,8 @@ export default function Home() {
                                 delay: 0.92
                             }}>
                             <SplashItem
-                                name="docs"
-                                link="https://docs.kazu.bot/"
+                                name="invite (Paused)"
+                                link="https://discord.com/oauth2/authorize?client_id=1347441071323480074&permissions=8&integration_type=0&scope=bot"
                                 icon={<HiBookOpen />}
                             />
                         </motion.div>
