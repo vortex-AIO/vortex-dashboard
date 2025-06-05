@@ -38,9 +38,9 @@ const Privacy = () => {
             </span>
             <span className="text-neutral-400 text-sm mt-5">
                 When a command is invoked, we store the message content for a maximum of 2 hours or
-                less for debugging purposes. We also store a unlimited number of entries for 'lore'
-                added messages, again users can opt out of this and have all their messages purged
-                from the database.
+                less for debugging purposes. We also store a unlimited number of entries for
+                &apos;Lore&apos; added messages, again users can opt out of this and have all their
+                messages purged from the database.
             </span>
             <span className="text-neutral-400 text-sm mt-5">
                 Guild IDs, Channel IDs, Role IDs, User IDs and Message IDs are all stored for our
