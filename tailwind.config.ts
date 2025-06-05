@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                heresy: {
+                vortex: {
                     "100": "#141114",
                     "200": "#111212",
                     "300": "#1F2020",
