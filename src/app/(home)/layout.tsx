@@ -7,7 +7,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
     title: "vortex",
-    description: "The only aesthetic multi-functional discord bot you need.",
+    description:
+        "Vortex, an all-in-one Discord Bot designed to manage and elevate your Discord Server experience.",
     twitter: {
         site: "https://vortex.bot/",
         card: "player"
@@ -15,12 +16,13 @@ export const metadata: Metadata = {
     openGraph: {
         url: "https://playfairs.cc.cc/",
         type: "website",
-        title: "playfairs.cc",
-        siteName: "playfairs.cc.cc",
-        description: "The only aesthetic multi-functional discord bot you need.",
+        title: "vortex",
+        siteName: "vortex",
+        description:
+            "Vortex, an all-in-one Discord Bot designed to manage and elevate your Discord Server experience.",
         images: [
             {
-                url: "/vortex.png",
+                url: "https://www.playfairs.cc/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkazu.0e5e847e.png&w=384&q=75",
                 width: 500,
                 height: 500,
                 alt: "vortex"
