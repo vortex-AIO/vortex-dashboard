@@ -4,7 +4,7 @@ import "@/styles/globals.css"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ReactNode, useState } from "react"
-import { HiBookOpen } from "react-icons/hi2"
+import { IoMdAdd } from "react-icons/io"
 import { IoTerminal } from "react-icons/io5"
 import { RiDiscordLine } from "react-icons/ri"
 import kazu from "../../../public/kazu.png"
@@ -81,7 +81,7 @@ export default function Home() {
                             <SplashItem
                                 name="invite"
                                 link="https://discord.com/oauth2/authorize?client_id=1347441071323480074&permissions=8&integration_type=0&scope=bot"
-                                icon={<HiBookOpen />}
+                                icon={<IoMdAdd />}
                             />
                         </motion.div>
                     </div>
