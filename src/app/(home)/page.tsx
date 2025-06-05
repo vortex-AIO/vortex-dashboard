@@ -27,7 +27,7 @@ export default function Home() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ ease: "easeInOut", duration: 1 }}
                     className="rounded-lg pb-3">
-                    <Image src={kazu} alt="heresy" width={300} height={300} />
+                    <Image src={kazu} alt="vortex" width={300} height={300} />
                 </motion.div>
                 <motion.h1
                     initial="hidden"
@@ -39,7 +39,7 @@ export default function Home() {
                         delay: 0.5
                     }}
                     className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#caca90] via-white to-[#caca90] pb-3">
-                    heresy
+                    vortex
                 </motion.h1>
                 <div className="flex flex-row gap-3 sm:flex-col sm:gap-6 mt-10">
                     <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
@@ -65,7 +65,7 @@ export default function Home() {
                             }}>
                             <SplashItem
                                 name="discord"
-                                link="https://discord.gg/heresy"
+                                link="https://discord.gg/t4RYGFwY4D"
                                 icon={<RiDiscordLine />}
                             />
                         </motion.div>

@@ -11,24 +11,24 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    title: "heresy",
+    title: "vortex",
     description: "The only aesthetic multi-functional discord bot you need.",
     twitter: {
-        site: "https://heresy.vercel.app/",
+        site: "https://vortex.vercel.app/",
         card: "player"
     },
     openGraph: {
-        url: "https://heresy.vercel.app/",
+        url: "https://vortex.vercel.app/",
         type: "website",
-        title: "heresy",
-        siteName: "heresy.bot",
+        title: "vortex",
+        siteName: "vortex.bot",
         description: "The only aesthetic multi-functional discord bot you need.",
         images: [
             {
                 url: "https://cdn.kazu.bot/kazu.png",
                 width: 500,
                 height: 500,
-                alt: "heresy"
+                alt: "vortex"
             }
         ]
     }

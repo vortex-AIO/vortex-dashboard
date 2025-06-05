@@ -6,37 +6,37 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    title: "heresy",
+    title: "vortex",
     description: "The only aesthetic multi-functional discord bot you need.",
     twitter: {
-        site: "https://heresy.bot/",
+        site: "https://vortex.bot/",
         card: "player"
     },
     openGraph: {
-        url: "https://heresy.cc/",
+        url: "https://playfairs.cc.cc/",
         type: "website",
-        title: "heresy",
-        siteName: "heresy.cc",
+        title: "playfairs.cc",
+        siteName: "playfairs.cc.cc",
         description: "The only aesthetic multi-functional discord bot you need.",
         images: [
             {
-                url: "/heresy.png",
+                url: "/vortex.png",
                 width: 500,
                 height: 500,
-                alt: "heresy"
+                alt: "vortex"
             }
         ]
     }
 }
 
-export default function heresyMain({
+export default function vortexMain({
     children
 }: Readonly<{
     children: React.ReactNode
 }>) {
     return (
         <html lang="en">
-            <body className={`bg-heresy-100 font-satoshi`}>{children}</body>
+            <body className={`bg-vortex-100 font-satoshi`}>{children}</body>
         </html>
     )
 }

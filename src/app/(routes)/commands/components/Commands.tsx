@@ -26,16 +26,16 @@ export const CommandsPage = ({
                 <BackToTopButton />
                 <div className="flex flex-row justify-between items-center -mx-10 sm:-mx-0">
                     <div className="flex justify-center items-center space-x-2">
-                        <div className="rounded-full p-3 border border-heresy-card-border bg-heresy-200">
-                            <TerminalSquareIcon size="25" className="text-heresy-main" />
+                        <div className="rounded-full p-3 border border-vortex-card-border bg-vortex-200">
+                            <TerminalSquareIcon size="25" className="text-vortex-main" />
                         </div>
                         <div className="text-2xl font-bold text-white sm:text-3xl">Commands</div>
                     </div>
                     <div className="flex flex-row items-center gap-4 mt-2 sm:mt-0">
                         <div
-                            className="flex items-center justify-center rounded-2xl border border-heresy-card-border bg-heresy-200 hover:bg-heresy-300 cursor-pointer p-3"
+                            className="flex items-center justify-center rounded-2xl border border-vortex-card-border bg-vortex-200 hover:bg-vortex-300 cursor-pointer p-3"
                             onClick={() => setSearchMenuOpen(true)}>
-                            <Search size="25" className="text-heresy-main" />
+                            <Search size="25" className="text-vortex-main" />
                         </div>
                     </div>
                 </div>
@@ -74,8 +74,8 @@ export const CommandsPage = ({
                     <BackToTopButton />
                     <div className="flex flex-row justify-between items-center">
                         <div className="flex justify-center items-center space-x-2">
-                            <div className="rounded-full p-3 border border-heresy-card-border bg-heresy-200">
-                                <TerminalSquareIcon size="25" className="text-heresy-main" />
+                            <div className="rounded-full p-3 border border-vortex-card-border bg-vortex-200">
+                                <TerminalSquareIcon size="25" className="text-vortex-main" />
                             </div>
                             <div className="text-2xl font-bold text-white sm:text-3xl">
                                 Commands
@@ -83,9 +83,9 @@ export const CommandsPage = ({
                         </div>
                         <div className="flex flex-row items-center gap-4 mt-2 sm:mt-0">
                             <div
-                                className="flex items-center justify-center rounded-2xl border border-heresy-card-border bg-heresy-200 hover:bg-heresy-300 cursor-pointer p-3"
+                                className="flex items-center justify-center rounded-2xl border border-vortex-card-border bg-vortex-200 hover:bg-vortex-300 cursor-pointer p-3"
                                 onClick={() => setSearchMenuOpen(true)}>
-                                <Search size="25" className="text-heresy-main" />
+                                <Search size="25" className="text-vortex-main" />
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ const Command = ({
     return (
         <div
             id={name}
-            className="flex flex-col py-6 rounded-3xl bg-heresy-200 border transition-shadow duration-200 ease-linear border-heresy-card-border text-white">
+            className="flex flex-col py-6 rounded-3xl bg-vortex-200 border transition-shadow duration-200 ease-linear border-vortex-card-border text-white">
             <div className="relative h-full flex flex-col justify-between">
                 <div className="px-6">
                     <div className="flex items-start justify-between gap-x-4">
@@ -150,27 +150,27 @@ const Command = ({
                             <BiCopy className="w-6 h-6" />
                         </button>
                     </div>
-                    <p className="text-sm text-heresy-secondary font-medium pb-[5%]">
+                    <p className="text-sm text-vortex-secondary font-medium pb-[5%]">
                         {description}
                     </p>
                 </div>
-                <hr className="border-t border-heresy-card-border w-full" />
+                <hr className="border-t border-vortex-card-border w-full" />
                 <div>
                     <div className="px-6 pt-[5%] flex flex-col gap-4">
                         <div>
-                            <p className="text-sm tracking-wide text-heresy-main font-medium">
+                            <p className="text-sm tracking-wide text-vortex-main font-medium">
                                 arguments
                             </p>
                             <div className="flex flex-wrap gap-2 mt-3">
                                 {args.length === 0 ? (
-                                    <p className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-heresy-300">
+                                    <p className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-vortex-300">
                                         None
                                     </p>
                                 ) : (
                                     args.map((arg: string, index: number) => (
                                         <p
                                             key={index}
-                                            className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-heresy-300">
+                                            className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-vortex-300">
                                             {arg.replaceAll("_", " ")}
                                         </p>
                                     ))
@@ -178,14 +178,14 @@ const Command = ({
                             </div>
                         </div>
                         <div>
-                            <p className="text-sm tracking-wide text-heresy-main font-medium">
+                            <p className="text-sm tracking-wide text-vortex-main font-medium">
                                 permissions
                             </p>
                             <div className="flex items-center gap-2 mt-3 capitalize">
                                 {permissions.map((permission: string, index: number) => (
                                     <p
                                         key={index}
-                                        className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-heresy-300">
+                                        className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-vortex-300">
                                         {permission == "N/A"
                                             ? "None"
                                             : permission.replaceAll("_", " ")}

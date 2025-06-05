@@ -59,7 +59,7 @@ export const CategorySelector = ({
             </button>
             <div
                 ref={scrollContainerRef}
-                className="mt-10 flex items-center overflow-x-auto no-scrollbar h-[60px] bg-heresy-200 rounded-2xl w-full border border-heresy-card-border"
+                className="mt-10 flex items-center overflow-x-auto no-scrollbar h-[60px] bg-vortex-200 rounded-2xl w-full border border-vortex-card-border"
                 onMouseDown={event => {
                     let startX = event.pageX
                     let scrollLeft = scrollContainerRef.current?.scrollLeft || 0
@@ -154,17 +154,17 @@ const SelectorItem = ({
 }) => {
     return (
         <button
-            className={`flex flex-row gap-2 items-center h-full px-6 ${active == name ? "text-white bg-heresy-300" : "text-heresy-700 bg-heresy-900 hover:bg-heresy-dim hover:text-white"}`}
+            className={`flex flex-row gap-2 items-center h-full px-6 ${active == name ? "text-white bg-vortex-300" : "text-vortex-700 bg-vortex-900 hover:bg-vortex-dim hover:text-white"}`}
             onClick={() => !scrolling && setCategory(name)}>
-            <div className="text-heresy-main font-bold text-lg">{icon}</div>
+            <div className="text-vortex-main font-bold text-lg">{icon}</div>
             <span
-                className={`font-bold ${active != name ? "text-heresy-unselected" : ""} text-base`}>
+                className={`font-bold ${active != name ? "text-vortex-unselected" : ""} text-base`}>
                 {name}
             </span>
             <div
-                className={`flex font-bold ${active != name ? "bg-heresy-500" : "bg-heresy-700"} px-2 py-1 rounded-lg`}>
+                className={`flex font-bold ${active != name ? "bg-vortex-500" : "bg-vortex-700"} px-2 py-1 rounded-lg`}>
                 <span
-                    className={`text-sm font-semibold ${active != name ? "text-heresy-unselected" : "text-white"}`}>
+                    className={`text-sm font-semibold ${active != name ? "text-vortex-unselected" : "text-white"}`}>
                     {amount}
                 </span>
             </div>

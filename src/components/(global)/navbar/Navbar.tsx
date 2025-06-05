@@ -37,13 +37,13 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
                     <Link href="/" className="flex space-x-3">
                         <Image
                             src={kazu}
-                            alt="heresy"
+                            alt="vortex"
                             width={35}
                             height={35}
                             className="rounded-lg"
                         />
                         <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#caca90] via-white to-[#caca90]">
-                            heresy
+                            vortex
                         </h1>
                     </Link>
                     <div className="hidden lg:block space-x-12">
