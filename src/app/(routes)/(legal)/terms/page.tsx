@@ -7,11 +7,11 @@ const Terms = () => {
             </span>
             <span className="text-neutral-400 text-sm mt-5 pb-5">
                 By visiting (&apos;vortex&apos;) or inviting (&apos;vortex Bot&apos;) to your
-                Discord or logging into our website (&apos;vortex.cc&apos;), you agree and consent
-                to the terms displayed on this page including our policies (Privacy Policy). When we
-                state &apos;vortex&apos;, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; in
-                these terms, we mean vortex. &apos;Services&apos; mean vortex&apos;s services that
-                we offer to users.
+                Discord or logging into our website (&apos;playfairs.cc&apos;), you agree and
+                consent to the terms displayed on this page including our policies (Privacy Policy).
+                When we state &apos;vortex&apos;, &apos;we&apos;, &apos;us&apos;, and
+                &apos;our&apos; in these terms, we mean vortex. &apos;Services&apos; mean
+                vortex&apos;s services that we offer to users.
             </span>
             <span className="text-neutral-400 text-sm mt-5">
                 If any information stated here seems misleading, please contact us @{" "}
