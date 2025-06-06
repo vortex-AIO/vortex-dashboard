@@ -79,10 +79,10 @@
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.24.7.tgz"
   integrity sha512-9uUYRm6OqQrCqQdG1iCBwBPZgN8ciDBro2nIOFaiRz1/BCxaI7CNvQbDHvsArAC7Tw9Hda/B3U+6ui9u4HWXPw==
 
-"@babel/runtime@7.23.4":
-  version "7.23.4"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.23.4.tgz"
-  integrity sha512-2Yv65nlWnWlSpe3fXEyX5i7fx5kIKo4Qbcj+hMO0odwaneFjfXw5fdum+4yL20O0QiaHpia0cYQ9xpNMqrBwHg==
+"@babel/runtime@7.26.10":
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.10.tgz#a07b4d8fa27af131a633d7b3524db803eb4764c2"
+  integrity sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -3280,14 +3280,14 @@ axe-core@=4.7.0:
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.7.0.tgz"
   integrity sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==
 
-axios-hooks@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/axios-hooks/-/axios-hooks-5.0.2.tgz"
-  integrity sha512-A047WTutYx5mYzfPc+CFblEliHLlLQ9zyrCJGtQeu5RyX0aLiAaOqqSvu2C6ts4fHFZfK9IPflqppIeIjldlrg==
+axios-hooks@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/axios-hooks/-/axios-hooks-5.1.1.tgz#de0f17e5bff1bc88e8144b75ed16355ceb5bbe9f"
+  integrity sha512-ti27vL2ttZUdOoBSwLzR63sW5zu0cC12jgOOw3PPhG6D8wajt4wfi9t9xUVpvK+6zHawcS2rHo9fKDTiOzOlgg==
   dependencies:
-    "@babel/runtime" "7.23.4"
+    "@babel/runtime" "7.26.10"
     dequal "2.0.3"
-    lru-cache "^10.0.1"
+    lru-cache "^11.0.0"
 
 axios@^1.9.0:
   version "1.9.0"
@@ -5349,10 +5349,15 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lru-cache@^10.0.1, lru-cache@^10.2.0:
+lru-cache@^10.2.0:
   version "10.2.2"
   resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-10.2.2.tgz"
   integrity sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==
+
+lru-cache@^11.0.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-11.1.0.tgz#afafb060607108132dbc1cf8ae661afb69486117"
+  integrity sha512-QIXZUBJUx+2zHUdQujWejBkcD9+cs94tLn0+YL8UrCh+D5sCXZ4c7LaEH48pNwRY3MLDgqUFyhlCyjJPf1WP0A==
 
 lucide-react@^0.378.0:
   version "0.378.0"

@@ -70,7 +70,7 @@
         "@nextui-org/react": "^2.3.6",
         "@storybook/react": "^8.1.11",
         "axios": "^1.9.0",
-        "axios-hooks": "^5.0.2",
+        "axios-hooks": "^5.1.1",
         "cheerio": "^1.0.0-rc.12",
         "color-rgba": "^3.0.0",
         "framer-motion": "^11.2.4",
