@@ -11,8 +11,8 @@ const nextConfig = {
         ]
     },
     images: {
-        unoptimized: true
-        // domains: ["i.imgur.com", "cdn.kazu.bot"]
+        // unoptimized: true
+        domains: ["i.imgur.com", "cdn.kazu.bot"]
     },
     matcher: ["/((?!_next|favicon.ico).*)"]
 }
