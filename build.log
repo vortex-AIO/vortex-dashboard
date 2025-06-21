@@ -1,0 +1,72 @@
+yarn run v1.22.22
+$ next build
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Unrecognized key(s) in object: 'swcMinify', 'matcher'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+   ▲ Next.js 15.2.4
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./public/kazu.png
+Error: Could not load the "sharp" module using the darwin-arm64 runtime
+ERR_DLOPEN_FAILED: dlopen(/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node, 0x0001): Library not loaded: @rpath/libvips-cpp.42.dylib
+  Referenced from: <8791EE4B-BC08-3720-9DD2-BC610F2FA3E6> /Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node
+  Reason: tried: '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../sharp-libvips-darwin-arm64/1.0.4/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../../../@img-sharp-libvips-darwin-arm64-npm-1.0.4-d0d063884a/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../sharp-libvips-darwin-arm64/1.0.4/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../../../@img-sharp-libvips-darwin-arm64-npm-1.0.4-d0d063884a/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file)
+Possible solutions:
+- Ensure optional dependencies can be installed:
+    npm install --include=optional sharp
+- Ensure your package manager supports multi-platform installation:
+    See https://sharp.pixelplumbing.com/install#cross-platform
+- Add platform-specific dependencies:
+    npm install --os=darwin --cpu=arm64 sharp
+- Consult the installation documentation:
+    See https://sharp.pixelplumbing.com/install
+    at Object.<anonymous> (/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/sharp/lib/sharp.js:113:9)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1491:12)
+    at mod.require (/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+
+Import trace for requested module:
+./public/kazu.png
+./src/components/(global)/Footer.tsx
+./src/app/(routes)/layout.tsx
+
+./public/kazu.png
+Error: Could not load the "sharp" module using the darwin-arm64 runtime
+ERR_DLOPEN_FAILED: dlopen(/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node, 0x0001): Library not loaded: @rpath/libvips-cpp.42.dylib
+  Referenced from: <8791EE4B-BC08-3720-9DD2-BC610F2FA3E6> /Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node
+  Reason: tried: '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../sharp-libvips-darwin-arm64/1.0.4/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../../../@img-sharp-libvips-darwin-arm64-npm-1.0.4-d0d063884a/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../sharp-libvips-darwin-arm64/1.0.4/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file), '/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/../../../../../@img-sharp-libvips-darwin-arm64-npm-1.0.4-d0d063884a/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.42.dylib' (no such file)
+Possible solutions:
+- Ensure optional dependencies can be installed:
+    npm install --include=optional sharp
+- Ensure your package manager supports multi-platform installation:
+    See https://sharp.pixelplumbing.com/install#cross-platform
+- Add platform-specific dependencies:
+    npm install --os=darwin --cpu=arm64 sharp
+- Consult the installation documentation:
+    See https://sharp.pixelplumbing.com/install
+    at Object.<anonymous> (/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/sharp/lib/sharp.js:113:9)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1491:12)
+    at mod.require (/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+
+Import trace for requested module:
+./public/kazu.png
+
+
+> Build failed because of webpack errors
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
