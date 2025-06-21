@@ -8,6 +8,7 @@ type Command = {
   usage: string;
   enabled: boolean;
   cog: string;
+  permissions?: string;
 };
 
 type CommandsResponse = {
@@ -18,18 +19,19 @@ type CommandsResponse = {
 
 const commands: CommandsResponse[] = [
   {
-    "status": "success",
-    "commands": [
+    status: "success",
+    commands: [
       {
-        "name": ",;",
-        "description": "No description",
-        "aliases": [
+        name: ",;",
+        description: "No description",
+        aliases: [
           ".;",
           "-;"
         ],
-        "usage": ";,; ",
-        "enabled": true,
-        "cog": "Fun"
+        usage: ";,; ",
+        enabled: true,
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "afk",
@@ -46,25 +48,28 @@ const commands: CommandsResponse[] = [
           "aficionado",
           "apt"
         ],
-        usage: ";afk [reason=AFK]",
+        usage: ";afk [reason]",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "autorole",
-        description: "No description",
+        description: "Automatically assigns a role to new members for this server.",
         aliases: [],
         usage: ";autorole <role>",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "autorolebots",
-        description: "Automatically assigns a role to new bot members for this server.",
+        description: "Automatically assigns a role to new bots for this server.",
         aliases: [],
         usage: ";autorolebots <role>",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "avatar",
@@ -75,17 +80,19 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";avatar [member]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "ban",
-        description: "No description",
+        description: "Bans a user from the server.",
         aliases: [
           "banish"
         ],
         usage: ";ban [target] [reason]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "BAN_MEMBERS"
       },
       {
         name: "banlist",
@@ -95,7 +102,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";banlist ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "BAN_MEMBERS"
       },
       {
         name: "banner",
@@ -103,7 +111,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";banner [member]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "bc",
@@ -111,7 +120,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";bc [amount]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "bi",
@@ -123,7 +133,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";bi ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "blacklist",
@@ -131,7 +142,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";blacklist ",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "blacklist channel",
@@ -139,7 +151,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";blacklist channel <channel_id>",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "blacklist command",
@@ -147,7 +160,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";blacklist command [args]",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "blacklist command add",
@@ -155,7 +169,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";blacklist command add <command_name> [scope]",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "blacklist guild",
@@ -163,7 +178,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";blacklist guild <guild_id>",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "Bot Owner"
       },
       {
         name: "blacklist user",
@@ -171,7 +187,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";blacklist user <user_id>",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "Bot Owner"
       },
       {
         name: "boop",
@@ -179,7 +196,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";boop <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "bots",
@@ -189,7 +207,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";bots ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "button",
@@ -197,7 +216,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";button ",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "channel",
@@ -205,7 +225,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "channel create",
@@ -213,7 +234,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel create <name> [category]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "channel delete",
@@ -221,7 +243,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel delete [channel]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "channel private",
@@ -229,7 +252,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel private [name]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "channel rename",
@@ -237,7 +261,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel rename <new_name>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "channel sync",
@@ -245,7 +270,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel sync [category]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "channel topic",
@@ -253,7 +279,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";channel topic <new_topic>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "clearsnipe",
@@ -274,7 +301,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";clearsnipe ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "command",
@@ -282,7 +310,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";command ",
         enabled: true,
-        cog: "CommandManager"
+        cog: "CommandManager",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "command disable",
@@ -290,7 +319,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";command disable <command_name>",
         enabled: true,
-        cog: "CommandManager"
+        cog: "CommandManager",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "command enable",
@@ -298,7 +328,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";command enable <command_name>",
         enabled: true,
-        cog: "CommandManager"
+        cog: "CommandManager",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "cover",
@@ -309,7 +340,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";cover [user]",
         enabled: true,
-        cog: "LastFM"
+        cog: "LastFM",
+        permissions: "None"
       },
       {
         name: "createinvite",
@@ -320,7 +352,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";createinvite [channel]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "INSTANT_INVITE"
       },
       {
         name: "define",
@@ -328,7 +361,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";define <word>",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "disconnect",
@@ -338,7 +372,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";disconnect [member]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MOVE_MEMBERS"
       },
       {
         name: "editsnipe",
@@ -348,7 +383,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";editsnipe ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "None"
       },
       {
         name: "emoji",
@@ -356,7 +392,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";emoji ",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "emoji escape",
@@ -366,7 +403,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";emoji escape <emojis>",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "errors",
@@ -376,7 +414,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";errors <id>",
         enabled: true,
-        cog: "ErrorHandler"
+        cog: "ErrorHandler",
+        permissions: "Bot Owner"
       },
       {
         name: "fetch",
@@ -384,7 +423,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";fetch ",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "filter",
@@ -392,7 +432,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";filter ",
         enabled: true,
-        cog: "Automod"
+        cog: "Automod",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "filter add",
@@ -400,7 +441,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";filter add <keyword>",
         enabled: true,
-        cog: "Automod"
+        cog: "Automod",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "filter list",
@@ -408,7 +450,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";filter list ",
         enabled: true,
-        cog: "Automod"
+        cog: "Automod",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "filter remove",
@@ -416,7 +459,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";filter remove <keyword>",
         enabled: true,
-        cog: "Automod"
+        cog: "Automod",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "finger",
@@ -427,7 +471,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";finger [user]",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "fm",
@@ -435,7 +480,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";fm [user]",
         enabled: true,
-        cog: "LastFM"
+        cog: "LastFM",
+        permissions: "None"
       },
       {
         name: "fn",
@@ -446,7 +492,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";fn [member] [forced_nick]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "force_remove_afk",
@@ -457,7 +504,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";force_remove_afk <member>",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "Bot Owner"
       },
       {
         name: "fuck",
@@ -465,7 +513,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";fuck [user]",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "gate",
@@ -473,7 +522,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";gate ",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "gate join",
@@ -488,7 +538,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";gate join <message>",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "gate leave",
@@ -498,7 +549,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";gate leave <message>",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "gate reset",
@@ -508,7 +560,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";gate reset ",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "gate set",
@@ -518,7 +571,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";gate set [channel]",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "gate view",
@@ -528,7 +582,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";gate view ",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "hardban",
@@ -539,7 +594,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";hardban <user_id> [reason]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "help",
@@ -550,7 +606,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";help [command]",
         enabled: true,
-        cog: "No Category"
+        cog: "Core",
+        permissions: "None"
       },
       {
         name: "hide",
@@ -558,7 +615,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";hide [channel] [role]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "hotfix",
@@ -566,7 +624,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";hotfix ",
         enabled: true,
-        cog: "Developer"
+        cog: "Developer",
+        permissions: "Bot Owner"
       },
       {
         name: "hug",
@@ -574,7 +633,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";hug <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "immunity",
@@ -582,7 +642,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";immunity <target> <rule_id>",
         enabled: true,
-        cog: "Automod"
+        cog: "Automod",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "inrole",
@@ -592,7 +653,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";inrole <role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "install",
@@ -600,7 +662,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";install ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "invite",
@@ -610,7 +673,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";invite [user]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "invocations",
@@ -618,7 +682,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";invocations <ctx> [args...] <kwargs>",
         enabled: true,
-        cog: "Invocations"
+        cog: "Invocations",
+        permissions: "Bot Owner"
       },
       {
         name: "jail",
@@ -626,7 +691,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jail <member> [reason=No reason provided]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "jail channel",
@@ -634,7 +700,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jail channel <channel>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "jail role",
@@ -642,7 +709,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jail role <role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "jail setup",
@@ -650,7 +718,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jail setup ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "jishaku ast",
@@ -658,7 +727,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku ast <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku cancel",
@@ -666,7 +736,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku cancel <index>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku cat",
@@ -674,7 +745,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku cat <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku curl",
@@ -682,7 +754,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku curl <url>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku debug",
@@ -692,7 +765,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku debug <command_string>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku dis",
@@ -702,7 +776,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku dis <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku git",
@@ -710,7 +785,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku git <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku hide",
@@ -718,7 +794,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku hide ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku invite",
@@ -726,7 +803,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku invite [perms...]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku load",
@@ -736,7 +814,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku load [extensions...]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku node",
@@ -744,7 +823,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku node <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku override",
@@ -758,7 +838,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku override [overrides]... <command_string>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku permtrace",
@@ -766,7 +847,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku permtrace <channel> [targets...]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku pip",
@@ -774,7 +856,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku pip <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku py",
@@ -784,7 +867,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku py <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku py_inspect",
@@ -796,7 +880,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku py_inspect <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku repeat",
@@ -804,7 +889,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku repeat <times> <command_string>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku retain",
@@ -812,7 +898,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku retain [toggle]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku rtt",
@@ -822,7 +909,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku rtt ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku rustc",
@@ -830,7 +918,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku rustc <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku shell",
@@ -846,7 +935,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku shell <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku show",
@@ -854,7 +944,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku show ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku shutdown",
@@ -864,7 +955,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku shutdown ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku source",
@@ -874,7 +966,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku source <command_name>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku specialist",
@@ -882,7 +975,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku specialist <argument>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sql",
@@ -890,7 +984,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku sql ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sql execute",
@@ -898,7 +993,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku sql execute <query>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sql fetch",
@@ -906,7 +1002,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku sql fetch <query>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sql fetchrow",
@@ -916,7 +1013,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku sql fetchrow <query>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sql schema",
@@ -924,7 +1022,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku sql schema [query]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sql select",
@@ -932,7 +1031,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku sql select <query>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku sync",
@@ -940,7 +1040,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku sync [targets...]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku tasks",
@@ -948,7 +1049,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku tasks ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku unload",
@@ -956,7 +1058,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku unload [extensions...]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice",
@@ -966,7 +1069,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku voice ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice disconnect",
@@ -976,7 +1080,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku voice disconnect ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice join",
@@ -986,7 +1091,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku voice join [destination]",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice pause",
@@ -994,7 +1100,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku voice pause ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice play",
@@ -1004,7 +1111,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku voice play <uri>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice resume",
@@ -1012,7 +1120,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku voice resume ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice stop",
@@ -1020,7 +1129,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku voice stop ",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
           name: "jishaku voice volume",
@@ -1028,7 +1138,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";jishaku voice volume <percentage>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "jishaku voice youtube_dl",
@@ -1040,7 +1151,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";jishaku voice youtube_dl <url>",
         enabled: true,
-        cog: "Jishaku"
+        cog: "Jishaku",
+        permissions: "Jishaku"
       },
       {
         name: "kick",
@@ -1050,7 +1162,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";kick [member] [user_id] [reason]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "KICK_MEMBERS"
       },
       {
         name: "kill",
@@ -1058,7 +1171,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";kill <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "kiss",
@@ -1066,7 +1180,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";kiss <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "language",
@@ -1074,7 +1189,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";language <language>",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "lastfm",
@@ -1085,7 +1201,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";lastfm ",
         enabled: true,
-        cog: "LastFM"
+        cog: "LastFM",
+        permissions: "None"
       },
       {
         name: "lastfm set",
@@ -1095,7 +1212,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";lastfm set <username>",
         enabled: true,
-        cog: "LastFM"
+        cog: "LastFM",
+        permissions: "None"
       },
       {
         name: "leaderboard",
@@ -1106,7 +1224,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";leaderboard [page=1]",
         enabled: true,
-        cog: "Levels"
+        cog: "Levels",
+        permissions: "None"
       },
       {
         name: "lock",
@@ -1114,7 +1233,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lock [channel] [role]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "lore",
@@ -1122,7 +1242,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lore [user]",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "None"
       },
       {
         name: "lore add",
@@ -1130,7 +1251,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lore add ",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "None"
       },
       {
         name: "lore leaderboard",
@@ -1141,7 +1263,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";lore leaderboard ",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "None"
       },
       {
         name: "lore remove",
@@ -1149,7 +1272,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lore remove <entry_number> [user]",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "Bot Owner"
       },
       {
         name: "lore reset",
@@ -1157,7 +1281,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lore reset [user]",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "Bot Owner"
       },
       {
         name: "lore search",
@@ -1165,7 +1290,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lore search [query]",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "None"
       },
       {
         name: "lore show",
@@ -1173,7 +1299,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";lore show <entry_number> [user]",
         enabled: true,
-        cog: "Lore"
+        cog: "Lore",
+        permissions: "None"
       },
       {
         name: "loreadd",
@@ -1183,7 +1310,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";loreadd ",
         enabled: true,
-        cog: "Invocations"
+        cog: "Invocations",
+        permissions: "Bot Owner"
       },
       {
         name: "ltt",
@@ -1195,11 +1323,12 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";ltt ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "massban",
-        description: "No description",
+        description: "Bans multiple users at once.",
         aliases: [
           "mban",
           "mb",
@@ -1207,55 +1336,61 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";massban [user_ids...] [reason]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "mc",
-        description: "No description",
+        description: "Shows the number of members in the server.",
         aliases: [
           "membercount",
           "members"
         ],
         usage: ";mc ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "nick",
-        description: "No description",
+        description: "Changes the nickname of a user.",
         aliases: [],
         usage: ";nick [member] [new_nick]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_NICKNAMES"
       },
       {
         name: "nick force",
-        description: "No description",
+        description: "Forcefully changes a users nickname, preventing nickname changing.",
         aliases: [],
         usage: ";nick force [member] [forced_nick]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "nick remove",
-        description: "No description",
+        description: "Removes a users nickname, resetting it to their default nickname.",
         aliases: [
           "reset",
           "clear"
         ],
         usage: ";nick remove [member]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_NICKNAMES"
       },
       {
         name: "nick set",
-        description: "No description",
+        description: "Changes the nickname of a user, without preventing nickname changing.",
         aliases: [
           "change"
         ],
         usage: ";nick set [member] [new_nick]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_NICKNAMES"
       },
       {
         name: "nuke",
@@ -1274,7 +1409,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";nuke ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "pat",
@@ -1282,7 +1418,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";pat <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "patch",
@@ -1290,7 +1427,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";patch ",
         enabled: true,
-        cog: "Developer"
+        cog: "Developer",
+        permissions: "Bot Owner"
       },
       {
         name: "pause",
@@ -1298,7 +1436,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";pause ",
         enabled: true,
-        cog: "Music"
+        cog: "Music",
+        permissions: "None"
       },
       {
         name: "permissions",
@@ -1309,7 +1448,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";permissions [target]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "play",
@@ -1317,15 +1457,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";play <query>",
         enabled: true,
-        cog: "Music"
-      },
-      {
-        name: "playunfair",
-        description: "No description",
-        aliases: [],
-        usage: ";playunfair ",
-        enabled: true,
-        cog: "Fun"
+        cog: "Music",
+        permissions: "None"
       },
       {
         name: "prefix",
@@ -1333,7 +1466,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";prefix ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "punch",
@@ -1341,7 +1475,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";punch <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "purge",
@@ -1349,7 +1484,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge [amount]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge after",
@@ -1357,7 +1493,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge after <message_id>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge all",
@@ -1365,7 +1502,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge all ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge attachments",
@@ -1373,7 +1511,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge attachments ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge before",
@@ -1381,7 +1520,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge before <message_id>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge bot",
@@ -1389,7 +1529,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge bot ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge contains",
@@ -1397,7 +1538,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge contains <text>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge endswith",
@@ -1405,7 +1547,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge endswith <text>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge from",
@@ -1415,7 +1558,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";purge from <user>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge invites",
@@ -1423,7 +1567,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge invites ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge links",
@@ -1433,7 +1578,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";purge links ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge mentions",
@@ -1441,7 +1587,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge mentions [user]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge reactions",
@@ -1449,7 +1596,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge reactions ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge self",
@@ -1457,7 +1605,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge self ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge startswith",
@@ -1465,7 +1614,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge startswith <text>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "purge stickers",
@@ -1473,7 +1623,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";purge stickers ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_MESSAGES"
       },
       {
         name: "r",
@@ -1483,7 +1634,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";r [member] [role_input]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r bot",
@@ -1493,7 +1645,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";r bot <role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r color",
@@ -1501,7 +1654,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r color <role> <color_hex>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r create",
@@ -1509,7 +1663,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r create <role_name>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r delete",
@@ -1517,7 +1672,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r delete <role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r give",
@@ -1525,7 +1681,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r give <member> <role_input>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r has",
@@ -1533,7 +1690,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r has <role> <action> <new_role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r hoist",
@@ -1541,7 +1699,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r hoist <role> [hoist]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r human",
@@ -1551,7 +1710,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";r human <role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r info",
@@ -1559,7 +1719,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r info [role]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r list",
@@ -1567,7 +1728,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r list [user]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r mentionable",
@@ -1575,7 +1737,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r mentionable <role>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r remove",
@@ -1583,7 +1746,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";r remove <member> <role_input>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "r rename",
@@ -1593,7 +1757,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";r rename <role> <new_name>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "rank",
@@ -1604,7 +1769,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";rank [user]",
         enabled: true,
-        cog: "Levels"
+        cog: "Levels",
+        permissions: "None"
       },
       {
         name: "reactionmute",
@@ -1614,7 +1780,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";reactionmute <member>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MODERATE_MEMBERS"
       },
       {
         name: "reactionsnipe",
@@ -1624,7 +1791,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";reactionsnipe ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "None"
       },
       {
         name: "reactionunmute",
@@ -1635,7 +1803,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";reactionunmute <member>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MODERATE_MEMBERS"
       },
       {
         name: "resume",
@@ -1643,7 +1812,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";resume ",
         enabled: true,
-        cog: "Music"
+        cog: "Music",
+        permissions: "None"
       },
       {
         name: "ri",
@@ -1653,7 +1823,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";ri [role]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "roleid",
@@ -1663,15 +1834,17 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";roleid [role]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "roles",
-        description: "No description",
+        description: "Lists the roles of the specified user or yourself if no one is mentioned.",
         aliases: [],
         usage: ";roles [user]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "MANAGE_ROLES"
       },
       {
         name: "rtt",
@@ -1684,7 +1857,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";rtt ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "sav",
@@ -1692,7 +1866,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";sav [member]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "sbanner",
@@ -1702,18 +1877,20 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";sbanner [member]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "scrobbles",
-        description: "No description",
+        description: "Get the total scrobbles for a specific user.",
         aliases: [
           "sc",
           "plays"
         ],
         usage: ";scrobbles [user]",
         enabled: true,
-        cog: "LastFM"
+        cog: "LastFM",
+        permissions: "None"
       },
       {
         name: "sdeafen",
@@ -1724,7 +1901,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";sdeafen [member]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "DEAFEN_MEMBERS"
       },
       {
         name: "server",
@@ -1736,7 +1914,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";server ",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "server prefix",
@@ -1747,7 +1926,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";server prefix <prefix>",
         enabled: true,
-        cog: "Server"
+        cog: "Server",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "serverbanner",
@@ -1755,7 +1935,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";serverbanner ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "serverid",
@@ -1765,7 +1946,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";serverid ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "shards",
@@ -1773,7 +1955,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";shards ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "si",
@@ -1783,7 +1966,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";si ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "sicon",
@@ -1791,7 +1975,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";sicon ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "skibidi",
@@ -1801,7 +1986,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";skibidi ",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "slap",
@@ -1809,7 +1995,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";slap <user>",
         enabled: true,
-        cog: "Reactions"
+        cog: "Reactions",
+        permissions: "None"
       },
       {
         name: "smute",
@@ -1820,7 +2007,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";smute [member]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MUTE_MEMBERS"
       },
       {
         name: "sname",
@@ -1830,7 +2018,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";sname [new_name]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "snipe",
@@ -1840,7 +2029,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";snipe ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "None"
       },
       {
         name: "snipe edit",
@@ -1850,7 +2040,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";snipe edit ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "None"
       },
       {
         name: "snipe reaction",
@@ -1858,7 +2049,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";snipe reaction ",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "None"
       },
       {
         name: "source",
@@ -1868,7 +2060,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";source ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "splash",
@@ -1876,7 +2069,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";splash ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "staffstrip",
@@ -1887,7 +2081,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";staffstrip <member>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "steal",
@@ -1895,7 +2090,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";steal [emoji]",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "MANAGE_EMOJIS_AND_STICKERS"
       },
       {
         name: "steal emojis",
@@ -1903,7 +2099,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";steal emojis [emojis]",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "MANAGE_EMOJIS_AND_STICKERS"
       },
       {
         name: "steal sticker",
@@ -1911,7 +2108,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";steal sticker ",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "MANAGE_EMOJIS_AND_STICKERS"
       },
       {
         name: "stop",
@@ -1919,7 +2117,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";stop ",
         enabled: true,
-        cog: "Music"
+        cog: "Music",
+        permissions: "None"
       },
       {
         name: "sundeafen",
@@ -1931,7 +2130,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";sundeafen [member]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "DEAFEN_MEMBERS"
       },
       {
         name: "sunmute",
@@ -1942,7 +2142,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";sunmute [member]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MUTE_MEMBERS"
       },
       {
         name: "sync",
@@ -1950,7 +2151,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";sync [channel_or_category]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "tableflip",
@@ -1958,7 +2160,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";tableflip ",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "test",
@@ -1966,7 +2169,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";test ",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "test status",
@@ -1974,7 +2178,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";test status ",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "time",
@@ -1982,7 +2187,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";time ",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "timeout",
@@ -1997,7 +2203,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";timeout [member] [duration=5m]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MODERATE_MEMBERS"
       },
       {
         name: "touch",
@@ -2005,7 +2212,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";touch <user>",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "trackplays",
@@ -2015,7 +2223,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";trackplays [user] [artist] [track]",
         enabled: true,
-        cog: "LastFM"
+        cog: "LastFM",
+        permissions: "None"
       },
       {
         name: "translate",
@@ -2026,7 +2235,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";translate [text]",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "unban",
@@ -2036,7 +2246,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";unban <user_id>",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "BAN_MEMBERS"
       },
       {
         name: "unflip",
@@ -2044,7 +2255,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";unflip ",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "unhide",
@@ -2052,7 +2264,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";unhide [channel] [role]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "unjail",
@@ -2060,7 +2273,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";unjail <member> [reason=No reason provided]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "ADMINISTRATOR"
       },
       {
         name: "unlock",
@@ -2068,7 +2282,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";unlock [channel] [role]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MANAGE_CHANNELS"
       },
       {
         name: "untimeout",
@@ -2079,7 +2294,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";untimeout [member] [user_id]",
         enabled: true,
-        cog: "Moderation"
+        cog: "Moderation",
+        permissions: "MODERATE_MEMBERS"
       },
       {
         name: "urban",
@@ -2087,7 +2303,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";urban <word>",
         enabled: true,
-        cog: "Utility"
+        cog: "Utility",
+        permissions: "None"
       },
       {
         name: "userid",
@@ -2099,7 +2316,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";userid [user_id]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "userinfo",
@@ -2113,7 +2331,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";userinfo [member]",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "uwulock",
@@ -2121,7 +2340,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";uwulock <user> [flag=False]",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "MANAGE_WEBHOOKS"
       },
       {
         name: "uwulock reset",
@@ -2129,7 +2349,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";uwulock reset ",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "Bot Owner"
       },
       {
         name: "vanity",
@@ -2137,7 +2358,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vanity ",
         enabled: true,
-        cog: "Vanity"
+        cog: "Vanity",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "vanity check",
@@ -2145,7 +2367,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vanity check ",
         enabled: true,
-        cog: "Vanity"
+        cog: "Vanity",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "vanity logs",
@@ -2153,7 +2376,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vanity logs <channel>",
         enabled: true,
-        cog: "Vanity"
+        cog: "Vanity",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "vanity reset",
@@ -2161,7 +2385,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vanity reset ",
         enabled: true,
-        cog: "Vanity"
+        cog: "Vanity",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "vanity role",
@@ -2169,7 +2394,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vanity role <role>",
         enabled: true,
-        cog: "Vanity"
+        cog: "Vanity",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "vanity set",
@@ -2177,7 +2403,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vanity set <vanity>",
         enabled: true,
-        cog: "Vanity"
+        cog: "Vanity",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "voicemaster",
@@ -2189,7 +2416,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";voicemaster ",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "None"
       },
       {
         name: "voicemaster bandwidth",
@@ -2197,7 +2425,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster bandwidth <channel> <limit>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster claim",
@@ -2205,7 +2434,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster claim <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "None"
       },
       {
         name: "voicemaster delete",
@@ -2213,7 +2443,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster delete <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster hide",
@@ -2221,7 +2452,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster hide <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster info",
@@ -2229,7 +2461,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster info <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster limit",
@@ -2237,7 +2470,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster limit <channel> <limit>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster list",
@@ -2245,7 +2479,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster list ",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "None"
       },
       {
         name: "voicemaster lock",
@@ -2253,7 +2488,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster lock <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster permit",
@@ -2261,7 +2497,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster permit <channel> <user>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster rename",
@@ -2269,7 +2506,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster rename <channel> <name>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster reset",
@@ -2277,7 +2515,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster reset ",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "voicemaster revoke",
@@ -2285,7 +2524,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster revoke <channel> <user>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster setup",
@@ -2293,7 +2533,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster setup ",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "voicemaster status",
@@ -2301,7 +2542,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster status ",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "None"
       },
       {
         name: "voicemaster transfer",
@@ -2309,7 +2551,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster transfer <channel> <user>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster unhide",
@@ -2317,7 +2560,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster unhide <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "voicemaster unlock",
@@ -2325,7 +2569,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";voicemaster unlock <channel>",
         enabled: true,
-        cog: "VoiceMaster"
+        cog: "VoiceMaster",
+        permissions: "VoiceMaster Owner"
       },
       {
         name: "void",
@@ -2335,7 +2580,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";void <question>",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       },
       {
         name: "vortex",
@@ -2343,7 +2589,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";vortex ",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "whitelist",
@@ -2351,7 +2598,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whitelist ",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "None"
       },
       {
         name: "whitelist channel",
@@ -2359,7 +2607,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whitelist channel <channel_id>",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "whitelist command",
@@ -2367,7 +2616,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whitelist command [args]",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "whitelist command remove",
@@ -2375,7 +2625,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whitelist command remove <command_name> [scope]",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "MANAGE_GUILD"
       },
       {
         name: "whitelist guild",
@@ -2383,7 +2634,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whitelist guild <guild_id>",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "Bot Owner"
       },
       {
         name: "whitelist user",
@@ -2391,7 +2643,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whitelist user <user_id>",
         enabled: true,
-        cog: "Blacklist"
+        cog: "Blacklist",
+        permissions: "Bot Owner"
       },
       {
         name: "whois",
@@ -2399,7 +2652,8 @@ const commands: CommandsResponse[] = [
         aliases: [],
         usage: ";whois <user_id>",
         enabled: true,
-        cog: "Information"
+        cog: "Information",
+        permissions: "None"
       },
       {
         name: "wolfram",
@@ -2410,7 +2664,8 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";wolfram <question>",
         enabled: true,
-        cog: "Fun"
+        cog: "Fun",
+        permissions: "None"
       }
     ],
     "count": 263
