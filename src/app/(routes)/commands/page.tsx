@@ -9,7 +9,7 @@ import { CommandsPage } from "./components/Commands"
 const Commands = () => {
     const [{ data, loading, error }] = useAxios({
         url: "/",
-        baseURL: "https://api.vortex.bot"
+        baseURL: "https://api.playfairs.cc"
     })
 
     const [loadingComplete, setLoadingComplete] = useState(false)
