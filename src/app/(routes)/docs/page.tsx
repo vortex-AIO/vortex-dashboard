@@ -1469,6 +1469,11 @@ const groupedCommands = commands[0].commands.reduce<Record<string, Command[]>>((
   return acc;
 }, {});
 
+const sortedCategories = Object.keys(groupedCommands).sort();
+const sortedCommands = sortedCategories.map((category) =>
+  groupedCommands[category].sort((a, b) => a.name.localeCompare(b.name))
+);
+
 export default function DocsPage() {
   return (
     <main className="min-h-screen p-10">
@@ -1481,7 +1486,7 @@ export default function DocsPage() {
       <nav className="mt-8">
         <h2 className="text-2xl font-semibold">Table of Contents</h2>
         <ul className="list-disc list-inside mt-4">
-          {Object.keys(groupedCommands).map((category) => (
+          {sortedCategories.map((category) => (
             <li key={category}>
               <a href={`#${category}`} className="text-blue-500 hover:underline">
                 {category}
@@ -1492,12 +1497,12 @@ export default function DocsPage() {
       </nav>
 
       {/* Command Documentation */}
-      <section className="mt-10">
-        {Object.entries(groupedCommands).map(([category, categoryCommands]) => (
+      <section className="mt-10 space-y-16">
+        {sortedCategories.map((category, index) => (
           <div key={category} id={category} className="mt-10">
             <h2 className="text-3xl font-bold">{category}</h2>
             <ul className="mt-4 space-y-4">
-              {categoryCommands.map((command: Command) => (
+              {sortedCommands[index].map((command: Command) => (
                 <li key={command.name} className="border-b pb-4">
                   <h3 className="text-xl font-semibold">{command.name}</h3>
                   <p className="mt-2">
