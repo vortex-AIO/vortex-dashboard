@@ -23,8 +23,8 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
             },
             {
                 label: "Docs",
-                destination: "https://docs.kazu.bot",
-                isActive: pathname == "https://docs.kazu.bot"
+                destination: "https://docs.playfairs.cc",
+                isActive: pathname == "https://docs.playfairs.cc"
             }
         ],
         [pathname]
