@@ -1,6 +1,22 @@
 import React from "react";
 
-const commands = [
+// Define the command type
+type Command = {
+  name: string;
+  description: string;
+  aliases: string[];
+  usage: string;
+  enabled: boolean;
+  cog: string;
+};
+
+type CommandsResponse = {
+  status: string;
+  commands: Command[];
+  count: number;
+};
+
+const commands: CommandsResponse[] = [
   {
     status: "success",
     commands: [
@@ -1445,66 +1461,68 @@ const commands = [
     }
 ];
 
-const groupedCommands = commands[0].commands.reduce((acc, command) => {
-    if (!acc[command.cog]) acc[command.cog] = [];
-    acc[command.cog].push(command);
-    return acc;
-}, {} as Record<string, typeof commands[0].commands>);
+const groupedCommands = commands[0].commands.reduce<Record<string, Command[]>>((acc, command) => {
+  if (!acc[command.cog]) {
+    acc[command.cog] = [];
+  }
+  acc[command.cog].push(command);
+  return acc;
+}, {});
 
 export default function DocsPage() {
-    return (
-        <main className="min-h-screen p-10">
-            <h1 className="text-4xl font-bold text-center">Documentation</h1>
-            <p className="mt-4 text-lg text-center">
-                Below is the categorized documentation for all commands.
-            </p>
+  return (
+    <main className="min-h-screen p-10">
+      <h1 className="text-4xl font-bold text-center">Documentation</h1>
+      <p className="mt-4 text-lg text-center">
+        Below is the categorized documentation for all commands.
+      </p>
 
-            {/* Table of Contents */}
-            <nav className="mt-8">
-                <h2 className="text-2xl font-semibold">Table of Contents</h2>
-                <ul className="list-disc list-inside mt-4">
-                    {Object.keys(groupedCommands).map((category) => (
-                        <li key={category}>
-                            <a href={`#${category}`} className="text-blue-500 hover:underline">
-                                {category}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+      {/* Table of Contents */}
+      <nav className="mt-8">
+        <h2 className="text-2xl font-semibold">Table of Contents</h2>
+        <ul className="list-disc list-inside mt-4">
+          {Object.keys(groupedCommands).map((category) => (
+            <li key={category}>
+              <a href={`#${category}`} className="text-blue-500 hover:underline">
+                {category}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-            {/* Command Documentation */}
-            <section className="mt-10">
-                {Object.entries(groupedCommands).map(([category, commands]) => (
-                    <div key={category} id={category} className="mt-10">
-                        <h2 className="text-3xl font-bold">{category}</h2>
-                        <ul className="mt-4 space-y-4">
-                            {commands.map((command) => (
-                                <li key={command.name} className="border-b pb-4">
-                                    <h3 className="text-xl font-semibold">{command.name}</h3>
-                                    <p className="mt-2">
-                                        <strong>Description:</strong>{" "}
-                                        {command.description || "No description provided."}
-                                    </p>
-                                    <p className="mt-2">
-                                        <strong>Aliases:</strong>{" "}
-                                        {command.aliases.length > 0
-                                            ? command.aliases.join(", ")
-                                            : "None"}
-                                    </p>
-                                    <p className="mt-2">
-                                        <strong>Usage:</strong>{" "}
-                                        {command.usage || "No usage information provided."}
-                                    </p>
-                                    <p className="mt-2">
-                                        <strong>Enabled:</strong> {command.enabled ? "Yes" : "No"}
-                                    </p>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
-            </section>
-        </main>
-    );
+      {/* Command Documentation */}
+      <section className="mt-10">
+        {Object.entries(groupedCommands).map(([category, categoryCommands]) => (
+          <div key={category} id={category} className="mt-10">
+            <h2 className="text-3xl font-bold">{category}</h2>
+            <ul className="mt-4 space-y-4">
+              {categoryCommands.map((command: Command) => (
+                <li key={command.name} className="border-b pb-4">
+                  <h3 className="text-xl font-semibold">{command.name}</h3>
+                  <p className="mt-2">
+                    <strong>Description:</strong>{" "}
+                    {command.description || "No description provided."}
+                  </p>
+                  <p className="mt-2">
+                    <strong>Aliases:</strong>{" "}
+                    {command.aliases.length > 0
+                      ? command.aliases.join(", ")
+                      : "None"}
+                  </p>
+                  <p className="mt-2">
+                    <strong>Usage:</strong>{" "}
+                    {command.usage || "No usage information provided."}
+                  </p>
+                  <p className="mt-2">
+                    <strong>Enabled:</strong> {command.enabled ? "Yes" : "No"}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
 }
