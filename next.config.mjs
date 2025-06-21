@@ -12,7 +12,8 @@ const nextConfig = {
     },
     images: {
         domains: ["i.imgur.com", "cdn.kazu.bot"]
-    }
+    },
+    matcher: ["/((?!_next|favicon.ico).*)"]
 }
 
-export default nextConfig
+export default nextConfig;
