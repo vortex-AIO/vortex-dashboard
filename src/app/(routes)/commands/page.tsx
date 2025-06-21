@@ -13,6 +13,7 @@ interface ImportedCommand {
   usage: string;
   enabled: boolean;
   cog: string;
+  permissions: string;
 }
 
 const Commands = () => {
@@ -26,7 +27,7 @@ const Commands = () => {
             const formattedCommands: Command[] = commandData[0].commands
                 .map((cmd: ImportedCommand) => ({
                     name: cmd.name,
-                    permissions: [cmd.description],
+                    permissions: [cmd.permissions],
                     parameters: [cmd.usage],
                     description: cmd.description,
                     category: cmd.cog,

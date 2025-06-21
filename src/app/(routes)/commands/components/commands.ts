@@ -1,19 +1,19 @@
-import React from "react";
+import { Command as AppCommand } from "@/types/Command";
 
-// Define the command type
-type Command = {
+// Define the command type for the imported data
+type ImportedCommand = {
   name: string;
   description: string;
   aliases: string[];
   usage: string;
   enabled: boolean;
   cog: string;
-  permissions?: string;
+  permissions: string;
 };
 
 type CommandsResponse = {
   status: string;
-  commands: Command[];
+  commands: ImportedCommand[];
   count: number;
 };
 
