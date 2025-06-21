@@ -17,6 +17,8 @@ export interface Command {
     parameters: string[]
     description: string
     category: string
+    aliases?: string[]
+    enabled?: boolean
 }
 
 export interface Parameter {
