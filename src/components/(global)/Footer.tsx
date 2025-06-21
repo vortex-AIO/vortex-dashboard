@@ -29,12 +29,12 @@ export const Footer = () => {
                                 Invite
                             </Link>
                             <Link
-                                href="https://docs.kazu.bot/"
+                                href="https://docs.playfairs.cc/"
                                 className="font-semibold text-kazu-main text-sm mt-2">
                                 Documentation
                             </Link>
                             <Link
-                                href="https://discord.gg/t4RYGFwY4D"
+                                href="https://support.playfairs.cc"
                                 className="font-semibold text-kazu-main text-sm mt-2">
                                 Support Server
                             </Link>
