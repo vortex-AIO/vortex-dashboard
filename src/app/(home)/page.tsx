@@ -65,7 +65,7 @@ export default function Home() {
                             }}>
                             <SplashItem
                                 name="discord"
-                                link="https://discord.gg/t4RYGFwY4D"
+                                link="https://support.playfairs.cc"
                                 icon={<RiDiscordLine />}
                             />
                         </motion.div>
