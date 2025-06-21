@@ -23,18 +23,25 @@ const Commands = () => {
 
     useEffect(() => {
         try {
-            const formattedCommands: Command[] = commandData[0].commands.map((cmd: ImportedCommand) => ({
-                name: cmd.name,
-                permissions: [cmd.description],
-                parameters: [cmd.usage],
-                description: cmd.description,
-                category: cmd.cog,
-                aliases: cmd.aliases,
-                enabled: cmd.enabled
-            }));
+            const formattedCommands: Command[] = commandData[0].commands
+                .map((cmd: ImportedCommand) => ({
+                    name: cmd.name,
+                    permissions: [cmd.description],
+                    parameters: [cmd.usage],
+                    description: cmd.description,
+                    category: cmd.cog,
+                    aliases: cmd.aliases,
+                    enabled: cmd.enabled
+                }))
+                .sort((a, b) => a.name.localeCompare(b.name));
+            
+            const allCategories = getCategoriesFromCommands(formattedCommands);
+            const sortedCategories = [...allCategories].sort((a, b) => 
+                a.name.localeCompare(b.name)
+            );
             
             setCommands(formattedCommands);
-            setCategories(getCategoriesFromCommands(formattedCommands));
+            setCategories(sortedCategories);
             setLoading(false);
         } catch (error) {
             console.error("Error loading commands:", error);
