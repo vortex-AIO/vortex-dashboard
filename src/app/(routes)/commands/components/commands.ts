@@ -606,7 +606,7 @@ const commands: CommandsResponse[] = [
         ],
         usage: ";help [command]",
         enabled: true,
-        cog: "Core",
+        cog: "Information",
         permissions: "None"
       },
       {
