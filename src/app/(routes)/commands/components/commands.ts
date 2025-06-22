@@ -2679,7 +2679,7 @@ const commands: CommandsResponse[] = [
         permissions: "None"
       }
     ],
-    "count": 264 // Wait can I lowkey jus change this to whatever i want? 😭
+    "count": 264 // Wait can I lowkey jus change this to whatever i want? 😭 (Update, no, you cant 😭 it jus imports the number itself 😭✌️ fucking retard)
   }
 ]
 
