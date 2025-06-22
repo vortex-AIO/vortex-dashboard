@@ -1,6 +1,9 @@
-import { Command as AppCommand } from "@/types/Command";
+/*
+ * Fuck making an API, I'll manually import the commands if I want.
+ * I have every right to.
+ */
 
-// Define the command type for the imported data
+// ion even know what this shi does 😭✌️
 type ImportedCommand = {
   name: string;
   description: string;
@@ -517,7 +520,7 @@ const commands: CommandsResponse[] = [
         permissions: "Bot Owner"
       },
       {
-        name: "fuck",
+        name: "fuck", // LMFAOOOO 😭✌️ fuckass command bro, who made this shit.. oh wait, me :(
         description: "Fuck a user, yea, thats literally all this does.",
         aliases: [],
         usage: ";fuck [user]",
@@ -2676,7 +2679,7 @@ const commands: CommandsResponse[] = [
         permissions: "None"
       }
     ],
-    "count": 263
+    "count": 264 // Wait can I lowkey jus change this to whatever i want? 😭
   }
 ]
 
