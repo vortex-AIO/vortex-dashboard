@@ -332,6 +332,15 @@ const commands: CommandsResponse[] = [
         permissions: "MANAGE_GUILD"
       },
       {
+        name: "commands",
+        description: "Takes you to this page :)",
+        aliases: [],
+        usage: ";commands ",
+        enabled: true,
+        cog: "Information",
+        permissions: "None"
+      },
+      {
         name: "cover",
         description: "No description",
         aliases: [
@@ -601,8 +610,7 @@ const commands: CommandsResponse[] = [
         name: "help",
         description: "Shows help about the bot, a command, or a category of commands.",
         aliases: [
-          "h",
-          "commands"
+          "h"
         ],
         usage: ";help [command]",
         enabled: true,
