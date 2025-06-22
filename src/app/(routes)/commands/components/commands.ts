@@ -1278,6 +1278,15 @@ const commands: CommandsResponse[] = [
         permissions: "None"
       },
       {
+        name: "lore opt-out",
+        description: "Opt out of the lore system.",
+        aliases: ["optout"],
+        usage: ";lore opt-out",
+        enabled: true,
+        cog: "Lore",
+        permissions: "None"
+      },
+      {
         name: "lore remove",
         description: "Removes a specific lore entry by its number.",
         aliases: [],
@@ -1322,7 +1331,7 @@ const commands: CommandsResponse[] = [
         usage: ";loreadd ",
         enabled: true,
         cog: "Invocations",
-        permissions: "Bot Owner"
+        permissions: "None"
       },
       {
         name: "ltt",
