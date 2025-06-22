@@ -1166,6 +1166,15 @@ const commands: CommandsResponse[] = [
         permissions: "Jishaku"
       },
       {
+        name: "joinvc",
+        description: "Joins a voice channel, or moves to it if already connected.",
+        aliases: ["jvc"],
+        usage: ";joinvc",
+        enabled: true,
+        cog: "Owner",
+        permissions: "Bot Owner"
+      },
+      {
         name: "kick",
         description: "Kicks a member from the server.",
         aliases: [
@@ -1645,6 +1654,15 @@ const commands: CommandsResponse[] = [
         enabled: true,
         cog: "Moderation",
         permissions: "MANAGE_MESSAGES"
+      },
+      {
+        name: "queue",
+        description: "Queue a song from YouTube.",
+        aliases: [],
+        usage: ";queue <query>",
+        enabled: true,
+        cog: "Music",
+        permissions: "None"
       },
       {
         name: "r",
