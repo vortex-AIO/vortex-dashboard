@@ -8,7 +8,7 @@ const Privacy = () => {
             <span className="text-neutral-400 text-sm mt-5 pb-5">
                 Any information we collect is not used in any malicious manner. If anything shown
                 seems misleading, please contact us @{" "}
-                <span className="text-white font-semibold">x@playfairs.cc</span>
+                <span className="text-white font-semibold">support@playfairs.cc</span>
             </span>
             <div className="flex flex-col gap-4 text-[17px] pl-5">
                 <li className="text-neutral-400 marker:text-kazu-main">Guild IDs</li>
@@ -46,11 +46,6 @@ const Privacy = () => {
                 Guild IDs, Channel IDs, Role IDs, User IDs and Message IDs are all stored for our
                 system to aggregate values to find data.
             </span>
-            <span className="text-neutral-400 text-sm mt-5">
-                Nickname, Username and Avatar changes are logged in order for the
-                &quot;namehistory&quot; and &quot;avatarhistory&quot; commands to function. Users
-                can clear this data themselves at any time.
-            </span>
             <span className="font-bold text-2xl text-white pt-10">
                 Who is your collected information shared with?
             </span>
@@ -59,9 +54,9 @@ const Privacy = () => {
             </span>
             <span className="font-bold text-2xl text-white pt-10">Data Removal?</span>
             <span className="text-neutral-400 text-sm mt-5">
-                Email <span className="text-white font-semibold">x@playfairs.cc</span> for all of
+                Email <span className="text-white font-semibold">support@playfairs.cc</span> for all of
                 your data that we are currently storing. Response times may vary and could take up
-                to 7 days.
+                to 7 days, but is unlilkly to take longer than 12 hours.
             </span>
             <span className="font-bold text-2xl text-white pt-10">
                 Changes to the Privacy Policy
