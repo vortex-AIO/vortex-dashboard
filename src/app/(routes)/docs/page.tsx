@@ -8,6 +8,7 @@ type Command = {
   usage: string;
   enabled: boolean;
   cog: string;
+  hidden?: boolean;
 };
 
 type CommandsResponse = {
@@ -1521,6 +1522,9 @@ export default function DocsPage() {
                   </p>
                   <p className="mt-2">
                     <strong>Enabled:</strong> {command.enabled ? "Yes" : "No"}
+                  </p>
+                  <p className="mt-2">
+                    <strong>Hidden:</strong> {command.hidden ? "Yes" : "No"}
                   </p>
                 </li>
               ))}

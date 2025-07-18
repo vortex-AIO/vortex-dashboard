@@ -12,6 +12,7 @@ type ImportedCommand = {
     enabled: boolean
     cog: string
     permissions: string
+    hidden?: boolean
 }
 
 type CommandsResponse = {
@@ -31,25 +32,8 @@ const commands: CommandsResponse[] = [
                 usage: ";,; ,;",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: ",;",
-                description: `No description`,
-                aliases: [".;", "-;"],
-                usage: ";,; ,;",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: ",;",
-                description: `No description`,
-                aliases: [".;", "-;"],
-                usage: ";,; ,;",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "3",
@@ -58,7 +42,18 @@ const commands: CommandsResponse[] = [
                 usage: ";3 ;3",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "addxp",
+                description: `Add XP to a user in the server.`,
+                aliases: ["givexp"],
+                usage: ";addxp <user> <xp>",
+                enabled: true,
+                cog: "Levels",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "afk",
@@ -81,306 +76,8 @@ const commands: CommandsResponse[] = [
                 usage: ";afk [reason=AFK]",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "afk",
-                description: `Set the AFK status with an optional reason.`,
-                aliases: [
-                    "kms",
-                    "despawn",
-                    "idle",
-                    "akf",
-                    "dies",
-                    "oof",
-                    "bye",
-                    "a",
-                    "aficionado",
-                    "apt",
-                    "sleeping",
-                    "sleep",
-                    "tired"
-                ],
-                usage: ";afk [reason=AFK]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "ai",
@@ -389,7 +86,8 @@ const commands: CommandsResponse[] = [
                 usage: ";ai <enabled> [channel]",
                 enabled: true,
                 cog: "AICommands",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "ascii",
@@ -398,16 +96,8 @@ const commands: CommandsResponse[] = [
                 usage: ";ascii <message>",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "ascii",
-                description: `Converts a given message into ASCII art.`,
-                aliases: ["as"],
-                usage: ";ascii <message>",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "asslore",
@@ -416,7 +106,18 @@ const commands: CommandsResponse[] = [
                 usage: ";asslore ",
                 enabled: true,
                 cog: "Invocations",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "attachment",
+                description: `No description`,
+                aliases: [],
+                usage: ";attachment <file (upload a file)>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "automod",
@@ -425,16 +126,8 @@ const commands: CommandsResponse[] = [
                 usage: ";automod ",
                 enabled: true,
                 cog: "Automod",
-                permissions: "None"
-            },
-            {
-                name: "automod",
-                description: `No description`,
-                aliases: ["am"],
-                usage: ";automod ",
-                enabled: true,
-                cog: "Automod",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "autorole",
@@ -443,7 +136,8 @@ const commands: CommandsResponse[] = [
                 usage: ";autorole <role>",
                 enabled: true,
                 cog: "Server",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "autorolebots",
@@ -452,7 +146,8 @@ const commands: CommandsResponse[] = [
                 usage: ";autorolebots <role>",
                 enabled: true,
                 cog: "Server",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "avatar",
@@ -461,25 +156,18 @@ const commands: CommandsResponse[] = [
                 usage: ";avatar [member]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "avatar",
-                description: `Displays the avatar of the specified user or yourself if no one is mentioned.`,
-                aliases: ["pfp", "av"],
-                usage: ";avatar [member]",
+                name: "avoco",
+                description: `No description`,
+                aliases: [],
+                usage: ";avoco [name]",
                 enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "avatar",
-                description: `Displays the avatar of the specified user or yourself if no one is mentioned.`,
-                aliases: ["pfp", "av"],
-                usage: ";avatar [member]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "ban",
@@ -506,466 +194,8 @@ const commands: CommandsResponse[] = [
                 usage: ";ban [target] [reason]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "ban",
-                description: `No description`,
-                aliases: [
-                    "banish",
-                    "yeet",
-                    "bonk",
-                    "perish",
-                    "smite",
-                    "hammer",
-                    "devinejustice",
-                    "corpses",
-                    "murk",
-                    "lavender",
-                    "floral",
-                    "bannerbutbad",
-                    "ban-ner",
-                    "repel",
-                    "disintegrate",
-                    "deport",
-                    "kys"
-                ],
-                usage: ";ban [target] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "banlist",
@@ -974,16 +204,8 @@ const commands: CommandsResponse[] = [
                 usage: ";banlist ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "banlist",
-                description: `Display the server's ban list in a paginated embed.`,
-                aliases: ["bans"],
-                usage: ";banlist ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "banner",
@@ -992,7 +214,8 @@ const commands: CommandsResponse[] = [
                 usage: ";banner [member]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "bathe",
@@ -1001,7 +224,8 @@ const commands: CommandsResponse[] = [
                 usage: ";bathe <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "bc",
@@ -1010,7 +234,8 @@ const commands: CommandsResponse[] = [
                 usage: ";bc [amount]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "bi",
@@ -1019,34 +244,8 @@ const commands: CommandsResponse[] = [
                 usage: ";bi ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "bi",
-                description: `Shows detailed information about the bot.`,
-                aliases: ["botinfo", "abt", "bitch"],
-                usage: ";bi ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "bi",
-                description: `Shows detailed information about the bot.`,
-                aliases: ["botinfo", "abt", "bitch"],
-                usage: ";bi ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "bi",
-                description: `Shows detailed information about the bot.`,
-                aliases: ["botinfo", "abt", "bitch"],
-                usage: ";bi ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "blacklist",
@@ -1055,7 +254,8 @@ const commands: CommandsResponse[] = [
                 usage: ";blacklist ",
                 enabled: true,
                 cog: "Blacklist",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "blacktea",
@@ -1064,7 +264,8 @@ const commands: CommandsResponse[] = [
                 usage: ";blacktea ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "boop",
@@ -1073,7 +274,8 @@ const commands: CommandsResponse[] = [
                 usage: ";boop <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "bots",
@@ -1082,16 +284,28 @@ const commands: CommandsResponse[] = [
                 usage: ";bots ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "bots",
-                description: `Displays the number of bots in the server.`,
-                aliases: ["botcount"],
-                usage: ";bots ",
+                name: "bp",
+                description: `Base command for purging only the bots messages.`,
+                aliases: [],
+                usage: ";bp ",
                 enabled: true,
-                cog: "Information",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
+            },
+            {
+                name: "brew",
+                description: `Runs a brew command. Supports the same syntax as the terminal, including --cask and --formulae.`,
+                aliases: [],
+                usage: ";brew <command>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "button",
@@ -1100,7 +314,28 @@ const commands: CommandsResponse[] = [
                 usage: ";button ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "changeavatar",
+                description: `Change the bot's avatar to the provided URL or attachment.`,
+                aliases: ["changeavatar!"],
+                usage: ";changeavatar [url] <attachment (upload a file)>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
+            },
+            {
+                name: "changebanner",
+                description: `Change the bot's banner to the provided URL or attachment.`,
+                aliases: ["changebanner!"],
+                usage: ";changebanner [url] <attachment (upload a file)>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "channel",
@@ -1109,7 +344,8 @@ const commands: CommandsResponse[] = [
                 usage: ";channel ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "clearsnipe",
@@ -1131,271 +367,18 @@ const commands: CommandsResponse[] = [
                 usage: ";clearsnipe ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
+                name: "clipboard",
+                description: `Show the current contents of the clipboard.`,
+                aliases: ["cb"],
+                usage: ";clipboard ",
                 enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "clearsnipe",
-                description: `Clear the snipe history.`,
-                aliases: [
-                    "cs",
-                    "cs:go",
-                    "csharp",
-                    "counterstrike",
-                    "csgo",
-                    "computerscience",
-                    "cs:go:go",
-                    "csharp:sharp",
-                    "counterstrike:strike",
-                    "csgo:go",
-                    "clearsnipe:snipe",
-                    "computerscience:science"
-                ],
-                usage: ";clearsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "command",
@@ -1404,7 +387,8 @@ const commands: CommandsResponse[] = [
                 usage: ";command ",
                 enabled: true,
                 cog: "CommandManager",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "commands",
@@ -1413,7 +397,18 @@ const commands: CommandsResponse[] = [
                 usage: ";commands ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "commands.json",
+                description: `No description`,
+                aliases: [],
+                usage: ";commands.json ",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "cover",
@@ -1422,25 +417,8 @@ const commands: CommandsResponse[] = [
                 usage: ";cover [user]",
                 enabled: true,
                 cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "cover",
-                description: `No description`,
-                aliases: ["coverart", "c"],
-                usage: ";cover [user]",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "cover",
-                description: `No description`,
-                aliases: ["coverart", "c"],
-                usage: ";cover [user]",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "createinvite",
@@ -1449,25 +427,8 @@ const commands: CommandsResponse[] = [
                 usage: ";createinvite [channel]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "createinvite",
-                description: `Creates a unique invite for the server. (non-vanity).`,
-                aliases: ["createinv", "instantinvite"],
-                usage: ";createinvite [channel]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "createinvite",
-                description: `Creates a unique invite for the server. (non-vanity).`,
-                aliases: ["createinv", "instantinvite"],
-                usage: ";createinvite [channel]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "define",
@@ -1476,7 +437,18 @@ const commands: CommandsResponse[] = [
                 usage: ";define <word>",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "disable",
+                description: `Disable XP gain in the server.`,
+                aliases: ["disablexp"],
+                usage: ";disable ",
+                enabled: true,
+                cog: "Levels",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "disconnect",
@@ -1485,25 +457,18 @@ const commands: CommandsResponse[] = [
                 usage: ";disconnect [member]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "disconnect",
-                description: `Server disconnects the mentioned member, or self if none mentioned.`,
-                aliases: ["dc"],
-                usage: ";disconnect [member]",
+                name: "dm",
+                description: `Sends a direct message to a specified user.`,
+                aliases: [],
+                usage: ";dm <user> <message>",
                 enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "docs",
-                description: `No description`,
-                aliases: ["documentation"],
-                usage: ";docs ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "docs",
@@ -1512,7 +477,18 @@ const commands: CommandsResponse[] = [
                 usage: ";docs ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "echo",
+                description: `Echoes the provided message. Only the owner can use this command.`,
+                aliases: [],
+                usage: ";echo <message>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "editsnipe",
@@ -1521,16 +497,18 @@ const commands: CommandsResponse[] = [
                 usage: ";editsnipe ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "editsnipe",
-                description: `Snipe the last edited message.`,
-                aliases: ["es"],
-                usage: ";editsnipe ",
+                name: "embed",
+                description: `Sends an embed to a specified channel or the current one if none mentioned.`,
+                aliases: [],
+                usage: ";embed [channel] [title] [description] <color> [thumbnail] [footer]",
                 enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "emoji",
@@ -1539,7 +517,8 @@ const commands: CommandsResponse[] = [
                 usage: ";emoji ",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "errors",
@@ -1548,34 +527,8 @@ const commands: CommandsResponse[] = [
                 usage: ";errors [id]",
                 enabled: true,
                 cog: "ErrorHandler",
-                permissions: "None"
-            },
-            {
-                name: "errors",
-                description: `Search errors by ID. Requires bot owner permissions.`,
-                aliases: ["errorsearch", "tb", "traceback"],
-                usage: ";errors [id]",
-                enabled: true,
-                cog: "ErrorHandler",
-                permissions: "None"
-            },
-            {
-                name: "errors",
-                description: `Search errors by ID. Requires bot owner permissions.`,
-                aliases: ["errorsearch", "tb", "traceback"],
-                usage: ";errors [id]",
-                enabled: true,
-                cog: "ErrorHandler",
-                permissions: "None"
-            },
-            {
-                name: "errors",
-                description: `Search errors by ID. Requires bot owner permissions.`,
-                aliases: ["errorsearch", "tb", "traceback"],
-                usage: ";errors [id]",
-                enabled: true,
-                cog: "ErrorHandler",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "fetch",
@@ -1584,7 +537,18 @@ const commands: CommandsResponse[] = [
                 usage: ";fetch ",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "flameshot",
+                description: `No description`,
+                aliases: ["fs"],
+                usage: ";flameshot ",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "fm",
@@ -1593,7 +557,8 @@ const commands: CommandsResponse[] = [
                 usage: ";fm [user]",
                 enabled: true,
                 cog: "LastFM",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "fn",
@@ -1602,25 +567,8 @@ const commands: CommandsResponse[] = [
                 usage: ";fn [member] [forced_nick]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "fn",
-                description: `No description`,
-                aliases: ["nickforce", "forcednick"],
-                usage: ";fn [member] [forced_nick]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "fn",
-                description: `No description`,
-                aliases: ["nickforce", "forcednick"],
-                usage: ";fn [member] [forced_nick]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "force_remove_afk",
@@ -1629,25 +577,8 @@ const commands: CommandsResponse[] = [
                 usage: ";force_remove_afk <member>",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "force_remove_afk",
-                description: `Forcefully removes AFK status from a mentioned user if they are AFK.`,
-                aliases: ["uafk", "unafk"],
-                usage: ";force_remove_afk <member>",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "force_remove_afk",
-                description: `Forcefully removes AFK status from a mentioned user if they are AFK.`,
-                aliases: ["uafk", "unafk"],
-                usage: ";force_remove_afk <member>",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "gate",
@@ -1656,7 +587,8 @@ const commands: CommandsResponse[] = [
                 usage: ";gate ",
                 enabled: true,
                 cog: "Server",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "git",
@@ -1665,7 +597,8 @@ const commands: CommandsResponse[] = [
                 usage: ";git ",
                 enabled: true,
                 cog: "Git",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "hardban",
@@ -1674,25 +607,18 @@ const commands: CommandsResponse[] = [
                 usage: ";hardban <user_id> [reason]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "hardban",
+                name: "hello",
                 description: `No description`,
-                aliases: ["hb", "hban"],
-                usage: ";hardban <user_id> [reason]",
+                aliases: [],
+                usage: ";hello <name>",
                 enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "hardban",
-                description: `No description`,
-                aliases: ["hb", "hban"],
-                usage: ";hardban <user_id> [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "help",
@@ -1701,34 +627,8 @@ const commands: CommandsResponse[] = [
                 usage: ";help [command]",
                 enabled: true,
                 cog: "No Category",
-                permissions: "None"
-            },
-            {
-                name: "help",
-                description: `Shows help about the bot, a command, or a category of commands.`,
-                aliases: ["h", "man", "manual"],
-                usage: ";help [command]",
-                enabled: true,
-                cog: "No Category",
-                permissions: "None"
-            },
-            {
-                name: "help",
-                description: `Shows help about the bot, a command, or a category of commands.`,
-                aliases: ["h", "man", "manual"],
-                usage: ";help [command]",
-                enabled: true,
-                cog: "No Category",
-                permissions: "None"
-            },
-            {
-                name: "help",
-                description: `Shows help about the bot, a command, or a category of commands.`,
-                aliases: ["h", "man", "manual"],
-                usage: ";help [command]",
-                enabled: true,
-                cog: "No Category",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "hide",
@@ -1737,7 +637,8 @@ const commands: CommandsResponse[] = [
                 usage: ";hide [channel] [role]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "hotfix",
@@ -1746,7 +647,8 @@ const commands: CommandsResponse[] = [
                 usage: ";hotfix ",
                 enabled: true,
                 cog: "Developer",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "hug",
@@ -1755,7 +657,18 @@ const commands: CommandsResponse[] = [
                 usage: ";hug <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "imports",
+                description: `No description`,
+                aliases: [],
+                usage: ";imports ",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "inrole",
@@ -1764,16 +677,8 @@ const commands: CommandsResponse[] = [
                 usage: ";inrole <role>",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "inrole",
-                description: `Displays all members in a specific role with interactive buttons.`,
-                aliases: ["ir"],
-                usage: ";inrole <role>",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "install",
@@ -1782,7 +687,8 @@ const commands: CommandsResponse[] = [
                 usage: ";install ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "invite",
@@ -1791,16 +697,8 @@ const commands: CommandsResponse[] = [
                 usage: ";invite [user]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "invite",
-                description: `Generates an invite link for the bot.`,
-                aliases: ["gbi"],
-                usage: ";invite [user]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "invocations",
@@ -1809,7 +707,8 @@ const commands: CommandsResponse[] = [
                 usage: ";invocations ",
                 enabled: true,
                 cog: "Invocations",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "jail",
@@ -1818,7 +717,28 @@ const commands: CommandsResponse[] = [
                 usage: ";jail <member> [reason=No reason provided]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "jishaku",
+                description: `The Jishaku debug and diagnostic commands.\n\nThis command on its own gives a status brief.\nAll other functionality is within its subcommands.`,
+                aliases: ["jsk", "磁石"],
+                usage: ";jishaku ",
+                enabled: true,
+                cog: "Jishaku",
+                permissions: "None",
+                hidden: true
+            },
+            {
+                name: "joinvc",
+                description: `No description`,
+                aliases: ["jvc"],
+                usage: ";joinvc ",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "kick",
@@ -1827,16 +747,8 @@ const commands: CommandsResponse[] = [
                 usage: ";kick [member] [user_id] [reason]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "kick",
-                description: `Kicks a member from the server.`,
-                aliases: ["sock"],
-                usage: ";kick [member] [user_id] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "kill",
@@ -1845,7 +757,8 @@ const commands: CommandsResponse[] = [
                 usage: ";kill <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "kiss",
@@ -1854,7 +767,8 @@ const commands: CommandsResponse[] = [
                 usage: ";kiss <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "l",
@@ -1863,7 +777,8 @@ const commands: CommandsResponse[] = [
                 usage: ";l ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "language",
@@ -1872,7 +787,8 @@ const commands: CommandsResponse[] = [
                 usage: ";language <language>",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "lastfm",
@@ -1881,25 +797,8 @@ const commands: CommandsResponse[] = [
                 usage: ";lastfm ",
                 enabled: true,
                 cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "lastfm",
-                description: `No description`,
-                aliases: ["lf", "lfm"],
-                usage: ";lastfm ",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "lastfm",
-                description: `No description`,
-                aliases: ["lf", "lfm"],
-                usage: ";lastfm ",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "leaderboard",
@@ -1908,25 +807,18 @@ const commands: CommandsResponse[] = [
                 usage: ";leaderboard [page=1]",
                 enabled: true,
                 cog: "Levels",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "leaderboard",
+                name: "len",
                 description: `No description`,
-                aliases: ["lb", "top"],
-                usage: ";leaderboard [page=1]",
+                aliases: ["length"],
+                usage: ";len [expr]",
                 enabled: true,
-                cog: "Levels",
-                permissions: "None"
-            },
-            {
-                name: "leaderboard",
-                description: `No description`,
-                aliases: ["lb", "top"],
-                usage: ";leaderboard [page=1]",
-                enabled: true,
-                cog: "Levels",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "lock",
@@ -1935,7 +827,8 @@ const commands: CommandsResponse[] = [
                 usage: ";lock [channel] [role]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "lore",
@@ -1944,7 +837,8 @@ const commands: CommandsResponse[] = [
                 usage: ";lore [user]",
                 enabled: true,
                 cog: "Lore",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "loreadd",
@@ -1953,16 +847,8 @@ const commands: CommandsResponse[] = [
                 usage: ";loreadd ",
                 enabled: true,
                 cog: "Invocations",
-                permissions: "None"
-            },
-            {
-                name: "loreadd",
-                description: `Adds a new lore entry.`,
-                aliases: ["addlore"],
-                usage: ";loreadd ",
-                enabled: true,
-                cog: "Invocations",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "ltt",
@@ -1971,34 +857,8 @@ const commands: CommandsResponse[] = [
                 usage: ";ltt ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "ltt",
-                description: `Estimate the one-way latency (LTT) of the bot.`,
-                aliases: ["oneway", "latencyoneway", "halfping"],
-                usage: ";ltt ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "ltt",
-                description: `Estimate the one-way latency (LTT) of the bot.`,
-                aliases: ["oneway", "latencyoneway", "halfping"],
-                usage: ";ltt ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "ltt",
-                description: `Estimate the one-way latency (LTT) of the bot.`,
-                aliases: ["oneway", "latencyoneway", "halfping"],
-                usage: ";ltt ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "massban",
@@ -2007,34 +867,8 @@ const commands: CommandsResponse[] = [
                 usage: ";massban [user_ids...] [reason]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "massban",
-                description: `No description`,
-                aliases: ["mban", "mb", "bulkban"],
-                usage: ";massban [user_ids...] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "massban",
-                description: `No description`,
-                aliases: ["mban", "mb", "bulkban"],
-                usage: ";massban [user_ids...] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "massban",
-                description: `No description`,
-                aliases: ["mban", "mb", "bulkban"],
-                usage: ";massban [user_ids...] [reason]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "mc",
@@ -2043,25 +877,8 @@ const commands: CommandsResponse[] = [
                 usage: ";mc ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "mc",
-                description: `No description`,
-                aliases: ["membercount", "members"],
-                usage: ";mc ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "mc",
-                description: `No description`,
-                aliases: ["membercount", "members"],
-                usage: ";mc ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "nick",
@@ -2070,7 +887,8 @@ const commands: CommandsResponse[] = [
                 usage: ";nick [member] [new_nick]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "nothing",
@@ -2079,7 +897,8 @@ const commands: CommandsResponse[] = [
                 usage: ";nothing ;nothing",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "nuke",
@@ -2099,207 +918,8 @@ const commands: CommandsResponse[] = [
                 usage: ";nuke ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "nuke",
-                description: `Nukes the current channel with confirmation.`,
-                aliases: [
-                    "arab",
-                    "twintowers",
-                    "hiroshima",
-                    "nagasaki",
-                    "japan1945",
-                    "ww2",
-                    "boomboom",
-                    "no_witnesses",
-                    "allahuakbar",
-                    "tsarbomba"
-                ],
-                usage: ";nuke ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "nword",
@@ -2308,7 +928,18 @@ const commands: CommandsResponse[] = [
                 usage: ";nword [user]",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "o",
+                description: `Runs the specified command as the bot's owner.`,
+                aliases: [],
+                usage: ";o <command>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "pat",
@@ -2317,7 +948,8 @@ const commands: CommandsResponse[] = [
                 usage: ";pat <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "patch",
@@ -2326,7 +958,8 @@ const commands: CommandsResponse[] = [
                 usage: ";patch ",
                 enabled: true,
                 cog: "Developer",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "pause",
@@ -2335,7 +968,8 @@ const commands: CommandsResponse[] = [
                 usage: ";pause ",
                 enabled: true,
                 cog: "Music",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "permissions",
@@ -2344,25 +978,8 @@ const commands: CommandsResponse[] = [
                 usage: ";permissions [target]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "permissions",
-                description: `Checks the permissions of a member or a role.`,
-                aliases: ["perm", "perms"],
-                usage: ";permissions [target]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "permissions",
-                description: `Checks the permissions of a member or a role.`,
-                aliases: ["perm", "perms"],
-                usage: ";permissions [target]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "pickupline",
@@ -2371,25 +988,8 @@ const commands: CommandsResponse[] = [
                 usage: ";pickupline [user]",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "pickupline",
-                description: `Get a random pickup line.`,
-                aliases: ["pickup", "rizz"],
-                usage: ";pickupline [user]",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "pickupline",
-                description: `Get a random pickup line.`,
-                aliases: ["pickup", "rizz"],
-                usage: ";pickupline [user]",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "play",
@@ -2398,7 +998,18 @@ const commands: CommandsResponse[] = [
                 usage: ";play <query>",
                 enabled: true,
                 cog: "Music",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "playfairs",
+                description: `No description`,
+                aliases: [],
+                usage: ";playfairs ",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "playunfair",
@@ -2407,7 +1018,8 @@ const commands: CommandsResponse[] = [
                 usage: ";playunfair ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "pp",
@@ -2416,25 +1028,8 @@ const commands: CommandsResponse[] = [
                 usage: ";pp [user=<you>]",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "pp",
-                description: `See someones pp size`,
-                aliases: ["dih", "dihsize"],
-                usage: ";pp [user=<you>]",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "pp",
-                description: `See someones pp size`,
-                aliases: ["dih", "dihsize"],
-                usage: ";pp [user=<you>]",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "prefix",
@@ -2443,7 +1038,8 @@ const commands: CommandsResponse[] = [
                 usage: ";prefix ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "privacy",
@@ -2452,7 +1048,8 @@ const commands: CommandsResponse[] = [
                 usage: ";privacy ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "punch",
@@ -2461,7 +1058,8 @@ const commands: CommandsResponse[] = [
                 usage: ";punch <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "purge",
@@ -2470,7 +1068,8 @@ const commands: CommandsResponse[] = [
                 usage: ";purge [amount]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "queue",
@@ -2479,7 +1078,8 @@ const commands: CommandsResponse[] = [
                 usage: ";queue [url]",
                 enabled: true,
                 cog: "Music",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "r",
@@ -2488,16 +1088,8 @@ const commands: CommandsResponse[] = [
                 usage: ";r [member] [role_input]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "r",
-                description: `No description`,
-                aliases: ["role"],
-                usage: ";r [member] [role_input]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "rank",
@@ -2506,25 +1098,18 @@ const commands: CommandsResponse[] = [
                 usage: ";rank [user]",
                 enabled: true,
                 cog: "Levels",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "rank",
-                description: `No description`,
-                aliases: ["level", "lvl"],
-                usage: ";rank [user]",
+                name: "react",
+                description: `Reacts to a message.`,
+                aliases: [],
+                usage: ";react <message_id> <emoji>",
                 enabled: true,
-                cog: "Levels",
-                permissions: "None"
-            },
-            {
-                name: "rank",
-                description: `No description`,
-                aliases: ["level", "lvl"],
-                usage: ";rank [user]",
-                enabled: true,
-                cog: "Levels",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "reactionmute",
@@ -2533,16 +1118,8 @@ const commands: CommandsResponse[] = [
                 usage: ";reactionmute <member>",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "reactionmute",
-                description: `Revokes a users permissions to react in a channel.`,
-                aliases: ["rmute"],
-                usage: ";reactionmute <member>",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "reactionsnipe",
@@ -2551,16 +1128,8 @@ const commands: CommandsResponse[] = [
                 usage: ";reactionsnipe ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "reactionsnipe",
-                description: `Snipes the last removed reaction in the channel.`,
-                aliases: ["rs"],
-                usage: ";reactionsnipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "reactionunmute",
@@ -2569,25 +1138,8 @@ const commands: CommandsResponse[] = [
                 usage: ";reactionunmute <member>",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "reactionunmute",
-                description: `Grants a users permissions to react in a channel.`,
-                aliases: ["rumute", "runmute"],
-                usage: ";reactionunmute <member>",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "reactionunmute",
-                description: `Grants a users permissions to react in a channel.`,
-                aliases: ["rumute", "runmute"],
-                usage: ";reactionunmute <member>",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "reminder",
@@ -2596,16 +1148,28 @@ const commands: CommandsResponse[] = [
                 usage: ";reminder ",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "reminder",
-                description: `Base command for reminder commands.`,
-                aliases: ["reminders"],
-                usage: ";reminder ",
+                name: "reset",
+                description: `Reset a user's XP in the server.`,
+                aliases: ["resetxp"],
+                usage: ";reset <user>",
                 enabled: true,
-                cog: "Utility",
-                permissions: "None"
+                cog: "Levels",
+                permissions: "None",
+                hidden: true
+            },
+            {
+                name: "resetall",
+                description: `Reset all users' XP in the server.`,
+                aliases: ["resetallxp"],
+                usage: ";resetall ",
+                enabled: true,
+                cog: "Levels",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "resume",
@@ -2614,7 +1178,8 @@ const commands: CommandsResponse[] = [
                 usage: ";resume ",
                 enabled: true,
                 cog: "Music",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "ri",
@@ -2623,16 +1188,8 @@ const commands: CommandsResponse[] = [
                 usage: ";ri [role]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "ri",
-                description: `No description`,
-                aliases: ["roleinfo"],
-                usage: ";ri [role]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "roleid",
@@ -2641,16 +1198,8 @@ const commands: CommandsResponse[] = [
                 usage: ";roleid [role]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "roleid",
-                description: `Shows the role ID of the specified role or yourself if no one is mentioned.`,
-                aliases: ["rid"],
-                usage: ";roleid [role]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "roles",
@@ -2659,7 +1208,8 @@ const commands: CommandsResponse[] = [
                 usage: ";roles [user]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "rtt",
@@ -2668,43 +1218,18 @@ const commands: CommandsResponse[] = [
                 usage: ";rtt ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "rtt",
-                description: `Check the round-trip time (RTT) of the bot.`,
-                aliases: ["ping", "pong", "roundtrip", "latency"],
-                usage: ";rtt ",
+                name: "runas",
+                description: `Run a command with a different user, channel, or thread, optionally bypassing checks and cooldowns.`,
+                aliases: ["execute", "exec", "override!", "execute!", "exec!", "override"],
+                usage: ";runas [overrides]... <command_string>",
                 enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "rtt",
-                description: `Check the round-trip time (RTT) of the bot.`,
-                aliases: ["ping", "pong", "roundtrip", "latency"],
-                usage: ";rtt ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "rtt",
-                description: `Check the round-trip time (RTT) of the bot.`,
-                aliases: ["ping", "pong", "roundtrip", "latency"],
-                usage: ";rtt ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "rtt",
-                description: `Check the round-trip time (RTT) of the bot.`,
-                aliases: ["ping", "pong", "roundtrip", "latency"],
-                usage: ";rtt ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "sav",
@@ -2713,7 +1238,8 @@ const commands: CommandsResponse[] = [
                 usage: ";sav [member]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sbanner",
@@ -2722,16 +1248,18 @@ const commands: CommandsResponse[] = [
                 usage: ";sbanner [member]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "sbanner",
-                description: `Displays the server specific banner of the specified user or yourself if no one is mentioned.`,
-                aliases: ["memberbanner"],
-                usage: ";sbanner [member]",
+                name: "sbd",
+                description: `No description`,
+                aliases: ["watchdog"],
+                usage: ";sbd ",
                 enabled: true,
-                cog: "Information",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "scrobbles",
@@ -2740,25 +1268,8 @@ const commands: CommandsResponse[] = [
                 usage: ";scrobbles [user]",
                 enabled: true,
                 cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "scrobbles",
-                description: `No description`,
-                aliases: ["sc", "plays"],
-                usage: ";scrobbles [user]",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "scrobbles",
-                description: `No description`,
-                aliases: ["sc", "plays"],
-                usage: ";scrobbles [user]",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sdeafen",
@@ -2767,25 +1278,18 @@ const commands: CommandsResponse[] = [
                 usage: ";sdeafen [member]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "sdeafen",
-                description: `Server deafens the mentioned member, or self if none mentioned.`,
-                aliases: ["sd", "deafen"],
-                usage: ";sdeafen [member]",
+                name: "send",
+                description: `Sends a message to a specified channel or the current one if none mentioned.`,
+                aliases: [],
+                usage: ";send [channel] [message] [message_id] [attachment (upload a file)]",
                 enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sdeafen",
-                description: `Server deafens the mentioned member, or self if none mentioned.`,
-                aliases: ["sd", "deafen"],
-                usage: ";sdeafen [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "server",
@@ -2794,34 +1298,8 @@ const commands: CommandsResponse[] = [
                 usage: ";server ",
                 enabled: true,
                 cog: "Server",
-                permissions: "None"
-            },
-            {
-                name: "server",
-                description: `No description`,
-                aliases: ["config", "serverconfig", "configuration"],
-                usage: ";server ",
-                enabled: true,
-                cog: "Server",
-                permissions: "None"
-            },
-            {
-                name: "server",
-                description: `No description`,
-                aliases: ["config", "serverconfig", "configuration"],
-                usage: ";server ",
-                enabled: true,
-                cog: "Server",
-                permissions: "None"
-            },
-            {
-                name: "server",
-                description: `No description`,
-                aliases: ["config", "serverconfig", "configuration"],
-                usage: ";server ",
-                enabled: true,
-                cog: "Server",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "serverbanner",
@@ -2830,7 +1308,8 @@ const commands: CommandsResponse[] = [
                 usage: ";serverbanner ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "serverid",
@@ -2839,16 +1318,28 @@ const commands: CommandsResponse[] = [
                 usage: ";serverid ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "serverid",
-                description: `No description`,
-                aliases: ["sid"],
-                usage: ";serverid ",
+                name: "servers",
+                description: `Server management and Blacklist`,
+                aliases: [],
+                usage: ";servers ",
                 enabled: true,
-                cog: "Information",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
+            },
+            {
+                name: "setlevel",
+                description: `Set a user's level in the server.`,
+                aliases: ["setlvl"],
+                usage: ";setlevel <user> <level>",
+                enabled: true,
+                cog: "Levels",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "shards",
@@ -2857,7 +1348,8 @@ const commands: CommandsResponse[] = [
                 usage: ";shards ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "si",
@@ -2866,16 +1358,8 @@ const commands: CommandsResponse[] = [
                 usage: ";si ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "si",
-                description: `Show the server info.`,
-                aliases: ["serverinfo"],
-                usage: ";si ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sicon",
@@ -2884,7 +1368,18 @@ const commands: CommandsResponse[] = [
                 usage: ";sicon ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "silence",
+                description: `Deletes messages from a user everytime they talk.`,
+                aliases: [],
+                usage: ";silence <user>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "skibidi",
@@ -2893,16 +1388,8 @@ const commands: CommandsResponse[] = [
                 usage: ";skibidi ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "skibidi",
-                description: `No description`,
-                aliases: ["brainrot"],
-                usage: ";skibidi ",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "slap",
@@ -2911,7 +1398,8 @@ const commands: CommandsResponse[] = [
                 usage: ";slap <user>",
                 enabled: true,
                 cog: "Reactions",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "smute",
@@ -2920,25 +1408,8 @@ const commands: CommandsResponse[] = [
                 usage: ";smute [member]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "smute",
-                description: `Server mutes the mentioned member, or self if none mentioned.`,
-                aliases: ["sm", "mute"],
-                usage: ";smute [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "smute",
-                description: `Server mutes the mentioned member, or self if none mentioned.`,
-                aliases: ["sm", "mute"],
-                usage: ";smute [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sname",
@@ -2947,16 +1418,8 @@ const commands: CommandsResponse[] = [
                 usage: ";sname [new_name]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sname",
-                description: `Change the name of a server.`,
-                aliases: ["servername"],
-                usage: ";sname [new_name]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "snipe",
@@ -2965,16 +1428,8 @@ const commands: CommandsResponse[] = [
                 usage: ";snipe ",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "snipe",
-                description: `Snipes recently deleted messages`,
-                aliases: ["s"],
-                usage: ";snipe ",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "source",
@@ -2983,16 +1438,8 @@ const commands: CommandsResponse[] = [
                 usage: ";source ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "source",
-                description: `Fetches source code.`,
-                aliases: ["src"],
-                usage: ";source ",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "splash",
@@ -3001,7 +1448,18 @@ const commands: CommandsResponse[] = [
                 usage: ";splash ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "spotify",
+                description: `No description`,
+                aliases: ["spotifyctl"],
+                usage: ";spotify ",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "staffstrip",
@@ -3010,25 +1468,18 @@ const commands: CommandsResponse[] = [
                 usage: ";staffstrip <member>",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "staffstrip",
-                description: `No description`,
-                aliases: ["strip", "stripstaff"],
-                usage: ";staffstrip <member>",
+                name: "status",
+                description: `Change the bot's status.`,
+                aliases: [],
+                usage: ";status [status]",
                 enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "staffstrip",
-                description: `No description`,
-                aliases: ["strip", "stripstaff"],
-                usage: ";staffstrip <member>",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "steal",
@@ -3037,7 +1488,8 @@ const commands: CommandsResponse[] = [
                 usage: ";steal [emoji]",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "stop",
@@ -3046,7 +1498,8 @@ const commands: CommandsResponse[] = [
                 usage: ";stop ",
                 enabled: true,
                 cog: "Music",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sundeafen",
@@ -3055,34 +1508,8 @@ const commands: CommandsResponse[] = [
                 usage: ";sundeafen [member]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sundeafen",
-                description: `Server undeafens the mentioned member, or self if none mentioned.`,
-                aliases: ["sund", "sunday", "undeafen"],
-                usage: ";sundeafen [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sundeafen",
-                description: `Server undeafens the mentioned member, or self if none mentioned.`,
-                aliases: ["sund", "sunday", "undeafen"],
-                usage: ";sundeafen [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sundeafen",
-                description: `Server undeafens the mentioned member, or self if none mentioned.`,
-                aliases: ["sund", "sunday", "undeafen"],
-                usage: ";sundeafen [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sunmute",
@@ -3091,25 +1518,8 @@ const commands: CommandsResponse[] = [
                 usage: ";sunmute [member]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sunmute",
-                description: `Server unmutes the mentioned member, or self if none mentioned.`,
-                aliases: ["sum", "unmute"],
-                usage: ";sunmute [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "sunmute",
-                description: `Server unmutes the mentioned member, or self if none mentioned.`,
-                aliases: ["sum", "unmute"],
-                usage: ";sunmute [member]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "sync",
@@ -3118,7 +1528,8 @@ const commands: CommandsResponse[] = [
                 usage: ";sync [channel_or_category]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "tableflip",
@@ -3127,7 +1538,18 @@ const commands: CommandsResponse[] = [
                 usage: ";tableflip ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "tech",
+                description: `No description`,
+                aliases: [],
+                usage: ";tech [name]",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "terms",
@@ -3136,7 +1558,8 @@ const commands: CommandsResponse[] = [
                 usage: ";terms ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "test",
@@ -3145,7 +1568,8 @@ const commands: CommandsResponse[] = [
                 usage: ";test ",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "tiktok",
@@ -3154,16 +1578,8 @@ const commands: CommandsResponse[] = [
                 usage: ";tiktok ",
                 enabled: true,
                 cog: "Reposters",
-                permissions: "None"
-            },
-            {
-                name: "tiktok",
-                description: `No description`,
-                aliases: ["tt"],
-                usage: ";tiktok ",
-                enabled: true,
-                cog: "Reposters",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "time",
@@ -3172,25 +1588,8 @@ const commands: CommandsResponse[] = [
                 usage: ";time [member]",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "time",
-                description: `Get the current time for yourself or another user based on their set timezone.`,
-                aliases: ["timezone", "tz"],
-                usage: ";time [member]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "time",
-                description: `Get the current time for yourself or another user based on their set timezone.`,
-                aliases: ["timezone", "tz"],
-                usage: ";time [member]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "timeout",
@@ -3199,61 +1598,8 @@ const commands: CommandsResponse[] = [
                 usage: ";timeout [member] [duration=5m]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "timeout",
-                description: `No description`,
-                aliases: ["to", "bdsm", "ballgag", "stfu", "sybau", "smd"],
-                usage: ";timeout [member] [duration=5m]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "timeout",
-                description: `No description`,
-                aliases: ["to", "bdsm", "ballgag", "stfu", "sybau", "smd"],
-                usage: ";timeout [member] [duration=5m]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "timeout",
-                description: `No description`,
-                aliases: ["to", "bdsm", "ballgag", "stfu", "sybau", "smd"],
-                usage: ";timeout [member] [duration=5m]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "timeout",
-                description: `No description`,
-                aliases: ["to", "bdsm", "ballgag", "stfu", "sybau", "smd"],
-                usage: ";timeout [member] [duration=5m]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "timeout",
-                description: `No description`,
-                aliases: ["to", "bdsm", "ballgag", "stfu", "sybau", "smd"],
-                usage: ";timeout [member] [duration=5m]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "timeout",
-                description: `No description`,
-                aliases: ["to", "bdsm", "ballgag", "stfu", "sybau", "smd"],
-                usage: ";timeout [member] [duration=5m]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "touch",
@@ -3262,7 +1608,8 @@ const commands: CommandsResponse[] = [
                 usage: ";touch <user>",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "trackplays",
@@ -3271,16 +1618,8 @@ const commands: CommandsResponse[] = [
                 usage: ";trackplays [user] [artist] [track]",
                 enabled: true,
                 cog: "LastFM",
-                permissions: "None"
-            },
-            {
-                name: "trackplays",
-                description: `No description`,
-                aliases: ["tp"],
-                usage: ";trackplays [user] [artist] [track]",
-                enabled: true,
-                cog: "LastFM",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "translate",
@@ -3289,25 +1628,8 @@ const commands: CommandsResponse[] = [
                 usage: ";translate [text]",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "translate",
-                description: `Translates the given text or a replied-to message into the default language.\n\nUsage:\n,translate <text>\nOR\nReply to a message with ,translate`,
-                aliases: ["trans", "wtf"],
-                usage: ";translate [text]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
-            },
-            {
-                name: "translate",
-                description: `Translates the given text or a replied-to message into the default language.\n\nUsage:\n,translate <text>\nOR\nReply to a message with ,translate`,
-                aliases: ["trans", "wtf"],
-                usage: ";translate [text]",
-                enabled: true,
-                cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "unban",
@@ -3316,16 +1638,8 @@ const commands: CommandsResponse[] = [
                 usage: ";unban <user_id>",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "unban",
-                description: `Unbans a user by their User ID.`,
-                aliases: ["befree"],
-                usage: ";unban <user_id>",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "unflip",
@@ -3334,7 +1648,8 @@ const commands: CommandsResponse[] = [
                 usage: ";unflip ",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "unhide",
@@ -3343,7 +1658,8 @@ const commands: CommandsResponse[] = [
                 usage: ";unhide [channel] [role]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "unjail",
@@ -3352,7 +1668,8 @@ const commands: CommandsResponse[] = [
                 usage: ";unjail <member> [reason=No reason provided]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "unlock",
@@ -3361,7 +1678,18 @@ const commands: CommandsResponse[] = [
                 usage: ";unlock [channel] [role]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
+            },
+            {
+                name: "unsilence",
+                description: `Unsilences a user.`,
+                aliases: [],
+                usage: ";unsilence <user>",
+                enabled: true,
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
                 name: "untimeout",
@@ -3370,25 +1698,8 @@ const commands: CommandsResponse[] = [
                 usage: ";untimeout [member] [user_id]",
                 enabled: true,
                 cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "untimeout",
-                description: `No description`,
-                aliases: ["uto", "futo"],
-                usage: ";untimeout [member] [user_id]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
-            },
-            {
-                name: "untimeout",
-                description: `No description`,
-                aliases: ["uto", "futo"],
-                usage: ";untimeout [member] [user_id]",
-                enabled: true,
-                cog: "Moderation",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "urban",
@@ -3397,7 +1708,8 @@ const commands: CommandsResponse[] = [
                 usage: ";urban <word>",
                 enabled: true,
                 cog: "Utility",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "userid",
@@ -3406,34 +1718,8 @@ const commands: CommandsResponse[] = [
                 usage: ";userid [user_id]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userid",
-                description: `Shows the user ID of the specified user or yourself if no one is mentioned.`,
-                aliases: ["uid", "whoid", "id"],
-                usage: ";userid [user_id]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userid",
-                description: `Shows the user ID of the specified user or yourself if no one is mentioned.`,
-                aliases: ["uid", "whoid", "id"],
-                usage: ";userid [user_id]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userid",
-                description: `Shows the user ID of the specified user or yourself if no one is mentioned.`,
-                aliases: ["uid", "whoid", "id"],
-                usage: ";userid [user_id]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "userinfo",
@@ -3442,52 +1728,8 @@ const commands: CommandsResponse[] = [
                 usage: ";userinfo [member]",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userinfo",
-                description: `Displays detailed user information with badges, activity, and roles.`,
-                aliases: ["who", "ui", "info", "whoami", "profile"],
-                usage: ";userinfo [member]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userinfo",
-                description: `Displays detailed user information with badges, activity, and roles.`,
-                aliases: ["who", "ui", "info", "whoami", "profile"],
-                usage: ";userinfo [member]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userinfo",
-                description: `Displays detailed user information with badges, activity, and roles.`,
-                aliases: ["who", "ui", "info", "whoami", "profile"],
-                usage: ";userinfo [member]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userinfo",
-                description: `Displays detailed user information with badges, activity, and roles.`,
-                aliases: ["who", "ui", "info", "whoami", "profile"],
-                usage: ";userinfo [member]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
-            },
-            {
-                name: "userinfo",
-                description: `Displays detailed user information with badges, activity, and roles.`,
-                aliases: ["who", "ui", "info", "whoami", "profile"],
-                usage: ";userinfo [member]",
-                enabled: true,
-                cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "uwulock",
@@ -3496,7 +1738,8 @@ const commands: CommandsResponse[] = [
                 usage: ";uwulock <user> [flag=False]",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "voicemaster",
@@ -3505,34 +1748,8 @@ const commands: CommandsResponse[] = [
                 usage: ";voicemaster ",
                 enabled: true,
                 cog: "VoiceMaster",
-                permissions: "None"
-            },
-            {
-                name: "voicemaster",
-                description: `No description`,
-                aliases: ["vmaster", "vc", "vm"],
-                usage: ";voicemaster ",
-                enabled: true,
-                cog: "VoiceMaster",
-                permissions: "None"
-            },
-            {
-                name: "voicemaster",
-                description: `No description`,
-                aliases: ["vmaster", "vc", "vm"],
-                usage: ";voicemaster ",
-                enabled: true,
-                cog: "VoiceMaster",
-                permissions: "None"
-            },
-            {
-                name: "voicemaster",
-                description: `No description`,
-                aliases: ["vmaster", "vc", "vm"],
-                usage: ";voicemaster ",
-                enabled: true,
-                cog: "VoiceMaster",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "void",
@@ -3541,16 +1758,8 @@ const commands: CommandsResponse[] = [
                 usage: ";void <question>",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
-            },
-            {
-                name: "void",
-                description: `No description`,
-                aliases: ["ask"],
-                usage: ";void <question>",
-                enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "vortex",
@@ -3559,7 +1768,8 @@ const commands: CommandsResponse[] = [
                 usage: ";vortex ",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "whitelist",
@@ -3568,7 +1778,8 @@ const commands: CommandsResponse[] = [
                 usage: ";whitelist ",
                 enabled: true,
                 cog: "Blacklist",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "whois",
@@ -3577,7 +1788,8 @@ const commands: CommandsResponse[] = [
                 usage: ";whois <user_id>",
                 enabled: true,
                 cog: "Information",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
                 name: "wolfram",
@@ -3586,28 +1798,31 @@ const commands: CommandsResponse[] = [
                 usage: ";wolfram <question>",
                 enabled: true,
                 cog: "Fun",
-                permissions: "None"
+                permissions: "None",
+                hidden: false
             },
             {
-                name: "wolfram",
+                name: "yabai",
                 description: `No description`,
-                aliases: ["wolframalpha", "wr"],
-                usage: ";wolfram <question>",
+                aliases: [],
+                usage: ";yabai ",
                 enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             },
             {
-                name: "wolfram",
+                name: "перезагрузка",
                 description: `No description`,
-                aliases: ["wolframalpha", "wr"],
-                usage: ";wolfram <question>",
+                aliases: [],
+                usage: ";перезагрузка [command]",
                 enabled: true,
-                cog: "Fun",
-                permissions: "None"
+                cog: "Owner",
+                permissions: "None",
+                hidden: true
             }
         ],
-        count: 308
+        count: 174
     }
 ]
 

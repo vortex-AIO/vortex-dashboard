@@ -8,6 +8,7 @@ import type { Category, Command } from "@/types/Command"
 import { BiCopy } from "react-icons/bi"
 import { FaRegFolderClosed } from "react-icons/fa6"
 import { SearchMenu } from "./SearchMenu"
+import React from "react"
 
 export const CommandsPage = ({
     commands,
@@ -159,7 +160,7 @@ const Command = ({
                     <div className="px-6 pt-[5%] flex flex-col gap-4">
                         <div>
                             <p className="text-sm tracking-wide text-vortex-main font-medium">
-                                arguments
+                                usage
                             </p>
                             <div className="flex flex-wrap gap-2 mt-3">
                                 {args.length === 0 ? (

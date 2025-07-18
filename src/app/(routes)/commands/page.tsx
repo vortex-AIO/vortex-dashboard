@@ -14,6 +14,7 @@ interface ImportedCommand {
   enabled: boolean;
   cog: string;
   permissions: string;
+  hidden?: boolean;
 }
 
 const Commands = () => {
@@ -32,7 +33,8 @@ const Commands = () => {
                     description: cmd.description,
                     category: cmd.cog,
                     aliases: cmd.aliases,
-                    enabled: cmd.enabled
+                    enabled: cmd.enabled,
+                    hidden: cmd.hidden
                 }))
                 .sort((a, b) => a.name.localeCompare(b.name));
             
