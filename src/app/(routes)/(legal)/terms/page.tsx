@@ -3,7 +3,7 @@ const Terms = () => {
         <div className="flex flex-col mx-[10vw] mt-5 sm:mx-[25vw]">
             <span className="font-bold text-5xl text-white">Terms of Service</span>
             <span className="text-kazu-main italic text-sm mt-5">
-                Last updated And Effective Since: 06-05-2025
+                Last updated And Effective Since: Friday, July 25, 2025
             </span>
             <span className="text-neutral-400 text-sm mt-5 pb-5">
                 By visiting (&apos;vortex&apos;) or inviting (&apos;vortex Bot&apos;) to your
@@ -15,16 +15,16 @@ const Terms = () => {
             </span>
             <span className="text-neutral-400 text-sm mt-5">
                 If any information stated here seems misleading, please contact us @{" "}
-                <span className="text-white font-semibold">x@playfairs.cc</span>
+                <span className="text-white font-semibold">support@playfairs.cc</span>
             </span>
             <span className="font-bold text-2xl text-white pt-10">Disclaimer</span>
             <span className="text-neutral-400 text-sm mt-5">
                 You may not use vortex to violate any applicable laws or regulations as well as
                 Discord&apos;s Terms of Service and Community Guidelines. If you encounter
                 individuals or communities doing so, please send an email to{" "}
-                <span className="text-white font-semibold">x@playfairs.cc</span>. If you are
-                refunded under any circumstances, your Discord account may be subject to blacklist
-                and a ban from all of our services.
+                <span className="text-white font-semibold">support@playfairs.cc</span>. If you are
+                violate any of our terms under any circumstances, your Discord account may be
+                subject to blacklist and a ban from all of our services.
             </span>
             <span className="font-bold text-2xl text-white pt-10">Vortex Website Usage</span>
             <span className="text-neutral-400 text-sm mt-5">
@@ -67,6 +67,46 @@ const Terms = () => {
                 </li>
                 <li className="text-neutral-400 marker:text-kazu-main">
                     Run a Discord Server that has been terminated repeatedly
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Run a Discord Server that does not comply with Discord&apos;s Terms of Service
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Run a Discord Server that promotes any illegal activities or encourages others
+                    to do so
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Run a Discord Server that supports or promotes hate speech, harassment, or
+                    discrimination
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Run a Discord Server that allows users under the age of 13, per Discord&apos;s
+                    Terms of Service
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Run a Discord Server that exposes any information not suitable for mature
+                    audiences or minors
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Engage in any activity that disrupts or interferes with the normal operation of
+                    our services
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Attempt to bypass any security measures or restrictions implemented by us
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Attempt to access or use our services in any manner not authorized by us
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Attempt to engage in any activity that is illegal or violates any applicable
+                    laws or regulations
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Attempt to engage in any activity that is harmful to our services or other users
+                </li>
+                <li className="text-neutral-400 marker:text-kazu-main">
+                    Attempt to violate the privacy of users or engage in any activity that is
+                    harmful to users on the platform
                 </li>
             </div>
             <span className="font-bold text-2xl text-white pt-10">Termination</span>
