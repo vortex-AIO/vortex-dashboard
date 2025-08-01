@@ -129,7 +129,7 @@ const Terms = () => {
             <span className="text-neutral-400 text-sm mt-5">
                 We can update these terms at any time without notice. Continuing to use our services
                 after any changes will mean that you agree with these terms and violation of our
-                terms of service could result in a permanent ban across all of our services.
+                terms of service could result in a permanent ban across all of our services. meow :3
             </span>
         </div>
     )
