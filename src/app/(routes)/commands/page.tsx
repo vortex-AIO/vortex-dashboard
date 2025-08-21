@@ -4,7 +4,7 @@ import { Category, Command } from "@/types/Command"
 import { useState, useEffect } from "react"
 import Loading from "../loading"
 import { CommandsPage } from "./components/Commands"
-import commandData from "./components/commands.ts"
+import commandData from "./components/commands"
 
 interface ImportedCommand {
   name: string;
