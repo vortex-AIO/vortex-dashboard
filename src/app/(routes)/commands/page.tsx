@@ -4,7 +4,7 @@ import { Category, Command } from "@/types/Command"
 import { useState, useEffect } from "react"
 import Loading from "../loading"
 import { CommandsPage } from "./components/Commands"
-import commandData from "./components/commands"
+import commandData from "./components/commands.ts"
 
 interface ImportedCommand {
   name: string;
@@ -25,6 +25,7 @@ const Commands = () => {
 
     useEffect(() => {
         try {
+            console.debug("[commands/page] raw commandData length:", Array.isArray(commandData) ? commandData.length : typeof commandData)
             const formattedCommands: Command[] = commandData
                 .map((cmd: ImportedCommand) => ({
                     name: cmd.name,
