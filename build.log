@@ -8,7 +8,7 @@ $ next build
    Creating an optimized production build ...
 Failed to compile.
 
-./public/kazu.png
+./public/kayu.png
 Error: Could not load the "sharp" module using the darwin-arm64 runtime
 ERR_DLOPEN_FAILED: dlopen(/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node, 0x0001): Library not loaded: @rpath/libvips-cpp.42.dylib
   Referenced from: <8791EE4B-BC08-3720-9DD2-BC610F2FA3E6> /Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node
@@ -34,11 +34,11 @@ Possible solutions:
     at require (node:internal/modules/helpers:135:16)
 
 Import trace for requested module:
-./public/kazu.png
+./public/kayu.png
 ./src/components/(global)/Footer.tsx
 ./src/app/(routes)/layout.tsx
 
-./public/kazu.png
+./public/kayu.png
 Error: Could not load the "sharp" module using the darwin-arm64 runtime
 ERR_DLOPEN_FAILED: dlopen(/Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node, 0x0001): Library not loaded: @rpath/libvips-cpp.42.dylib
   Referenced from: <8791EE4B-BC08-3720-9DD2-BC610F2FA3E6> /Volumes/EXTERNAL/Developer/playfairs.CC/website/node_modules/next/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64.node
@@ -64,7 +64,7 @@ Possible solutions:
     at require (node:internal/modules/helpers:135:16)
 
 Import trace for requested module:
-./public/kazu.png
+./public/kayu.png
 
 
 > Build failed because of webpack errors

@@ -7,7 +7,7 @@ import { ReactNode, useState } from "react"
 import { IoMdAdd } from "react-icons/io"
 import { IoTerminal } from "react-icons/io5"
 import { RiDiscordLine } from "react-icons/ri"
-import kazu from "../../../public/kazu.png"
+import kazu from "../../../public/kayu.png"
 
 export default function Home() {
     const [totalUsers, setTotalUsers] = useState<number>(0)
