@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useState } from "react"
-import kazu from "../../../public/kayu.png"
+import kazu from "../../../public/kaxu.png"
 
 export default function Loading({ onComplete }: { onComplete: () => void }) {
     const [isAtCenter, setIsAtCenter] = useState(false)

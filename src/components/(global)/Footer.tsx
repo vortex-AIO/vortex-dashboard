@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 import Image from "next/image"
 import Link from "next/link"
-import kazu from "../../../public/kayu.png"
+import kazu from "../../../public/kaxu.png"
 
 export const Footer = () => {
     return (

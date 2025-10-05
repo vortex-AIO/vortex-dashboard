@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useMemo } from "react"
-import kazu from "../../../../public/kayu.png"
+import kazu from "../../../../public/kaxu.png"
 import NavItem from "./NavItem"
 import UserMenu from "./UserMenu"
 
