@@ -70,7 +70,7 @@ export const SearchMenu = ({
                   .filter(category => category.commands.length > 0)
 
     return (
-        <div className="fixed inset-0 z-[99] flex flex-col items-center pt-52">
+        <div className="archive-search-layer">
             <motion.div
                 initial={{ opacity: 0, y: 20, scale: 0.8 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -80,29 +80,29 @@ export const SearchMenu = ({
                     duration: 0.3
                 }}
                 ref={searchMenuRef}
-                className={`bg-[#161717] border border-vortex-card-border z-[100] max-h-[30vh] w-[90%] sm:w-[600px] ${filteredCommands.length > 0 ? "rounded-t-2xl" : "rounded-2xl"}`}>
-                <div className="flex flex-row w-full h-full items-center gap-2 p-4 text-[#616161]">
-                    <Search size={24} className="ml-auto hover:cursor-pointer text-[#616161]" />
+                className={`archive-search-dialog${filteredCommands.length > 0 ? " has-results" : ""}`}>
+                <div className="archive-search-input-wrap">
+                    <Search size={19} aria-hidden="true" />
                     <input
                         type="text"
                         placeholder="Search for commands..."
-                        className="text-white bg-transparent font-medium rounded-2xl p-2 focus:outline-none focus:border-vortex-pink w-full h-full"
+                        className="archive-search-input"
                         onChange={e => setSearchTerm(e.target.value)}
                         autoFocus
                     />
                 </div>
             </motion.div>
             <div
-                className={`flex flex-col border border-vortex-card-border overflow-hidden bg-vortex-600 gap-4w-[80vw] max-h-[32em] w-[90%] sm:w-[600px] ${filteredCommands.length > 0 ? "inline-block rounded-b-2xl" : "hidden"}`}
+                className={`archive-search-results${filteredCommands.length > 0 ? " is-visible" : ""}`}
                 ref={searchValuesRef}>
-                <div className="flex flex-col gap-2 p-10 overflow-scroll overflow-x-hidden rounded-2xl -mt-6 bg-vortex-600">
+                <div className="archive-search-results-inner">
                     {filter.map(category => (
                         <div key={category.name}>
                             <div className="flex flex-col gap-2 pt-2 pb-5">
                                 {category.commands.map(command => (
                                     <div
                                         key={command.name}
-                                        className="flex flex-col bg-vortex-400 rounded-2xl py-4 px-4 hover:cursor-pointer hover:bg-vortex-500"
+                                        className="archive-search-result"
                                         onClick={() => {
                                             changeActiveCategory(category.name)
                                             setTimeout(() => {

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
             "Vortex, an all-in-one Discord Bot designed to manage and elevate your Discord Server experience.",
         images: [
             {
-                url: "https://www.playfairs.cc/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkazu.0e5e847e.png&w=384&q=75",
+                url: "https://vortex.playfairs.cc/kazu.png",
                 width: 500,
                 height: 500,
                 alt: "vortex"
@@ -37,8 +37,6 @@ export default function vortexMain({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en">
-            <body className={`bg-vortex-100 font-satoshi`}>{children}</body>
-        </html>
+        <div className="home-lander min-h-screen font-satoshi">{children}</div>
     )
 }

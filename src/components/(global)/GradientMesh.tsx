@@ -10,7 +10,7 @@ export const MeshGradient = () => {
     }, [])
     return (
         <>
-            <canvas style={{ opacity: 0.4 }} id="gradient-canvas" data-transition-in />
+            <canvas style={{ opacity: 0.52 }} id="gradient-canvas" data-transition-in />
         </>
     )
 }

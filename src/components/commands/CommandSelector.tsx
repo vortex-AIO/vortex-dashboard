@@ -37,7 +37,9 @@ export const CategorySelector = ({
     return (
         <div className="relative">
             <button
-                className={`absolute pl-4 left-0 z-50 inset-y-0 backdrop-blur-[1px] bg-[#110f112f] flex items-center text-neutral-300 transition duration-200 ease-linear hover:text-white ${
+                type="button"
+                aria-label="Scroll categories left"
+                className={`archive-category-scroll archive-category-scroll-left ${
                     scrollPosition === 0 ? "hidden" : "flex"
                 }`}
                 onClick={() => scroll("left")}>
@@ -59,7 +61,7 @@ export const CategorySelector = ({
             </button>
             <div
                 ref={scrollContainerRef}
-                className="mt-10 flex items-center overflow-x-auto no-scrollbar h-[60px] bg-vortex-200 rounded-2xl w-full border border-vortex-card-border"
+                className="archive-category-list no-scrollbar"
                 onMouseDown={event => {
                     let startX = event.pageX
                     let scrollLeft = scrollContainerRef.current?.scrollLeft || 0
@@ -107,7 +109,9 @@ export const CategorySelector = ({
                     />
                 ))}
                 <button
-                    className={`absolute px-4 right-0 z-50 inset-y-0 backdrop-blur-[1px] bg-[#110f112f] flex items-center text-neutral-300 transition duration-200 ease-linear hover:text-white ${
+                    type="button"
+                    aria-label="Scroll categories right"
+                    className={`archive-category-scroll archive-category-scroll-right ${
                         scrollContainerRef.current &&
                         scrollPosition ===
                             scrollContainerRef.current?.scrollWidth -
@@ -154,20 +158,13 @@ const SelectorItem = ({
 }) => {
     return (
         <button
-            className={`flex flex-row gap-2 items-center h-full px-6 ${active == name ? "text-white bg-vortex-300" : "text-vortex-700 bg-vortex-900 hover:bg-vortex-dim hover:text-white"}`}
+            type="button"
+            aria-pressed={active === name}
+            className={`archive-category-item${active === name ? " is-active" : ""}`}
             onClick={() => !scrolling && setCategory(name)}>
-            <div className="text-vortex-main font-bold text-lg">{icon}</div>
-            <span
-                className={`font-bold ${active != name ? "text-vortex-unselected" : ""} text-base`}>
-                {name}
-            </span>
-            <div
-                className={`flex font-bold ${active != name ? "bg-vortex-500" : "bg-vortex-700"} px-2 py-1 rounded-lg`}>
-                <span
-                    className={`text-sm font-semibold ${active != name ? "text-vortex-unselected" : "text-white"}`}>
-                    {amount}
-                </span>
-            </div>
+            <span className="archive-category-icon">{icon}</span>
+            <span>{name}</span>
+            <span className="archive-category-count">{amount}</span>
         </button>
     )
 }

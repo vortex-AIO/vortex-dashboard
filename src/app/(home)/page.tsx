@@ -4,9 +4,8 @@ import "@/styles/globals.css"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ReactNode, useState } from "react"
-import { IoMdAdd } from "react-icons/io"
 import { IoTerminal } from "react-icons/io5"
-import { RiDiscordLine } from "react-icons/ri"
+import { RiArrowRightUpLine, RiDiscordLine } from "react-icons/ri"
 import kazu from "../../../public/kaxu.png"
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
     return (
         <>
             <MeshGradient />
-            <div className="flex flex-col h-screen w-screen items-center justify-center">
+            <div className="home-lander-content flex flex-col h-screen w-screen items-center justify-center">
                 <motion.div
                     initial={{ opacity: 0, y: 500, scale: 0.5 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -38,7 +37,7 @@ export default function Home() {
                         duration: 0.8,
                         delay: 0.5
                     }}
-                    className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#caca90] via-white to-[#caca90] pb-3">
+                    className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#c5aa72] via-[#eee9df] to-[#c5aa72] pb-3">
                     vortex
                 </motion.h1>
                 <div className="flex flex-row gap-3 sm:flex-col sm:gap-6 mt-10">
@@ -65,7 +64,7 @@ export default function Home() {
                             }}>
                             <SplashItem
                                 name="discord"
-                                link="https://support.playfairs.cc"
+                                link="https://discord.gg/78CFrpCUrV"
                                 icon={<RiDiscordLine />}
                             />
                         </motion.div>
@@ -79,13 +78,22 @@ export default function Home() {
                                 delay: 0.92
                             }}>
                             <SplashItem
-                                name="invite"
-                                link="https://discord.com/oauth2/authorize?client_id=1347441071323480074&permissions=8&integration_type=0&scope=bot"
-                                icon={<IoMdAdd />}
+                                name="axis"
+                                link="/axis"
+                                icon={<RiArrowRightUpLine />}
                             />
                         </motion.div>
                     </div>
                 </div>
+                <motion.a
+                    href="/story"
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ ease: "easeInOut", duration: 0.6, delay: 1.1 }}
+                    className="mt-7 px-4 text-center text-xs text-neutral-400 transition-colors hover:text-white sm:text-sm">
+                    Vortex&apos;s final day is December 27, 2026. Axis is in development as its
+                    successor <span aria-hidden="true">→</span>
+                </motion.a>
             </div>
         </>
     )

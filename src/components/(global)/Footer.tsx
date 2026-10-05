@@ -1,60 +1,45 @@
-import "@/styles/globals.css"
 import Image from "next/image"
 import Link from "next/link"
 import kazu from "../../../public/kaxu.png"
 
 export const Footer = () => {
     return (
-        <div className="mt-[30vh] border-t border-kazu-card-border bg-[#0B0C0C] footer pb-10">
-            <div className="flex w-full border-solid border-t border-kazu-600 border-opacity-10">
-                <div className="flex flex-row w-full mt-10 justify-between ">
-                    <div className="flex flex-col">
-                        <Image
-                            src={kazu}
-                            alt="heres"
-                            height={150}
-                            width={150}
-                            className="rounded-2xl"
-                        />
-                        <p className="text-kazu-main text-sm mt-4">
-                            Copyright © 2025 vortex.cc. All rights reserved.
-                        </p>
+        <footer className="archive-footer">
+            <div className="archive-footer-inner">
+                <div className="archive-footer-brand">
+                    <Image src={kazu} alt="" height={46} width={46} className="rounded-xl" />
+                    <div>
+                        <p className="archive-footer-wordmark">vortex<span>.</span></p>
                     </div>
-                    <div className="flex flex-col gap-6 sm:flex-row">
-                        <div className="flex flex-col">
-                            <span className="font-extrabold text-2xl text-white">Bot</span>
-                            <Link
-                                href="/invite"
-                                className="font-semibold text-kazu-main text-sm mt-2">
-                                Invite
-                            </Link>
-                            <Link
-                                href="https://docs.playfairs.cc/"
-                                className="font-semibold text-kazu-main text-sm mt-2">
-                                Documentation
-                            </Link>
-                            <Link
-                                href="https://support.playfairs.cc"
-                                className="font-semibold text-kazu-main text-sm mt-2">
-                                Support Server
-                            </Link>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-extrabold text-2xl text-white">Legal</span>
-                            <Link
-                                href="/terms"
-                                className="font-semibold text-kazu-main text-sm mt-2">
-                                Terms
-                            </Link>
-                            <Link
-                                href="/privacy"
-                                className="font-semibold text-kazu-main text-sm mt-2">
-                                Privacy
-                            </Link>
-                        </div>
+                </div>
+                <div className="archive-footer-links">
+                    <div>
+                        <p className="archive-footer-heading">Explore</p>
+                        <Link href="/commands">Commands</Link>
+                        <Link href="/story">The story</Link>
+                        <Link href="/axis">Axis</Link>
+                        <a
+                            href="https://github.com/playfairs/vortex"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Vortex public source archive
+                        </a>
+                    </div>
+                    <div>
+                        <p className="archive-footer-heading">Connect</p>
+                        <a href="https://discord.gg/78CFrpCUrV">Support server</a>
+                    </div>
+                    <div>
+                        <p className="archive-footer-heading">Legal</p>
+                        <Link href="/terms">Terms</Link>
+                        <Link href="/privacy">Privacy</Link>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="archive-footer-bottom">
+                <span>Copyright © 2026 playfairs.cc. All rights reserved.</span>
+                <span>The Vortex Project</span>
+            </div>
+        </footer>
     )
 }

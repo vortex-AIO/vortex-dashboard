@@ -2,13 +2,12 @@
 import BackToTopButton from "@/components/TopButton"
 import { CategorySelector } from "@/components/commands/CommandSelector"
 import { Search, TerminalSquareIcon } from "lucide-react"
-import { useRef, useState } from "react"
+import { useEffect, useState } from "react"
 
 import type { Category, Command } from "@/types/Command"
-import { BiCopy } from "react-icons/bi"
+import { Check, Copy } from "lucide-react"
 import { FaRegFolderClosed } from "react-icons/fa6"
 import { SearchMenu } from "./SearchMenu"
-import React from "react"
 
 export const CommandsPage = ({
     commands,
@@ -17,28 +16,35 @@ export const CommandsPage = ({
     commands: Command[] | null
     categories: Category[] | null
 }) => {
-    const searchBackgroundRef = useRef<HTMLDivElement>(null)
     const [isSearchMenuOpen, setSearchMenuOpen] = useState(false)
     const [activeCategory, setActiveCategory] = useState("All")
 
+    useEffect(() => {
+        const handleSearchShortcut = (event: KeyboardEvent) => {
+            const target = event.target
+            const isTyping =
+                target instanceof HTMLElement &&
+                (target.isContentEditable ||
+                    ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName))
+
+            if (event.key === "/" && !isTyping) {
+                event.preventDefault()
+                setSearchMenuOpen(true)
+            }
+        }
+
+        window.addEventListener("keydown", handleSearchShortcut)
+        return () => window.removeEventListener("keydown", handleSearchShortcut)
+    }, [])
+
     if (!commands || !categories) {
         return (
-            <div className="2xl:container 2xl:mx-auto -mt-2 px-20 md:px-[8vw] 2xl:px-52 2xl:py-4">
+            <div className="archive-commands-shell">
                 <BackToTopButton />
-                <div className="flex flex-row justify-between items-center -mx-10 sm:-mx-0">
-                    <div className="flex justify-center items-center space-x-2">
-                        <div className="rounded-full p-3 border border-vortex-card-border bg-vortex-200">
-                            <TerminalSquareIcon size="25" className="text-vortex-main" />
-                        </div>
-                        <div className="text-2xl font-bold text-white sm:text-3xl">Commands</div>
-                    </div>
-                    <div className="flex flex-row items-center gap-4 mt-2 sm:mt-0">
-                        <div
-                            className="flex items-center justify-center rounded-2xl border border-vortex-card-border bg-vortex-200 hover:bg-vortex-300 cursor-pointer p-3"
-                            onClick={() => setSearchMenuOpen(true)}>
-                            <Search size="25" className="text-vortex-main" />
-                        </div>
-                    </div>
+                <div className="archive-commands-heading">
+                    <span className="archive-eyebrow">The Vortex index</span>
+                    <h1>Commands</h1>
+                    <p>Browse the tools and utilities that made Vortex part of your server.</p>
                 </div>
                 <div className="flex flex-col items-center justify-center pb-[15vh] pt-20">
                     <FaRegFolderClosed className="text-8xl text-[#4F4F4F] rotate-12" />
@@ -52,14 +58,16 @@ export const CommandsPage = ({
         activeCategory === "All"
             ? commands
             : commands.filter(command => command.category === activeCategory)
+    const activeCategoryCount =
+        categories.find(category => category.name === activeCategory)?.commands.length ??
+        commands.length
 
     return (
         <>
             {isSearchMenuOpen && (
                 <>
                     <div
-                        ref={searchBackgroundRef}
-                        className="fixed inset-0 bg-black bg-opacity-50 z-[60] backdrop-blur-sm"
+                        className="archive-search-backdrop"
                         onClick={() => setSearchMenuOpen(false)}
                     />
                     <SearchMenu
@@ -70,50 +78,57 @@ export const CommandsPage = ({
                     />
                 </>
             )}
-            <div className="p-6">
-                <div className="w-full flex flex-col max-w-5xl mx-auto">
-                    <BackToTopButton />
-                    <div className="flex flex-row justify-between items-center">
-                        <div className="flex justify-center items-center space-x-2">
-                            <div className="rounded-full p-3 border border-vortex-card-border bg-vortex-200">
-                                <TerminalSquareIcon size="25" className="text-vortex-main" />
-                            </div>
-                            <div className="text-2xl font-bold text-white sm:text-3xl">
-                                Commands
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center gap-4 mt-2 sm:mt-0">
-                            <div
-                                className="flex items-center justify-center rounded-2xl border border-vortex-card-border bg-vortex-200 hover:bg-vortex-300 cursor-pointer p-3"
-                                onClick={() => setSearchMenuOpen(true)}>
-                                <Search size="25" className="text-vortex-main" />
-                            </div>
-                        </div>
+            <div className="archive-commands-shell">
+                <BackToTopButton />
+                <div className="archive-commands-heading">
+                    <span className="archive-eyebrow">The Vortex index</span>
+                    <h1>Commands</h1>
+                    <p>Browse the tools and utilities that made Vortex part of your server.</p>
+                </div>
+
+                <div className="archive-commands-toolbar">
+                    <div>
+                        <span className="archive-commands-count">{activeCategoryCount}</span>
+                        <span className="archive-commands-count-label">
+                            {activeCategory === "All" ? "commands in the archive" : `${activeCategory} commands`}
+                        </span>
                     </div>
-                    <div className="relative">
-                        <CategorySelector
-                            categories={categories}
-                            selected={activeCategory}
-                            onClick={(category: string) => setActiveCategory(category)}
-                        />
-                    </div>
-                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <button
+                        type="button"
+                        className="archive-command-search"
+                        onClick={() => setSearchMenuOpen(true)}>
+                        <Search size={17} aria-hidden="true" />
+                        <span>Search commands</span>
+                        <kbd>/</kbd>
+                    </button>
+                </div>
+
+                <CategorySelector
+                    categories={categories}
+                    selected={activeCategory}
+                    onClick={(category: string) => setActiveCategory(category)}
+                />
+
+                {activeCommands.length > 0 ? (
+                    <div className="archive-command-grid">
                         {activeCommands.map(command => (
                             <Command
                                 key={command.name}
                                 name={command.name}
-                                description={
-                                    command.description.length > 0
-                                        ? command.description
-                                        : "No Description"
-                                }
-                                args={command.parameters ?? ["None"]}
-                                aliases={["None"]}
-                                permissions={command.permissions ?? ["None"]}
+                                category={command.category}
+                                description={command.description || "No description provided."}
+                                args={command.parameters ?? []}
+                                aliases={command.aliases ?? []}
+                                permissions={command.permissions ?? []}
                             />
                         ))}
                     </div>
-                </div>
+                ) : (
+                    <div className="archive-command-empty">
+                        <TerminalSquareIcon size={24} aria-hidden="true" />
+                        <p>No commands in this category.</p>
+                    </div>
+                )}
             </div>
         </>
     )
@@ -121,82 +136,104 @@ export const CommandsPage = ({
 
 const Command = ({
     name,
+    category,
     description,
     args,
     aliases,
     permissions
 }: {
     name: string
+    category: string
     description: string
     args: string[]
     aliases: string[]
     permissions: string[]
 }) => {
+    const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "error">("idle")
+
+    const copyCommand = async () => {
+        try {
+            await navigator.clipboard.writeText(name)
+            setCopyStatus("copied")
+            window.setTimeout(() => setCopyStatus("idle"), 1600)
+        } catch (error) {
+            console.error(`Unable to copy command name "${name}":`, error)
+            setCopyStatus("error")
+            window.setTimeout(() => setCopyStatus("idle"), 2500)
+        }
+    }
+
     return (
-        <div
-            id={name}
-            className="flex flex-col py-6 rounded-3xl bg-vortex-200 border transition-shadow duration-200 ease-linear border-vortex-card-border text-white">
-            <div className="relative h-full flex flex-col justify-between">
-                <div className="px-6">
-                    <div className="flex items-start justify-between gap-x-4">
-                        <div className="flex items-center gap-2">
-                            <p className="text-xl font-semibold inline-flex items-center">{name}</p>
-                        </div>
-                        <button
-                            data-clipboard-text={name}
-                            className="text-neutral-500 transition duration-200 ease-linear hover:text-white"
-                            onClick={() => {
-                                navigator.clipboard.writeText(name)
-                            }}>
-                            <BiCopy className="w-6 h-6" />
-                        </button>
+        <article id={name} className="archive-command-card">
+            <div className="archive-command-card-heading">
+                <span className="archive-command-category">{category}</span>
+                <button
+                    type="button"
+                    aria-label={
+                        copyStatus === "copied"
+                            ? `Copied ${name}`
+                            : copyStatus === "error"
+                              ? `Could not copy ${name}`
+                              : `Copy command name ${name}`
+                    }
+                    className={`archive-command-copy${copyStatus !== "idle" ? ` is-${copyStatus}` : ""}`}
+                    onClick={copyCommand}>
+                    {copyStatus === "copied" ? (
+                        <Check size={14} aria-hidden="true" />
+                    ) : (
+                        <Copy size={14} aria-hidden="true" />
+                    )}
+                    <span aria-live="polite">
+                        {copyStatus === "copied"
+                            ? "Copied"
+                            : copyStatus === "error"
+                              ? "Copy failed"
+                              : "Copy"}
+                    </span>
+                </button>
+            </div>
+            <h2 className="archive-command-name">
+                <code>{name}</code>
+            </h2>
+            <p className="archive-command-description">{description}</p>
+            <div className="archive-command-details">
+                <div className="archive-command-usage">
+                    <p className="archive-command-detail-label">Usage</p>
+                    <div className="archive-command-chips">
+                        {args.length > 0 ? (
+                            args.map((arg, index) => (
+                                <code key={`${arg}-${index}`}>{arg.replaceAll("_", " ")}</code>
+                            ))
+                        ) : (
+                            <span className="archive-command-none">No arguments</span>
+                        )}
                     </div>
-                    <p className="text-sm text-vortex-secondary font-medium pb-[5%]">
-                        {description}
-                    </p>
                 </div>
-                <hr className="border-t border-vortex-card-border w-full" />
+                {aliases.length > 0 && (
+                    <div>
+                        <p className="archive-command-detail-label">Aliases</p>
+                        <div className="archive-command-chips">
+                            {aliases.map((alias, index) => (
+                                <code key={`${alias}-${index}`}>{alias}</code>
+                            ))}
+                        </div>
+                    </div>
+                )}
                 <div>
-                    <div className="px-6 pt-[5%] flex flex-col gap-4">
-                        <div>
-                            <p className="text-sm tracking-wide text-vortex-main font-medium">
-                                usage
-                            </p>
-                            <div className="flex flex-wrap gap-2 mt-3">
-                                {args.length === 0 ? (
-                                    <p className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-vortex-300">
-                                        None
-                                    </p>
-                                ) : (
-                                    args.map((arg: string, index: number) => (
-                                        <p
-                                            key={index}
-                                            className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-vortex-300">
-                                            {arg.replaceAll("_", " ")}
-                                        </p>
-                                    ))
-                                )}
-                            </div>
-                        </div>
-                        <div>
-                            <p className="text-sm tracking-wide text-vortex-main font-medium">
-                                permissions
-                            </p>
-                            <div className="flex items-center gap-2 mt-3 capitalize">
-                                {permissions.map((permission: string, index: number) => (
-                                    <p
-                                        key={index}
-                                        className="text-[#D6D6D6] text-sm py-1 px-2 rounded-lg bg-vortex-300">
-                                        {permission == "N/A"
-                                            ? "None"
-                                            : permission.replaceAll("_", " ")}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
+                    <p className="archive-command-detail-label">Permissions</p>
+                    <div className="archive-command-chips">
+                        {permissions.length > 0 && permissions[0] !== "N/A" ? (
+                            permissions.map((permission, index) => (
+                                <span key={`${permission}-${index}`}>
+                                    {permission.replaceAll("_", " ")}
+                                </span>
+                            ))
+                        ) : (
+                            <span className="archive-command-none">None</span>
+                        )}
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }

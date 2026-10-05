@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         description: "The only aesthetic multi-functional discord bot you need.",
         images: [
             {
-                url: "https://cdn.kazu.bot/kaxu.png",
+                url: "https://vortex.playfairs.cc/kazu.png",
                 width: 500,
                 height: 500,
                 alt: "vortex"
