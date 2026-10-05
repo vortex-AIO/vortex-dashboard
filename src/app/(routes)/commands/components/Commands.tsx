@@ -44,7 +44,10 @@ export const CommandsPage = ({
                 <div className="archive-commands-heading">
                     <span className="archive-eyebrow">The Vortex index</span>
                     <h1>Commands</h1>
-                    <p>Browse the tools and utilities that made Vortex part of your server.</p>
+                    <p>
+                        Browse the source-verified command archive. Startup labels reflect source
+                        configuration; server-specific settings and live availability may vary.
+                    </p>
                 </div>
                 <div className="flex flex-col items-center justify-center pb-[15vh] pt-20">
                     <FaRegFolderClosed className="text-8xl text-[#4F4F4F] rotate-12" />
@@ -83,7 +86,10 @@ export const CommandsPage = ({
                 <div className="archive-commands-heading">
                     <span className="archive-eyebrow">The Vortex index</span>
                     <h1>Commands</h1>
-                    <p>Browse the tools and utilities that made Vortex part of your server.</p>
+                    <p>
+                        Browse the source-verified command archive. Startup labels reflect source
+                        configuration; server-specific settings and live availability may vary.
+                    </p>
                 </div>
 
                 <div className="archive-commands-toolbar">
@@ -113,13 +119,27 @@ export const CommandsPage = ({
                     <div className="archive-command-grid">
                         {activeCommands.map(command => (
                             <Command
-                                key={command.name}
+                                key={command.id}
+                                id={command.id}
                                 name={command.name}
                                 category={command.category}
                                 description={command.description || "No description provided."}
                                 args={command.parameters ?? []}
+                                argumentDetails={command.argumentDetails}
                                 aliases={command.aliases ?? []}
-                                permissions={command.permissions ?? []}
+                                requirements={command.requirements}
+                                enabled={command.enabled ?? false}
+                                hidden={command.hidden ?? false}
+                                runtimeStatus={command.runtimeStatus}
+                                interfaces={command.interfaces}
+                                commandType={command.commandType}
+                                commandKind={command.commandKind}
+                                signature={command.signature}
+                                customUsage={command.customUsage}
+                                otherDecorators={command.otherDecorators}
+                                sourceMetadata={command.sourceMetadata}
+                                sourceUrl={command.sourceUrl}
+                                descriptionSource={command.descriptionSource}
                             />
                         ))}
                     </div>
@@ -135,19 +155,47 @@ export const CommandsPage = ({
 }
 
 const Command = ({
+    id,
     name,
     category,
     description,
     args,
+    argumentDetails,
     aliases,
-    permissions
+    requirements,
+    enabled,
+    hidden,
+    runtimeStatus,
+    interfaces,
+    commandType,
+    commandKind,
+    signature,
+    customUsage,
+    otherDecorators,
+    sourceMetadata,
+    sourceUrl,
+    descriptionSource
 }: {
+    id: string
     name: string
     category: string
     description: string
     args: string[]
+    argumentDetails: string[]
     aliases: string[]
-    permissions: string[]
+    requirements: string[]
+    enabled: boolean
+    hidden: boolean
+    runtimeStatus: string
+    interfaces: string[]
+    commandType: string
+    commandKind: string
+    signature: string | null
+    customUsage: string | null
+    otherDecorators: string[]
+    sourceMetadata: string[]
+    sourceUrl: string | null
+    descriptionSource: "source" | "inferred"
 }) => {
     const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "error">("idle")
 
@@ -163,52 +211,104 @@ const Command = ({
         }
     }
 
+    const visibleSignature = signature
+        ?.replace(/^self,\s*/, "")
+        .replace(/^ctx(?::[^,]+)?(?:,\s*)?/, "")
+        .replace(/^\*,\s*/, "")
+        .trim()
+
     return (
-        <article id={name} className="archive-command-card">
+        <article id={id} className="archive-command-card">
             <div className="archive-command-card-heading">
                 <span className="archive-command-category">{category}</span>
-                <button
-                    type="button"
-                    aria-label={
-                        copyStatus === "copied"
-                            ? `Copied ${name}`
-                            : copyStatus === "error"
-                              ? `Could not copy ${name}`
-                              : `Copy command name ${name}`
-                    }
-                    className={`archive-command-copy${copyStatus !== "idle" ? ` is-${copyStatus}` : ""}`}
-                    onClick={copyCommand}>
-                    {copyStatus === "copied" ? (
-                        <Check size={14} aria-hidden="true" />
-                    ) : (
-                        <Copy size={14} aria-hidden="true" />
+                <div className="archive-command-card-actions">
+                    {sourceUrl && (
+                        <a
+                            className="archive-command-source"
+                            href={sourceUrl}
+                            target="_blank"
+                            rel="noreferrer">
+                            Source
+                        </a>
                     )}
-                    <span aria-live="polite">
-                        {copyStatus === "copied"
-                            ? "Copied"
-                            : copyStatus === "error"
-                              ? "Copy failed"
-                              : "Copy"}
-                    </span>
-                </button>
+                    <button
+                        type="button"
+                        aria-label={
+                            copyStatus === "copied"
+                                ? `Copied ${name}`
+                                : copyStatus === "error"
+                                  ? `Could not copy ${name}`
+                                  : `Copy command name ${name}`
+                        }
+                        className={`archive-command-copy${copyStatus !== "idle" ? ` is-${copyStatus}` : ""}`}
+                        onClick={copyCommand}>
+                        {copyStatus === "copied" ? (
+                            <Check size={14} aria-hidden="true" />
+                        ) : (
+                            <Copy size={14} aria-hidden="true" />
+                        )}
+                        <span aria-live="polite">
+                            {copyStatus === "copied"
+                                ? "Copied"
+                                : copyStatus === "error"
+                                  ? "Copy failed"
+                                  : "Copy"}
+                        </span>
+                    </button>
+                </div>
             </div>
             <h2 className="archive-command-name">
                 <code>{name}</code>
             </h2>
             <p className="archive-command-description">{description}</p>
+            <div className="archive-command-status">
+                <span>{interfaces.join(" · ") || commandType}</span>
+                <span>{commandKind.replaceAll("_", " ")}</span>
+                <span>
+                    {enabled
+                        ? "Registered by startup setup"
+                        : runtimeStatus === "not_registered_by_setup_or_module_not_imported"
+                          ? "Not registered by setup"
+                          : "Skipped by startup config"}
+                </span>
+                {hidden && <span>Hidden</span>}
+                {descriptionSource === "inferred" && <span>Summary from behavior</span>}
+            </div>
             <div className="archive-command-details">
                 <div className="archive-command-usage">
                     <p className="archive-command-detail-label">Usage</p>
                     <div className="archive-command-chips">
                         {args.length > 0 ? (
                             args.map((arg, index) => (
-                                <code key={`${arg}-${index}`}>{arg.replaceAll("_", " ")}</code>
+                                <code key={`${arg}-${index}`}>{arg}</code>
                             ))
                         ) : (
-                            <span className="archive-command-none">No arguments</span>
+                            <span className="archive-command-none">
+                                {commandType === "context_menu"
+                                    ? "Context menu action"
+                                    : "No arguments"}
+                            </span>
                         )}
                     </div>
+                    {customUsage && !args.includes(customUsage) && (
+                        <p className="archive-command-custom-usage">
+                            Custom usage: <code>{customUsage}</code>
+                        </p>
+                    )}
+                    {visibleSignature && (
+                        <p className="archive-command-signature">{visibleSignature}</p>
+                    )}
                 </div>
+                {argumentDetails.length > 0 && (
+                    <div>
+                        <p className="archive-command-detail-label">Arguments</p>
+                        <div className="archive-command-chips">
+                            {argumentDetails.map((argument, index) => (
+                                <span key={`${argument}-${index}`}>{argument}</span>
+                            ))}
+                        </div>
+                    </div>
+                )}
                 {aliases.length > 0 && (
                     <div>
                         <p className="archive-command-detail-label">Aliases</p>
@@ -220,19 +320,32 @@ const Command = ({
                     </div>
                 )}
                 <div>
-                    <p className="archive-command-detail-label">Permissions</p>
+                    <p className="archive-command-detail-label">Permissions &amp; checks</p>
                     <div className="archive-command-chips">
-                        {permissions.length > 0 && permissions[0] !== "N/A" ? (
-                            permissions.map((permission, index) => (
-                                <span key={`${permission}-${index}`}>
-                                    {permission.replaceAll("_", " ")}
+                        {requirements.length > 0 ? (
+                            requirements.map((requirement, index) => (
+                                <span key={`${requirement}-${index}`}>
+                                    {requirement}
                                 </span>
                             ))
                         ) : (
-                            <span className="archive-command-none">None</span>
+                            <span className="archive-command-none">No additional checks</span>
                         )}
                     </div>
                 </div>
+                {(otherDecorators.length > 0 || sourceMetadata.length > 0) && (
+                    <details className="archive-command-metadata">
+                        <summary>Other source metadata</summary>
+                        <div className="archive-command-chips">
+                            {otherDecorators.map((decorator, index) => (
+                                <code key={`${decorator}-${index}`}>{decorator}</code>
+                            ))}
+                            {sourceMetadata.map((metadata, index) => (
+                                <code key={`${metadata}-${index}`}>{metadata}</code>
+                            ))}
+                        </div>
+                    </details>
+                )}
             </div>
         </article>
     )

@@ -101,13 +101,13 @@ export const SearchMenu = ({
                             <div className="flex flex-col gap-2 pt-2 pb-5">
                                 {category.commands.map(command => (
                                     <div
-                                        key={command.name}
+                                        key={command.id}
                                         className="archive-search-result"
                                         onClick={() => {
                                             changeActiveCategory(category.name)
                                             setTimeout(() => {
                                                 const element = document.getElementById(
-                                                    command.name
+                                                    command.id
                                                 )
                                                 if (element) {
                                                     element.scrollIntoView({

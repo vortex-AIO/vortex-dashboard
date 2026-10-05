@@ -615,6 +615,29 @@ body {
     gap: 12px;
 }
 
+.archive-command-card-actions {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 6px;
+}
+
+.archive-command-source {
+    padding: 6px 8px;
+    border: 1px solid var(--archive-line);
+    border-radius: 7px;
+    color: var(--archive-muted);
+    font-size: 10px;
+    transition:
+        color 160ms ease,
+        border-color 160ms ease;
+}
+
+.archive-command-source:hover {
+    border-color: rgba(197, 170, 114, 0.38);
+    color: var(--archive-accent);
+}
+
 .archive-command-category {
     display: inline-flex;
     align-items: center;
@@ -676,6 +699,21 @@ body {
     line-height: 1.65;
 }
 
+.archive-command-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.archive-command-status > span {
+    padding: 3px 6px;
+    border: 1px solid rgba(48, 42, 33, 0.75);
+    border-radius: 5px;
+    color: #a69d8d;
+    font-size: 9px;
+}
+
 .archive-command-details {
     display: flex;
     flex-direction: column;
@@ -729,6 +767,29 @@ body {
     background: transparent;
     color: #e2d9c8;
     font-size: 10px;
+}
+
+.archive-command-custom-usage,
+.archive-command-signature {
+    margin-top: 7px;
+    color: #a69d8d;
+    font-size: 10px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.archive-command-custom-usage code {
+    color: #e2d9c8;
+}
+
+.archive-command-metadata summary {
+    color: #9c9384;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.archive-command-metadata .archive-command-chips {
+    margin-top: 8px;
 }
 
 .archive-command-chips code {

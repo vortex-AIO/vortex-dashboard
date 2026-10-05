@@ -12,13 +12,27 @@ export interface Category {
 }
 
 export interface Command {
+    id: string
     name: string
     permissions: string[]
+    requirements: string[]
     parameters: string[]
+    argumentDetails: string[]
     description: string
     category: string
     aliases?: string[]
     enabled?: boolean
+    hidden?: boolean
+    runtimeStatus: string
+    interfaces: string[]
+    commandType: string
+    commandKind: string
+    signature: string | null
+    customUsage: string | null
+    otherDecorators: string[]
+    sourceMetadata: string[]
+    sourceUrl: string | null
+    descriptionSource: "source" | "inferred"
 }
 
 export interface Parameter {

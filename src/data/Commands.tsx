@@ -13,8 +13,6 @@ export const getCategoriesFromCommands: (commands: Command[]) => Category[] = co
     })
 
     commands.forEach(command => {
-        if (command.name === "help") return
-
         const category = categories.find(c => c.name === command.category)
 
         if (!category) {
