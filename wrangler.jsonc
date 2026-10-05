@@ -1,6 +1,6 @@
 {
     "$schema": "node_modules/wrangler/config-schema.json",
-    "name": "vortex-website",
+    "name": "vortex-web",
     "compatibility_date": "2026-10-05",
     "main": "./src/worker.ts",
     "assets": {
