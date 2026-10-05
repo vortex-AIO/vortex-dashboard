@@ -1,100 +1,5 @@
 const commandsData = [
     {
-        "id": ",;::Fun::cogs/fun/fun.py:479",
-        "name": ",;",
-        "description": "Common emoticon, bots prefix is ; so whynot make a command for the emoticon :p",
-        "descriptionSource": "source",
-        "help": null,
-        "docstring": null,
-        "aliases": [
-            ".;",
-            "-;"
-        ],
-        "usage": [
-            ";,;"
-        ],
-        "customUsage": ",;",
-        "arguments": [
-            {
-                "name": "ctx",
-                "kind": "positional_or_keyword",
-                "type": "Context",
-                "default": null,
-                "required": true
-            }
-        ],
-        "optionDescriptions": {},
-        "enabled": true,
-        "runtimeStatus": "registered_by_extension_setup",
-        "hidden": false,
-        "interfaces": [
-            "prefix"
-        ],
-        "commandType": "prefix",
-        "kind": "command",
-        "cog": "Fun",
-        "category": "Fun",
-        "permissions": [],
-        "checks": [],
-        "inheritedGroupChecks": [],
-        "cogCheck": null,
-        "otherDecorators": [],
-        "signature": "self, ctx: Context",
-        "sourceFile": "cogs/fun/fun.py",
-        "sourceLine": 479,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L479",
-        "metadata": {
-            "usage": ",;"
-        },
-        "classCommandAttributes": {}
-    },
-    {
-        "id": "3::Fun::cogs/fun/fun.py:500",
-        "name": "3",
-        "description": ";3",
-        "descriptionSource": "source",
-        "help": null,
-        "docstring": ";3",
-        "aliases": [],
-        "usage": [
-            ";3"
-        ],
-        "customUsage": ";3",
-        "arguments": [
-            {
-                "name": "ctx",
-                "kind": "positional_or_keyword",
-                "type": "Context",
-                "default": null,
-                "required": true
-            }
-        ],
-        "optionDescriptions": {},
-        "enabled": true,
-        "runtimeStatus": "registered_by_extension_setup",
-        "hidden": false,
-        "interfaces": [
-            "prefix"
-        ],
-        "commandType": "prefix",
-        "kind": "command",
-        "cog": "Fun",
-        "category": "Fun",
-        "permissions": [],
-        "checks": [],
-        "inheritedGroupChecks": [],
-        "cogCheck": null,
-        "otherDecorators": [],
-        "signature": "self, ctx: Context",
-        "sourceFile": "cogs/fun/fun.py",
-        "sourceLine": 500,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L500",
-        "metadata": {
-            "usage": ";3"
-        },
-        "classCommandAttributes": {}
-    },
-    {
         "id": "about::Information::cogs/information/information.py:73",
         "name": "about",
         "description": "About the bot or Developer.",
@@ -148,7 +53,7 @@ const commandsData = [
         "signature": "self, interaction: discord.Interaction, option: app_commands.Choice[str]",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 73,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L73",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L73",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -197,7 +102,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1890,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1890",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1890",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -233,7 +138,7 @@ const commandsData = [
         "signature": null,
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 29,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L29",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L29",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -301,7 +206,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, user: discord.User, xp: int",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 109,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L109",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L109",
         "metadata": {
             "hidden": true
         },
@@ -377,7 +282,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, reason: str=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 196,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L196",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L196",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -428,7 +333,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 402,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L402",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L402",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -488,7 +393,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 441,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L441",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L441",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -546,7 +451,7 @@ const commandsData = [
         "signature": "self, ctx, *, reason: str=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 339,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L339",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L339",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -616,7 +521,7 @@ const commandsData = [
         "signature": "self, ctx: Context, enabled: bool, channel: discord.TextChannel=None",
         "sourceFile": "cogs/ai/commands.py",
         "sourceLine": 146,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/ai/commands.py#L146",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/ai/commands.py#L146",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -675,7 +580,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *guild_ids: str",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1590,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1590",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1590",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -723,7 +628,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 623,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L623",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L623",
         "metadata": {
             "invoke_without_command": true
         },
@@ -795,7 +700,7 @@ const commandsData = [
         "signature": "self, ctx: Context, enabled: bool=None, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 967,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L967",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L967",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -847,7 +752,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 811,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L811",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L811",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -934,7 +839,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url_type: str, action: str, channel: Optional[discord.TextChannel]=None, time: Optional[str]=None",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 632,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L632",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L632",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -996,7 +901,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 940,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L940",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L940",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1059,7 +964,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url_type: str",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 828,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L828",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L828",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1112,7 +1017,7 @@ const commandsData = [
         "signature": "self, ctx, *, message: str",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 947,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L947",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L947",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1156,7 +1061,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/invocations/invocations.py",
         "sourceLine": 58,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/invocations/invocations.py#L58",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/invocations/invocations.py#L58",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1210,7 +1115,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 69,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L69",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L69",
         "metadata": {
             "invoke_without_command": true
         },
@@ -1285,7 +1190,7 @@ const commandsData = [
         "signature": "self, ctx: Context, enabled: bool=None, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 480,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L480",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L480",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1340,7 +1245,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 561,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L561",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L561",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1395,7 +1300,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 277,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L277",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L277",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1477,7 +1382,7 @@ const commandsData = [
         "signature": "self, ctx: Context, option: str, time: Optional[str]=None, rule_id: Optional[int]=None",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 326,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L326",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L326",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1532,7 +1437,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 251,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L251",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L251",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1597,7 +1502,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 303,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L303",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L303",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1679,7 +1584,7 @@ const commandsData = [
         "signature": "self, ctx: Context, keyword: str, option: str='block', time: Optional[str]=None",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 80,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L80",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L80",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1734,7 +1639,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 231,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L231",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L231",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1796,7 +1701,7 @@ const commandsData = [
         "signature": "self, ctx: Context, keyword: str",
         "sourceFile": "cogs/automod/automod.py",
         "sourceLine": 441,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/automod/automod.py#L441",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/automod/automod.py#L441",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1852,7 +1757,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 421,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L421",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L421",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1926,7 +1831,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str, emoji: str",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 431,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L431",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L431",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -1992,7 +1897,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 467,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L467",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L467",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2066,7 +1971,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str, emoji: str",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 510,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L510",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L510",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2119,7 +2024,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 489,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L489",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L489",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2194,7 +2099,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str, action: str",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 537,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L537",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L537",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2248,7 +2153,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 206,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L206",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L206",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2331,7 +2236,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str, response: str, string: str='exact'",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 216,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L216",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L216",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2397,7 +2302,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 293,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L293",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L293",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2480,7 +2385,7 @@ const commandsData = [
         "signature": "self, ctx: Context, trigger: str, response: str, string: str='exact'",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 346,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L346",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L346",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2537,7 +2442,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 315,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L315",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L315",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2604,7 +2509,7 @@ const commandsData = [
         "signature": "self, ctx: Context, action: str",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 392,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L392",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L392",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2658,7 +2563,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 404,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L404",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L404",
         "metadata": {
             "invoke_without_command": true
         },
@@ -2717,7 +2622,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 286,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L286",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L286",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -2773,7 +2678,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 500,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L500",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L500",
         "metadata": {
             "invoke_without_command": true
         },
@@ -2829,7 +2734,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 412,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L412",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L412",
         "metadata": {
             "invoke_without_command": true
         },
@@ -2896,7 +2801,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 440,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L440",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L440",
         "metadata": {
             "invoke_without_command": true
         },
@@ -2963,7 +2868,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 421,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L421",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L421",
         "metadata": {
             "invoke_without_command": true
         },
@@ -3032,7 +2937,7 @@ const commandsData = [
         "signature": "self, ctx: Context, status: str",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 511,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L511",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L511",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3088,7 +2993,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 459,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L459",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L459",
         "metadata": {
             "invoke_without_command": true
         },
@@ -3147,7 +3052,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 318,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L318",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L318",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3212,7 +3117,7 @@ const commandsData = [
         "signature": "self, ctx, user: Union[discord.User, discord.User]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1103,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1103",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1103",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3275,7 +3180,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1595,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1595",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1595",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3341,7 +3246,7 @@ const commandsData = [
         "signature": "self, ctx, member: Union[discord.Member, discord.User, int, str], *, reason: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 472,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L472",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L472",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3393,7 +3298,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 624,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L624",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L624",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3452,7 +3357,7 @@ const commandsData = [
         "signature": "self, ctx, member: Union[discord.Member, discord.User]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1136,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1136",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1136",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3507,7 +3412,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 263,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L263",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L263",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3566,7 +3471,7 @@ const commandsData = [
         "signature": "self, ctx, amount: int=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1671,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1671",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1671",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3614,7 +3519,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 338,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L338",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L338",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3671,7 +3576,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 74,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L74",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L74",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3751,7 +3656,7 @@ const commandsData = [
         "signature": "self, ctx: Context, users: Optional[str]=None, guilds: Optional[str]=None, *, reason: Optional[str]=None",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 208,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L208",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L208",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3831,7 +3736,7 @@ const commandsData = [
         "signature": "self, ctx: Context, guild: str, *, reason: Optional[str]=None, leave: bool=False",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 126,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L126",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L126",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3885,7 +3790,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 420,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L420",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L420",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -3957,7 +3862,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[str]=None, guild: Optional[str]=None",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 330,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L330",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L330",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4029,7 +3934,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: str, *, reason: Optional[str]=None",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 83,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L83",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L83",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4101,7 +4006,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[str]=None, guild: Optional[str]=None",
         "sourceFile": "cogs/blacklist/blacklist.py",
         "sourceLine": 489,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/blacklist/blacklist.py#L489",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/blacklist/blacklist.py#L489",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4149,7 +4054,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 790,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L790",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L790",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4200,7 +4105,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 83,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L83",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L83",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4246,7 +4151,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 984,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L984",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L984",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4295,7 +4200,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 396,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L396",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L396",
         "metadata": {
             "invoke_without_command": true
         },
@@ -4357,7 +4262,7 @@ const commandsData = [
         "signature": "self, ctx: Context, message_id: int",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 402,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L402",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L402",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -4417,7 +4322,7 @@ const commandsData = [
         "signature": "self, ctx: Context, message_id: int",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 418,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L418",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L418",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -4477,7 +4382,7 @@ const commandsData = [
         "signature": "self, ctx: Context, message_id: int",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 434,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L434",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L434",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -4528,7 +4433,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2124,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2124",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2124",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4572,7 +4477,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 450,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L450",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L450",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4637,7 +4542,7 @@ const commandsData = [
         "signature": "self, interaction: discord.Interaction, image: discord.Attachment, *, caption: str",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1747,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1747",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1747",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4686,7 +4591,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2117,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2117",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2117",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4741,7 +4646,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1155,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1155",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1155",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4800,7 +4705,7 @@ const commandsData = [
         "signature": "self, ctx: Context, breed: str=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1430,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1430",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1430",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -4854,7 +4759,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 100,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L100",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L100",
         "metadata": {
             "invoke_without_command": true
         },
@@ -4930,7 +4835,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url: str=None, attachment: discord.Attachment=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 107,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L107",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L107",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -5004,7 +4909,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url: str=None, attachment: discord.Attachment=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 146,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L146",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L146",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -5076,7 +4981,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url: str=None, attachment: discord.Attachment=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 185,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L185",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L185",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -5148,7 +5053,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url: str=None, attachment: discord.Attachment=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 222,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L222",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L222",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -5212,7 +5117,7 @@ const commandsData = [
         "signature": "self, ctx: Context, bio: str=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 259,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L259",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L259",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -5266,7 +5171,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3427,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3427",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3427",
         "metadata": {
             "invoke_without_command": true
         },
@@ -5338,7 +5243,7 @@ const commandsData = [
         "signature": "self, ctx, name: str, category: discord.CategoryChannel=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3438,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3438",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3438",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5401,7 +5306,7 @@ const commandsData = [
         "signature": "self, ctx, channel: discord.TextChannel=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3457,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3457",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3457",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5464,7 +5369,7 @@ const commandsData = [
         "signature": "self, ctx, name: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3486,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3486",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3486",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5527,7 +5432,7 @@ const commandsData = [
         "signature": "self, ctx, *, new_name: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3472,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3472",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3472",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5590,7 +5495,7 @@ const commandsData = [
         "signature": "self, ctx, category: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3529,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3529",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3529",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5653,7 +5558,7 @@ const commandsData = [
         "signature": "self, ctx, *, new_topic: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3513,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3513",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3513",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5702,7 +5607,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 954,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L954",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L954",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5768,7 +5673,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1762,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1762",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1762",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5834,7 +5739,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.User]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1740,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1740",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1740",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5896,7 +5801,7 @@ const commandsData = [
         "signature": "self, ctx: Context, hexcode: str=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 941,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L941",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L941",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -5946,7 +5851,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/cmdmngr/cmdmngr.py",
         "sourceLine": 29,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/cmdmngr/cmdmngr.py#L29",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/cmdmngr/cmdmngr.py#L29",
         "metadata": {
             "invoke_without_command": true
         },
@@ -6008,7 +5913,7 @@ const commandsData = [
         "signature": "self, ctx, *, command_name: str",
         "sourceFile": "cogs/cmdmngr/cmdmngr.py",
         "sourceLine": 39,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/cmdmngr/cmdmngr.py#L39",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/cmdmngr/cmdmngr.py#L39",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6068,7 +5973,7 @@ const commandsData = [
         "signature": "self, ctx, *, command_name: str",
         "sourceFile": "cogs/cmdmngr/cmdmngr.py",
         "sourceLine": 59,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/cmdmngr/cmdmngr.py#L59",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/cmdmngr/cmdmngr.py#L59",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6112,7 +6017,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 316,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L316",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L316",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6161,7 +6066,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 984,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L984",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L984",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -6245,7 +6150,7 @@ const commandsData = [
         "signature": "self, ctx, channel: discord.TextChannel=None, age: app_commands.Choice[int]=None, uses: app_commands.Choice[int]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2935,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2935",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2935",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6327,7 +6232,7 @@ const commandsData = [
         "signature": "self, ctx, channel: discord.TextChannel=None, age: app_commands.Choice[int]=None, uses: app_commands.Choice[int]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3267,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3267",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3267",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6386,7 +6291,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, word: str",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 545,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L545",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L545",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6440,7 +6345,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 195,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L195",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L195",
         "metadata": {
             "hidden": true
         },
@@ -6501,7 +6406,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2922,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2922",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2922",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6560,7 +6465,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3254,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3254",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3254",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6632,7 +6537,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.Member, *, message: str",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 530,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L530",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L530",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -6680,7 +6585,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 330,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L330",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L330",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6739,7 +6644,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1339,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1339",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1339",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6791,7 +6696,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1279,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1279",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1279",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6840,7 +6745,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2140,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2140",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2140",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -6889,7 +6794,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1697,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1697",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1697",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -6995,7 +6900,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: Optional[discord.TextChannel], title: Optional[str], description: Optional[str], color: str, thumbnail: Optional[str], footer: Optional[str]",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 672,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L672",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L672",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -7041,7 +6946,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 907,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L907",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L907",
         "metadata": {
             "invoke_without_command": true
         },
@@ -7096,7 +7001,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, *, emojis: str",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 913,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L913",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L913",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7159,7 +7064,7 @@ const commandsData = [
         "signature": "self, ctx, id: str=None",
         "sourceFile": "cogs/errors/error.py",
         "sourceLine": 106,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/errors/error.py#L106",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/errors/error.py#L106",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7215,7 +7120,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fakepermissions/fakepermissions.py",
         "sourceLine": 32,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fakepermissions/fakepermissions.py#L32",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fakepermissions/fakepermissions.py#L32",
         "metadata": {
             "invoke_without_command": true
         },
@@ -7296,7 +7201,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role, permissions: str",
         "sourceFile": "cogs/fakepermissions/fakepermissions.py",
         "sourceLine": 40,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fakepermissions/fakepermissions.py#L40",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fakepermissions/fakepermissions.py#L40",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7361,7 +7266,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role=None",
         "sourceFile": "cogs/fakepermissions/fakepermissions.py",
         "sourceLine": 96,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fakepermissions/fakepermissions.py#L96",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fakepermissions/fakepermissions.py#L96",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7439,7 +7344,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role, permissions: str=None",
         "sourceFile": "cogs/fakepermissions/fakepermissions.py",
         "sourceLine": 140,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fakepermissions/fakepermissions.py#L140",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fakepermissions/fakepermissions.py#L140",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7483,7 +7388,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 691,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L691",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L691",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7532,7 +7437,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2155,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2155",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2155",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7591,7 +7496,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.User]=None",
         "sourceFile": "cogs/lastfm/.lastfm.py",
         "sourceLine": 164,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/.lastfm.py#L164",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/.lastfm.py#L164",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7654,7 +7559,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.User]=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 489,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L489",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L489",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7705,7 +7610,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1221,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1221",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1221",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -7759,7 +7664,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 114,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L114",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L114",
         "metadata": {
             "invoke_without_command": true
         },
@@ -7805,7 +7710,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 111,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L111",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L111",
         "metadata": {
             "invoke_without_command": true
         },
@@ -7873,7 +7778,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.TextChannel",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 294,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L294",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L294",
         "metadata": {
             "invoke_without_command": true
         },
@@ -7929,7 +7834,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 230,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L230",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L230",
         "metadata": {
             "invoke_without_command": true
         },
@@ -7989,7 +7894,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 284,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L284",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L284",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8057,7 +7962,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, message: str",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 241,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L241",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L241",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8111,7 +8016,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 176,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L176",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L176",
         "metadata": {
             "invoke_without_command": true
         },
@@ -8181,7 +8086,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, message: str",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 187,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L187",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L187",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8245,7 +8150,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, message: str",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 168,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L168",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L168",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8304,7 +8209,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, message: str",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 200,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L200",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L200",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8360,7 +8265,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 356,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L356",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L356",
         "metadata": {
             "invoke_without_command": true
         },
@@ -8414,7 +8319,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 222,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L222",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L222",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8473,7 +8378,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.TextChannel=None",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 116,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L116",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L116",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8540,7 +8445,7 @@ const commandsData = [
         "signature": "self, ctx: Context, status: str",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 365,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L365",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L365",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8596,7 +8501,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 314,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L314",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L314",
         "metadata": {
             "invoke_without_command": true
         },
@@ -8650,7 +8555,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/server/server.py",
         "sourceLine": 248,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/server/server.py#L248",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/server/server.py#L248",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8704,7 +8609,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 122,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L122",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L122",
         "metadata": {
             "invoke_without_command": true
         },
@@ -8774,7 +8679,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, message: str",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 133,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L133",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L133",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8833,7 +8738,7 @@ const commandsData = [
         "signature": "self, ctx, image: discord.Attachment",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 1358,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L1358",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L1358",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8882,7 +8787,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/git/git.py",
         "sourceLine": 54,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/git/git.py#L54",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/git/git.py#L54",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8938,7 +8843,7 @@ const commandsData = [
         "signature": "self, ctx: Context, limit: int=10",
         "sourceFile": "cogs/git/git.py",
         "sourceLine": 81,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/git/git.py#L81",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/git/git.py#L81",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -8987,7 +8892,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/git/git.py",
         "sourceLine": 74,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/git/git.py#L74",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/git/git.py#L74",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9036,7 +8941,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/git/git.py",
         "sourceLine": 67,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/git/git.py#L67",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/git/git.py#L67",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9085,7 +8990,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/git/git.py",
         "sourceLine": 59,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/git/git.py#L59",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/git/git.py#L59",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9138,7 +9043,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2497,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2497",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2497",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9192,7 +9097,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, album: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2515,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2515",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2515",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9246,7 +9151,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, track: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2506,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2506",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2506",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9292,7 +9197,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/games/games.py",
         "sourceLine": 339,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/games/games.py#L339",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/games/games.py#L339",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9359,7 +9264,7 @@ const commandsData = [
         "signature": "self, ctx, user_id: int, reason: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 577,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L577",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L577",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9408,7 +9313,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1907,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1907",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1907",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9456,7 +9361,7 @@ const commandsData = [
         "signature": "command=None",
         "sourceFile": "core/client/help.py",
         "sourceLine": 45,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/core/client/help.py#L45",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/core/client/help.py#L45",
         "metadata": {
             "example": "help",
             "configured_at": "src/base/bot.py:44"
@@ -9516,7 +9421,7 @@ const commandsData = [
         "signature": "self, ctx, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2756,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2756",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2756",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9566,7 +9471,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/developer/developer.py",
         "sourceLine": 56,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/developer/developer.py#L56",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/developer/developer.py#L56",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9617,7 +9522,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 133,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L133",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L133",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9661,7 +9566,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/listeners/listeners.py",
         "sourceLine": 395,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/listeners/listeners.py#L395",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/listeners/listeners.py#L395",
         "metadata": {
             "hidden": true
         },
@@ -9712,7 +9617,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 727,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L727",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L727",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -9769,7 +9674,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2210,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2210",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2210",
         "metadata": {
             "invoke_without_command": true
         },
@@ -9840,7 +9745,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role, *, reason: str='No reason provided'",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2225,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2225",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2225",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9891,7 +9796,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 258,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L258",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L258",
         "metadata": {
             "invoke_without_command": true
         },
@@ -9942,7 +9847,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 327,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L327",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L327",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -9998,7 +9903,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, username: str=None",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 264,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L264",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L264",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10047,7 +9952,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1423,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1423",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1423",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10105,7 +10010,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1379,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1379",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1379",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10151,7 +10056,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/invocations/invocations.py",
         "sourceLine": 36,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/invocations/invocations.py#L36",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/invocations/invocations.py#L36",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10215,7 +10120,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member, *, reason='No reason provided'",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2266,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2266",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2266",
         "metadata": {
             "invoke_without_command": true
         },
@@ -10272,7 +10177,7 @@ const commandsData = [
         "signature": "self, ctx, channel: discord.TextChannel",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2343,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2343",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2343",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10327,7 +10232,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2349,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2349",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2349",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10380,7 +10285,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2310,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2310",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2310",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10453,7 +10358,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, user_id: int=None, *, reason: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 708,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L708",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L708",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10497,7 +10402,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/$uicide/suicide.py",
         "sourceLine": 296,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/$uicide/suicide.py#L296",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/$uicide/suicide.py#L296",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10548,7 +10453,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, part: Optional[str]=None",
         "sourceFile": "cogs/$uicide/suicide.py",
         "sourceLine": 300,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/$uicide/suicide.py#L300",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/$uicide/suicide.py#L300",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10599,7 +10504,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 158,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L158",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L158",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10650,7 +10555,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, part: Optional[str]=None",
         "sourceFile": "cogs/$uicide/suicide.py",
         "sourceLine": 305,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/$uicide/suicide.py#L305",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/$uicide/suicide.py#L305",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10694,7 +10599,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 494,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L494",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L494",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10743,7 +10648,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lastfm/.lastfm.py",
         "sourceLine": 76,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/.lastfm.py#L76",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/.lastfm.py#L76",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10795,7 +10700,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 331,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L331",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L331",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10845,7 +10750,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lastfm/.lastfm.py",
         "sourceLine": 85,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/.lastfm.py#L85",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/.lastfm.py#L85",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10897,7 +10802,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 342,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L342",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L342",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -10956,7 +10861,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/lastfm/.lastfm.py",
         "sourceLine": 277,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/.lastfm.py#L277",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/.lastfm.py#L277",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11015,7 +10920,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 784,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L784",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L784",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11071,7 +10976,7 @@ const commandsData = [
         "signature": "self, ctx: Context, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1893,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1893",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1893",
         "metadata": {
             "invoke_without_command": true
         },
@@ -11140,7 +11045,7 @@ const commandsData = [
         "signature": "self, ctx: Context, album: str=None, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2279,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2279",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2279",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11199,7 +11104,7 @@ const commandsData = [
         "signature": "self, ctx: Context, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1944,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1944",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1944",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11266,7 +11171,7 @@ const commandsData = [
         "signature": "self, ctx: Context, track: str=None, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2093,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2093",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2093",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11315,7 +11220,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 430,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L430",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L430",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11377,7 +11282,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/lastfm/.lastfm.py",
         "sourceLine": 338,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/.lastfm.py#L338",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/.lastfm.py#L338",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11439,7 +11344,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 843,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L843",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L843",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11505,7 +11410,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None, period: str='7day'",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1601,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1601",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1601",
         "metadata": {
             "invoke_without_command": true
         },
@@ -11575,7 +11480,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None, period: str='7day'",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1692,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1692",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1692",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11644,7 +11549,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None, track: str=None",
         "sourceFile": "cogs/lastfm/.lastfm.py",
         "sourceLine": 362,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/.lastfm.py#L362",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/.lastfm.py#L362",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11713,7 +11618,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None, track: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 870,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L870",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L870",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11770,7 +11675,7 @@ const commandsData = [
         "signature": "self, ctx: Context, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 930,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L930",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L930",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11835,7 +11740,7 @@ const commandsData = [
         "signature": "self, ctx: Context, album: str=None, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1221,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1221",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1221",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11892,7 +11797,7 @@ const commandsData = [
         "signature": "self, ctx: Context, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1080,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1080",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1080",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -11956,7 +11861,7 @@ const commandsData = [
         "signature": "self, ctx: Context, track: str=None, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1408,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1408",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1408",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12012,7 +11917,7 @@ const commandsData = [
         "signature": "self, ctx, page: int=1",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 77,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L77",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L77",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12070,7 +11975,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, expr: str=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 928,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L928",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L928",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -12129,7 +12034,7 @@ const commandsData = [
         "signature": "self, ctx, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2694,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2694",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2694",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12181,7 +12086,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2569,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2569",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2569",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12233,7 +12138,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3077,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3077",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3077",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12307,7 +12212,7 @@ const commandsData = [
         "signature": "self, ctx, channel: Optional[discord.TextChannel]=None, action: str='lock'",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2607,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2607",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2607",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12381,7 +12286,7 @@ const commandsData = [
         "signature": "self, ctx, channel: Optional[discord.TextChannel]=None, action: str='lock'",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3115,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3115",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3115",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12446,7 +12351,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2575,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2575",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2575",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12511,7 +12416,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3083,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3083",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3083",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12570,7 +12475,7 @@ const commandsData = [
         "signature": "self, ctx, user: Optional[Union[User, str]]=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 96,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L96",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L96",
         "metadata": {
             "invoke_without_command": true
         },
@@ -12631,7 +12536,7 @@ const commandsData = [
         "signature": "self, ctx: Context, message: Optional[str]=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 174,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L174",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L174",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12680,7 +12585,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 445,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L445",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L445",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12746,7 +12651,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Member=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 668,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L668",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L668",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12797,7 +12702,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 593,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L593",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L593",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12867,7 +12772,7 @@ const commandsData = [
         "signature": "self, ctx: Context, entry_number: int, user: Member=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 369,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L369",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L369",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12926,7 +12831,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Member=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 397,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L397",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L397",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -12991,7 +12896,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, query: str=None, user: Member=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 465,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L465",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L465",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13056,7 +12961,7 @@ const commandsData = [
         "signature": "self, ctx: Context, entry_number: int, user: Member=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 411,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L411",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L411",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13115,7 +13020,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[User]=None",
         "sourceFile": "cogs/lore/lore.py",
         "sourceLine": 162,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lore/lore.py#L162",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lore/lore.py#L162",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13163,7 +13068,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/invocations/invocations.py",
         "sourceLine": 45,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/invocations/invocations.py#L45",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/invocations/invocations.py#L45",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13215,7 +13120,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1510,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1510",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1510",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13282,7 +13187,7 @@ const commandsData = [
         "signature": "self, ctx, *user_ids: int, reason: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 550,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L550",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L550",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13331,7 +13236,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/math/commands.py",
         "sourceLine": 24,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/math/commands.py#L24",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/math/commands.py#L24",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13398,7 +13303,7 @@ const commandsData = [
         "signature": "self, ctx: Context, input: str, variable: str='x'",
         "sourceFile": "cogs/math/commands.py",
         "sourceLine": 72,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/math/commands.py#L72",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/math/commands.py#L72",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13457,7 +13362,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, expression: str",
         "sourceFile": "cogs/math/commands.py",
         "sourceLine": 31,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/math/commands.py#L31",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/math/commands.py#L31",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13508,7 +13413,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 950,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L950",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L950",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13554,7 +13459,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1872,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1872",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1872",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13623,7 +13528,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1474,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1474",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1474",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -13688,7 +13593,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.User]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1566,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1566",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1566",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13740,7 +13645,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3558,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3558",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3558",
         "metadata": {
             "invoke_without_command": true
         },
@@ -13806,7 +13711,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, *, new_nick: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 889,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L889",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L889",
         "metadata": {
             "invoke_without_command": true
         },
@@ -13875,7 +13780,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, *, forced_nick: Optional[str]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1000,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1000",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1000",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13933,7 +13838,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 964,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L964",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L964",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -13997,7 +13902,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, *, new_nick: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 914,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L914",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L914",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14053,7 +13958,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3624,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3624",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3624",
         "metadata": {
             "invoke_without_command": true
         },
@@ -14113,7 +14018,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3654,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3654",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3654",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14171,7 +14076,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3632,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3632",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3632",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14227,7 +14132,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3675,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3675",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3675",
         "metadata": {
             "invoke_without_command": true
         },
@@ -14290,7 +14195,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3706,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3706",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3706",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14361,7 +14266,7 @@ const commandsData = [
         "signature": "self, ctx: Context, message: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3682,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3682",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3682",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14405,7 +14310,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 509,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L509",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L509",
         "metadata": {
             "usage": ";nothing"
         },
@@ -14474,7 +14379,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1678,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1678",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1678",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14530,7 +14435,7 @@ const commandsData = [
         "signature": "self, ctx, *, user: discord.User=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 517,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L517",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L517",
         "metadata": {
             "invoke_without_command": true
         },
@@ -14581,7 +14486,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 639,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L639",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L639",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14642,7 +14547,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 663,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L663",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L663",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14698,7 +14603,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 541,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L541",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L541",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14747,7 +14652,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 697,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L697",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L697",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14798,7 +14703,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 108,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L108",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L108",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14848,7 +14753,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/developer/developer.py",
         "sourceLine": 19,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/developer/developer.py#L19",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/developer/developer.py#L19",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14894,7 +14799,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/music/music.py",
         "sourceLine": 496,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/music/music.py#L496",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/music/music.py#L496",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -14948,7 +14853,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, target: str=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1164,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1164",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1164",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15002,7 +14907,7 @@ const commandsData = [
         "signature": "self, ctx, *, user: Optional[discord.User]=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 763,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L763",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L763",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15050,7 +14955,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 189,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L189",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L189",
         "metadata": {
             "invoke_without_command": true
         },
@@ -15111,7 +15016,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction], channel: discord.TextChannel",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 332,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L332",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L332",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15165,7 +15070,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction]",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 474,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L474",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L474",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15217,7 +15122,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 566,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L566",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L566",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15269,7 +15174,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 547,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L547",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L547",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15315,7 +15220,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 377,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L377",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L377",
         "metadata": {
             "invoke_without_command": true
         },
@@ -15363,7 +15268,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction]",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 388,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L388",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L388",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15409,7 +15314,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction]",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 435,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L435",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L435",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15455,7 +15360,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 200,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L200",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L200",
         "metadata": {
             "invoke_without_command": true
         },
@@ -15514,7 +15419,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction], *, query: str",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 211,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L211",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L211",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15562,7 +15467,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction]",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 289,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L289",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L289",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15621,7 +15526,7 @@ const commandsData = [
         "signature": "self, ctx: Union[Context, discord.Interaction], *, query: str",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 252,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L252",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L252",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15667,7 +15572,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/scrapers/scrapers.py",
         "sourceLine": 580,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/scrapers/scrapers.py#L580",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/scrapers/scrapers.py#L580",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15724,7 +15629,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, query: str",
         "sourceFile": "cogs/music/music.py",
         "sourceLine": 416,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/music/music.py#L416",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/music/music.py#L416",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15773,7 +15678,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 880,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L880",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L880",
         "metadata": {
             "hidden": true
         },
@@ -15821,7 +15726,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 2032,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L2032",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L2032",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15865,7 +15770,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 490,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L490",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L490",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15919,7 +15824,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=Author",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 720,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L720",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L720",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -15963,7 +15868,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1265,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1265",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1265",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16007,7 +15912,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 322,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L322",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L322",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16058,7 +15963,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 213,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L213",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L213",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16122,7 +16027,7 @@ const commandsData = [
         "signature": "self, ctx, amount: Union[int, discord.Member, discord.User]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1099,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1099",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1099",
         "metadata": {
             "invoke_without_command": true
         },
@@ -16192,7 +16097,7 @@ const commandsData = [
         "signature": "self, ctx, message_id: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1200,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1200",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1200",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16250,7 +16155,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1637,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1637",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1637",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16308,7 +16213,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1315,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1315",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1315",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16376,7 +16281,7 @@ const commandsData = [
         "signature": "self, ctx, message_id: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1180,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1180",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1180",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16452,7 +16357,7 @@ const commandsData = [
         "signature": "self, ctx, bot: Optional[discord.Member]=None, amount: Optional[int]=50",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1220,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1220",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1220",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16517,7 +16422,7 @@ const commandsData = [
         "signature": "self, ctx, *, text: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1404,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1404",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1404",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16582,7 +16487,7 @@ const commandsData = [
         "signature": "self, ctx, *, text: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1443,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1443",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1443",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16660,7 +16565,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.User, amount: int=20",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1143,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1143",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1143",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16718,7 +16623,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1507,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1507",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1507",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16778,7 +16683,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1354,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1354",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1354",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16843,7 +16748,7 @@ const commandsData = [
         "signature": "self, ctx, *, user: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1539,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1539",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1539",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16901,7 +16806,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1587,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1587",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1587",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -16959,7 +16864,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1285,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1285",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1285",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17024,7 +16929,7 @@ const commandsData = [
         "signature": "self, ctx, *, text: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1475,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1475",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1475",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17082,7 +16987,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1608,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1608",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1608",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17133,7 +17038,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2098,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2098",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2098",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17193,7 +17098,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, user: discord.User=None",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 31,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L31",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L31",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17265,7 +17170,7 @@ const commandsData = [
         "signature": "self, ctx: Context, message_id: str, emoji: str",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 864,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L864",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L864",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -17321,7 +17226,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3031,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3031",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3031",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17375,7 +17280,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3772,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3772",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3772",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17449,7 +17354,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3038,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3038",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3038",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17523,7 +17428,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3779,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3779",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3779",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17589,7 +17494,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3057,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3057",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3057",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17655,7 +17560,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3798,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3798",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3798",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17714,7 +17619,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 861,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L861",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L861",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17774,7 +17679,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 875,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L875",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L875",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17820,7 +17725,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3592,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3592",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3592",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17870,7 +17775,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3614,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3614",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3614",
         "metadata": {
             "hidden": true
         },
@@ -17908,7 +17813,7 @@ const commandsData = [
         "signature": null,
         "sourceFile": "cogs/ai/commands.py",
         "sourceLine": 18,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/ai/commands.py#L18",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/ai/commands.py#L18",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -17969,7 +17874,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, user: discord.User",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 161,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L161",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L161",
         "metadata": {
             "hidden": true
         },
@@ -18025,7 +17930,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 180,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L180",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L180",
         "metadata": {
             "hidden": true
         },
@@ -18076,7 +17981,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 287,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L287",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L287",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -18127,7 +18032,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 309,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L309",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L309",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -18178,7 +18083,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 298,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L298",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L298",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -18226,7 +18131,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/music/music.py",
         "sourceLine": 510,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/music/music.py#L510",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/music/music.py#L510",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18279,7 +18184,7 @@ const commandsData = [
         "signature": "self, ctx, *, role: discord.Role=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 933,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L933",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L933",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18336,7 +18241,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.User]=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2074,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2074",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2074",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18408,7 +18313,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, *, role_input: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1709,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1709",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1709",
         "metadata": {
             "invoke_without_command": true
         },
@@ -18477,7 +18382,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1752,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1752",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1752",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18550,7 +18455,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role, color_hex: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1972,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1972",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1972",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18615,7 +18520,7 @@ const commandsData = [
         "signature": "self, ctx, *, role_name: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1824,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1824",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1824",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18680,7 +18585,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1834,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1834",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1834",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18753,7 +18658,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1843,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1843",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1843",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18835,7 +18740,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role, action: app_commands.Choice[str], new_role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1776,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1776",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1776",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18908,7 +18813,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role, hoist: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1939,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1939",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1939",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -18975,7 +18880,7 @@ const commandsData = [
         "signature": "self, ctx, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1726,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1726",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1726",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19036,7 +18941,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, role: discord.Role=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2025,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2025",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2025",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19101,7 +19006,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2095,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2095",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2095",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19166,7 +19071,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1992,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1992",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1992",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19239,7 +19144,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member, role: discord.Role",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1889,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1889",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1889",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19314,7 +19219,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role, new_name: str",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 1923,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L1923",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L1923",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19379,7 +19284,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2113,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2113",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2113",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19438,7 +19343,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 624,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L624",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L624",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19495,7 +19400,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 941,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L941",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L941",
         "metadata": {
             "alises": [
                 "rl",
@@ -19553,7 +19458,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1470,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1470",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1470",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19604,7 +19509,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1153,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1153",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1153",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19655,7 +19560,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 789,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L789",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L789",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -19738,7 +19643,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url: str=None, delay: int=0, *, args: str=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 454,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L454",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L454",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -19800,7 +19705,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2870,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2870",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2870",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19860,7 +19765,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3202,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3202",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3202",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19912,7 +19817,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 974,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L974",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L974",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -19971,7 +19876,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 984,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L984",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L984",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20032,7 +19937,7 @@ const commandsData = [
         "signature": "self, ctx: Context, emoji: str=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1045,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1045",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1045",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20104,7 +20009,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User=None, table: bool=False",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1102,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1102",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1102",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20163,7 +20068,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User=None",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1004,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1004",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1004",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20251,7 +20156,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: Optional[discord.TextChannel], *, message: str='', message_id: Optional[str]=None, attachment: Optional[discord.Attachment]=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 558,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L558",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L558",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -20307,7 +20212,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 54,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L54",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L54",
         "metadata": {
             "invoke_without_command": true
         },
@@ -20363,7 +20268,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 62,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L62",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L62",
         "metadata": {
             "invoke_without_command": true
         },
@@ -20423,7 +20328,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 102,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L102",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L102",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20491,7 +20396,7 @@ const commandsData = [
         "signature": "self, ctx: Context, prefix: str",
         "sourceFile": "cogs/config/configuration.py",
         "sourceLine": 82,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/config/configuration.py#L82",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/config/configuration.py#L82",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20549,7 +20454,7 @@ const commandsData = [
         "signature": "self, ctx, member: Union[discord.Member, discord.User]=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1120,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1120",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1120",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20597,7 +20502,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1057,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1057",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1057",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20644,7 +20549,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 912,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L912",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L912",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20690,7 +20595,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 633,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L633",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L633",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -20739,7 +20644,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 334,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L334",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L334",
         "metadata": {
             "invoke_without_command": true
         },
@@ -20799,7 +20704,7 @@ const commandsData = [
         "signature": "self, ctx: Context, guild_id: int",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 356,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L356",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L356",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -20857,7 +20762,7 @@ const commandsData = [
         "signature": "self, ctx: Context, guild_id: int=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 379,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L379",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L379",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -20908,7 +20813,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 340,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L340",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L340",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -20978,7 +20883,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, user: discord.User, level: int",
         "sourceFile": "cogs/levels/levels.py",
         "sourceLine": 133,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/levels/levels.py#L133",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/levels/levels.py#L133",
         "metadata": {
             "hidden": true
         },
@@ -21024,7 +20929,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1537,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1537",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1537",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21081,7 +20986,7 @@ const commandsData = [
         "signature": "self, ctx: Context, guild_id: int=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 637,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L637",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L637",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21129,7 +21034,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1070,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1070",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1070",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21185,7 +21090,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 839,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L839",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L839",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -21233,7 +21138,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 255,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L255",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L255",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21279,7 +21184,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/music/music.py",
         "sourceLine": 538,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/music/music.py#L538",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/music/music.py#L538",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21330,7 +21235,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.Member",
         "sourceFile": "cogs/reactions/reactions.py",
         "sourceLine": 183,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reactions/reactions.py#L183",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reactions/reactions.py#L183",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21389,7 +21294,7 @@ const commandsData = [
         "signature": "self, ctx: Context, time: Optional[str]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2808,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2808",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2808",
         "metadata": {
             "invoke_without_command": true
         },
@@ -21455,7 +21360,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: Optional[TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2857,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2857",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2857",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21526,7 +21431,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: Optional[TextChannel]=None, *, time: Optional[str]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2820,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2820",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2820",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21586,7 +21491,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2883,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2883",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2883",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21646,7 +21551,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3215,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3215",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3215",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21705,7 +21610,7 @@ const commandsData = [
         "signature": "self, ctx, *, new_name: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2987,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2987",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2987",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21764,7 +21669,7 @@ const commandsData = [
         "signature": "self, ctx, *, new_name: str=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3319,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3319",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3319",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21812,7 +21717,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1087,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1087",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1087",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21874,7 +21779,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3363,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3363",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3363",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -21931,7 +21836,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, emoji=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 732,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L732",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L732",
         "metadata": {
             "invoke_without_command": true
         },
@@ -21993,7 +21898,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context, *, emojis=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 768,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L768",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L768",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22046,7 +21951,7 @@ const commandsData = [
         "signature": "self, ctx: commands.Context",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 816,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L816",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L816",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22095,7 +22000,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 1043,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L1043",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L1043",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22176,7 +22081,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, note: str, channel: discord.TextChannel=None, rate: int=5",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 1051,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L1051",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L1051",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22239,7 +22144,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.TextChannel=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 1146,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L1146",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L1146",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22295,7 +22200,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 1184,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L1184",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L1184",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22341,7 +22246,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/music/music.py",
         "sourceLine": 527,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/music/music.py#L527",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/music/music.py#L527",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22402,7 +22307,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2896,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2896",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2896",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22463,7 +22368,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3228,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3228",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3228",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22523,7 +22428,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2909,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2909",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2909",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22583,7 +22488,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 3241,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L3241",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L3241",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22627,7 +22532,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1338,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1338",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1338",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22671,7 +22576,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 263,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L263",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L263",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22715,7 +22620,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 326,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L326",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L326",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22766,7 +22671,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 45,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L45",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L45",
         "metadata": {
             "invoke_without_command": true
         },
@@ -22821,7 +22726,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 186,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L186",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L186",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22874,7 +22779,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 173,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L173",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L173",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22933,7 +22838,7 @@ const commandsData = [
         "signature": "self, ctx: Context, url: str=None",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 118,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L118",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L118",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -22992,7 +22897,7 @@ const commandsData = [
         "signature": "self, ctx: Context, username: str=None",
         "sourceFile": "cogs/reposters/reposters.py",
         "sourceLine": 51,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/reposters/reposters.py#L51",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/reposters/reposters.py#L51",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23046,7 +22951,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member=None",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 600,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L600",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L600",
         "metadata": {
             "invoke_without_command": true
         },
@@ -23099,7 +23004,7 @@ const commandsData = [
         "signature": "self, ctx: Context, timezone_abbr: str",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 658,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L658",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L658",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23170,7 +23075,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, duration: str='5m'",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 775,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L775",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L775",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23230,7 +23135,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None, period: str='7day'",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 1883,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L1883",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L1883",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23281,7 +23186,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.User | discord.Member",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 302,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L302",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L302",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23334,7 +23239,7 @@ const commandsData = [
         "signature": "self, ctx, opponent: Optional[discord.Member]=None",
         "sourceFile": "cogs/games/games.py",
         "sourceLine": 360,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/games/games.py#L360",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/games/games.py#L360",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23393,7 +23298,7 @@ const commandsData = [
         "signature": "self, ctx, user: Union[discord.User, int, str]",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 650,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L650",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L650",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23437,7 +23342,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 267,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L267",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L267",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23494,7 +23399,7 @@ const commandsData = [
         "signature": "self, ctx, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2782,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2782",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2782",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23560,7 +23465,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member, *, reason='No reason provided'",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2371,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2371",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2371",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23617,7 +23522,7 @@ const commandsData = [
         "signature": "self, ctx, channel: Optional[discord.TextChannel]=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 2725,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L2725",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L2725",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23673,7 +23578,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 855,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L855",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L855",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -23743,7 +23648,7 @@ const commandsData = [
         "signature": "self, ctx, member: discord.Member=None, user_id: int=None",
         "sourceFile": "cogs/moderation/moderation.py",
         "sourceLine": 836,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/moderation/moderation.py#L836",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/moderation/moderation.py#L836",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23797,7 +23702,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1156,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1156",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1156",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -23848,7 +23753,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1924,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1924",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1924",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23907,7 +23812,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, word: str",
         "sourceFile": "cogs/utility/utility.py",
         "sourceLine": 475,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/utility/utility.py#L475",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/utility/utility.py#L475",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -23964,7 +23869,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1196,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1196",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1196",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -24019,7 +23924,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1379,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1379",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1379",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -24090,7 +23995,7 @@ const commandsData = [
         "signature": "self, ctx: Context, guild_id: Optional[str]=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1283,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1283",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1283",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -24164,7 +24069,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: Optional[discord.Member]=None, guild_id: Optional[str]=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1203,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1203",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1203",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -24229,7 +24134,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user_id: str=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 571,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L571",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L571",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24292,7 +24197,7 @@ const commandsData = [
         "signature": "self, ctx: Context, member: discord.Member=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 537,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L537",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L537",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24346,7 +24251,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 580,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L580",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L580",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24420,7 +24325,7 @@ const commandsData = [
         "signature": "self, ctx: Context, emoji: str, user: User",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 590,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L590",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L590",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24486,7 +24391,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: User",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 648,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L648",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L648",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24542,7 +24447,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 686,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L686",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L686",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24598,7 +24503,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/autoresponders/autoresponders.py",
         "sourceLine": 711,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/autoresponders/autoresponders.py#L711",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/autoresponders/autoresponders.py#L711",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24648,7 +24553,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/vanity/vanity.py",
         "sourceLine": 56,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/vanity/vanity.py#L56",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/vanity/vanity.py#L56",
         "metadata": {
             "invoke_without_command": true
         },
@@ -24703,7 +24608,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/vanity/vanity.py",
         "sourceLine": 204,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/vanity/vanity.py#L204",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/vanity/vanity.py#L204",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24763,7 +24668,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.TextChannel",
         "sourceFile": "cogs/vanity/vanity.py",
         "sourceLine": 95,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/vanity/vanity.py#L95",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/vanity/vanity.py#L95",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24816,7 +24721,7 @@ const commandsData = [
         "signature": "self, ctx",
         "sourceFile": "cogs/vanity/vanity.py",
         "sourceLine": 265,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/vanity/vanity.py#L265",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/vanity/vanity.py#L265",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24876,7 +24781,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/vanity/vanity.py",
         "sourceLine": 79,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/vanity/vanity.py#L79",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/vanity/vanity.py#L79",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24936,7 +24841,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, vanity: str",
         "sourceFile": "cogs/vanity/vanity.py",
         "sourceLine": 63,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/vanity/vanity.py#L63",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/vanity/vanity.py#L63",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -24987,7 +24892,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1113,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1113",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1113",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -25051,7 +24956,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.VoiceChannel",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1120,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1120",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1120",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -25115,7 +25020,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.VoiceChannel",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1132,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1132",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1132",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -25179,7 +25084,7 @@ const commandsData = [
         "signature": "self, ctx: Context, channel: discord.VoiceChannel",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 1143,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L1143",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L1143",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true
@@ -25234,7 +25139,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 54,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L54",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L54",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25282,7 +25187,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 428,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L428",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L428",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25336,7 +25241,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 384,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L384",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L384",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25384,7 +25289,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 288,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L288",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L288",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25432,7 +25337,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 192,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L192",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L192",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25500,7 +25405,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.Member, action: app_commands.Choice[str]",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 621,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L621",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L621",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25562,7 +25467,7 @@ const commandsData = [
         "signature": "self, ctx: Context, name: str",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 703,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L703",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L703",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25616,7 +25521,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 110,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L110",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L110",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25684,7 +25589,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.Member, action: app_commands.Choice[str]",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 538,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L538",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L538",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25748,7 +25653,7 @@ const commandsData = [
         "signature": "self, ctx: Context, category: Optional[str]=None",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 59,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L59",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L59",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25809,7 +25714,7 @@ const commandsData = [
         "signature": "self, ctx: Context, role: discord.Role",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 99,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L99",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L99",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25864,7 +25769,7 @@ const commandsData = [
         "signature": "self, ctx: Context, user: discord.User",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 479,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L479",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L479",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25912,7 +25817,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 336,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L336",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L336",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -25960,7 +25865,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/voicemaster/voicemaster.py",
         "sourceLine": 240,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/voicemaster/voicemaster.py#L240",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/voicemaster/voicemaster.py#L240",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26004,7 +25909,7 @@ const commandsData = [
         "signature": "self, ctx: Context",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 1461,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L1461",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L1461",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26056,7 +25961,7 @@ const commandsData = [
         "signature": "self, interaction: discord.Interaction",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1945,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1945",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1945",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26129,7 +26034,7 @@ const commandsData = [
         "signature": "self, ctx_or_interaction: Union[discord.Interaction, commands.Context], channel: discord.TextChannel, delay: int",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 2019,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L2019",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L2019",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26184,7 +26089,7 @@ const commandsData = [
         "signature": "self, ctx_or_interaction: Union[discord.Interaction, commands.Context]",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 1951,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L1951",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L1951",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26243,7 +26148,7 @@ const commandsData = [
         "signature": "self, ctx, user: discord.User=None",
         "sourceFile": "cogs/information/information.py",
         "sourceLine": 523,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/information/information.py#L523",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/information/information.py#L523",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26296,7 +26201,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, artist: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2470,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2470",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2470",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26350,7 +26255,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, album: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2488,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2488",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2488",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26404,7 +26309,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, track: str=None",
         "sourceFile": "cogs/lastfm/lastfm.py",
         "sourceLine": 2479,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/lastfm/lastfm.py#L2479",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/lastfm/lastfm.py#L2479",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26458,7 +26363,7 @@ const commandsData = [
         "signature": "self, ctx, *, question: str",
         "sourceFile": "cogs/fun/fun.py",
         "sourceLine": 177,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/fun/fun.py#L177",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/fun/fun.py#L177",
         "metadata": {},
         "classCommandAttributes": {}
     },
@@ -26514,7 +26419,7 @@ const commandsData = [
         "signature": "self, ctx: Context, *, command: str=None",
         "sourceFile": "cogs/owner/owner.py",
         "sourceLine": 914,
-        "sourceUrl": "https://github.com/playfairs/vortex/blob/7f1b72af/src/cogs/owner/owner.py#L914",
+        "sourceUrl": "https://github.com/playfairs/vortex/blob/master/src/cogs/owner/owner.py#L914",
         "metadata": {},
         "classCommandAttributes": {
             "hidden": true

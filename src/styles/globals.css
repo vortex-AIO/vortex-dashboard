@@ -1103,6 +1103,81 @@ body {
     background: linear-gradient(90deg, var(--archive-accent-soft), var(--archive-line) 35%, transparent);
 }
 
+.archive-timeline {
+    position: relative;
+    display: grid;
+    gap: 16px;
+    margin-top: 58px;
+    padding: 0;
+    list-style: none;
+}
+
+.archive-timeline::before {
+    position: absolute;
+    top: 22px;
+    bottom: 22px;
+    left: 11px;
+    width: 1px;
+    background: linear-gradient(
+        180deg,
+        var(--archive-accent-soft),
+        rgba(197, 170, 114, 0.16) 85%,
+        transparent
+    );
+    content: "";
+}
+
+.archive-timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 23px minmax(0, 1fr);
+    align-items: start;
+    gap: 17px;
+}
+
+.archive-timeline-marker {
+    z-index: 1;
+    width: 23px;
+    height: 23px;
+    margin-top: 21px;
+    border: 1px solid rgba(197, 170, 114, 0.48);
+    border-radius: 50%;
+    background: #15130f;
+    box-shadow: inset 0 0 0 6px #15130f, inset 0 0 0 8px var(--archive-accent);
+}
+
+.archive-timeline-card {
+    padding: 20px 22px;
+    border: 1px solid var(--archive-line);
+    background:
+        linear-gradient(115deg, rgba(197, 170, 114, 0.045), transparent 60%),
+        var(--archive-panel);
+}
+
+.archive-timeline-card time,
+.archive-timeline-card > span {
+    color: var(--archive-accent);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.archive-timeline-card h2 {
+    margin-top: 7px;
+    color: var(--archive-text);
+    font-size: clamp(17px, 2.5vw, 21px);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+}
+
+.archive-timeline-card p {
+    margin-top: 6px;
+    color: var(--archive-muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
 .archive-markdown {
     color: #c9c2b6;
     font-size: 16px;

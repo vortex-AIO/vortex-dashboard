@@ -17,6 +17,7 @@ export const Footer = () => {
                         <p className="archive-footer-heading">Explore</p>
                         <Link href="/commands">Commands</Link>
                         <Link href="/story">The story</Link>
+                        <Link href="/timeline">Timeline</Link>
                         <Link href="/axis">Axis</Link>
                         <a
                             href="https://github.com/playfairs/vortex"

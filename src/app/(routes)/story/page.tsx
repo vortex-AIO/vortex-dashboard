@@ -19,7 +19,6 @@ export default function StoryPage() {
                 A place to remember what Vortex has been, and to look toward what comes next.
             </p>
             <div className="archive-last-day">
-                <span className="archive-last-day-mark" aria-hidden="true">✳</span>
                 <span className="archive-last-day-copy">
                     <span className="archive-last-day-label">Vortex&apos;s final day</span>
                     <time className="archive-last-day-date" dateTime="2026-12-27">

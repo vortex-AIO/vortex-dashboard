@@ -29,6 +29,11 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
                 label: "Story",
                 destination: "/story",
                 isActive: pathname === "/story"
+            },
+            {
+                label: "Timeline",
+                destination: "/timeline",
+                isActive: pathname === "/timeline"
             }
         ],
         [pathname]
