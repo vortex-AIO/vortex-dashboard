@@ -2,5 +2,10 @@
     "$schema": "node_modules/wrangler/config-schema.json",
     "name": "vortex-website",
     "compatibility_date": "2026-10-05",
-    "pages_build_output_dir": "./out"
+    "main": "./src/worker.ts",
+    "assets": {
+        "directory": "./out",
+        "binding": "ASSETS",
+        "run_worker_first": ["/418", "/418/"]
+    }
 }

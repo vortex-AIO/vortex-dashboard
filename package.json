@@ -6,8 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "cloudflare:preview": "bun run build && wrangler pages dev out",
-        "cloudflare:publish": "wrangler pages deploy out --project-name vortex-website",
+        "cloudflare:preview": "bun run build && wrangler dev",
+        "cloudflare:publish": "wrangler deploy",
         "cloudflare:deploy": "bun run build && bun run cloudflare:publish",
         "lint": "next lint",
         "format": "prettier --write \"src/**/*.{ts,tsx,json}\" --tab-width 4"
