@@ -6,6 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
+        "cloudflare:preview": "bun run build && wrangler pages dev out",
+        "cloudflare:deploy": "bun run build && wrangler pages deploy out",
         "lint": "next lint",
         "format": "prettier --write \"src/**/*.{ts,tsx,json}\" --tab-width 4"
     },
@@ -92,7 +94,6 @@
         "tailwind-merge": "^2.3.0"
     },
     "devDependencies": {
-        "@cloudflare/next-on-pages": "^1.13.7",
         "@types/color-rgba": "^2.1.2",
         "@types/node": "^20",
         "@types/react": "^18",
@@ -101,6 +102,7 @@
         "eslint-config-next": "14.2.3",
         "postcss": "^8",
         "tailwindcss": "^3.4.1",
-        "typescript": "^5"
+        "typescript": "^5",
+        "wrangler": "^4"
     }
 }
